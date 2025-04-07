@@ -1,0 +1,1697 @@
+2025-03-21 00:04:29,117 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 00:04:29,118 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:29] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 00:04:29,135 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032018429'}
+2025-03-21 00:04:29,138 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032018429'}
+2025-03-21 00:04:29,146 - INFO - data: Log-Lv1-000265 Log-Lv2-000348 
+2025-03-21 00:04:29,147 - INFO - data: Log-Lv1-000265 Log-Lv2-000348 
+2025-03-21 00:04:29,150 - INFO - don_vi_gan: VN0017369
+2025-03-21 00:04:29,151 - INFO - jobcode: CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 00:04:29,151 - INFO - PGD VN0017369
+2025-03-21 00:04:29,151 - INFO - jobcode:  CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 00:04:29,151 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 00:04:29,151 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 00:04:29,152 - INFO - don_vi_gan: VN0017369
+2025-03-21 00:04:29,153 - INFO - jobcode: CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 00:04:29,153 - INFO - PGD VN0017369
+2025-03-21 00:04:29,153 - INFO - jobcode:  CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 00:04:29,153 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 00:04:29,153 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 00:04:29,159 - INFO - result ('tuna5@lpbank.com.vn',)
+2025-03-21 00:04:29,159 - INFO - start
+2025-03-21 00:04:29,159 - INFO - VN0017369
+2025-03-21 00:04:29,160 - INFO - donvigan_cha VN0012420
+2025-03-21 00:04:29,160 - INFO - jobcode:  CN0001,CN0002,CN0318
+2025-03-21 00:04:29,160 - INFO - placeholders %s,%s,%s
+2025-03-21 00:04:29,160 - INFO - placeholders %s,%s,%s
+2025-03-21 00:04:29,161 - INFO - result ('tuna5@lpbank.com.vn',)
+2025-03-21 00:04:29,161 - INFO - start
+2025-03-21 00:04:29,161 - INFO - VN0017369
+2025-03-21 00:04:29,162 - INFO - donvigan_cha VN0012420
+2025-03-21 00:04:29,162 - INFO - jobcode:  CN0001,CN0002,CN0318
+2025-03-21 00:04:29,162 - INFO - placeholders %s,%s,%s
+2025-03-21 00:04:29,163 - INFO - placeholders %s,%s,%s
+2025-03-21 00:04:29,168 - INFO - result ('hoinv@lpbank.com.vn',)
+2025-03-21 00:04:29,168 - INFO - ['tuna5@lpbank.com.vn', 'hoinv@lpbank.com.vn']
+2025-03-21 00:04:29,169 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:29] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 00:04:29,170 - INFO - result ('hoinv@lpbank.com.vn',)
+2025-03-21 00:04:29,170 - INFO - ['tuna5@lpbank.com.vn', 'hoinv@lpbank.com.vn']
+2025-03-21 00:04:29,171 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:29] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 04:05:13,756 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 04:05:13,756 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 04:05:13,757 - INFO - 127.0.0.1 - - [21/Mar/2025 04:05:13] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 04:05:13,762 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Võ Quang trọng', 'email': 'voquangtrong11@gmail.com', 'phoneNumber': '0912289557', 'address': 'Thành phố Đà Nẵng-Quận Hải Châu-Chi nhánh Đà Nẵng', 'company': 'VN0012750', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Thấu chi Khách hàng cá nhân', 'description': 'Hỗ trợ gói vay', 'mac': 'bc7bf758bb4f7569b151cedb87c8596378527ba7997e29549f59bbfe5275a806'}
+2025-03-21 04:05:13,771 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 04:05:13,771 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 04:05:13,780 - INFO - Generated ticket ID: 25032118430
+2025-03-21 04:05:13,780 - INFO - Generated ticket ID: 85fec6dc-bd3d-47c0-9346-1b61058e78be - 25032118430
+2025-03-21 04:05:13,788 - INFO - IDKH: 
+2025-03-21 04:05:13,798 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"V\u00f5 Quang tr\u1ecdng\", \"email\": \"voquangtrong11@gmail.com\", \"phoneNumber\": \"0912289557\", \"address\": \"Th\u00e0nh ph\u1ed1 \u0110\u00e0 N\u1eb5ng-Qu\u1ead...
+2025-03-21 04:05:13,799 - INFO - 127.0.0.1 - - [21/Mar/2025 04:05:13] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 05:32:28,064 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 05:32:28,065 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 05:32:28,065 - INFO - 127.0.0.1 - - [21/Mar/2025 05:32:28] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 05:32:28,071 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Đỗ hoài đức', 'email': 'ducbk432@gmail.com', 'phoneNumber': '0816579777', 'address': 'Tỉnh Bình Dương-Huyện Phú Giáo-Phòng Giao dịch Phú Giáo', 'company': 'VN0017640', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank JCB Platinum', 'description': '', 'mac': 'f32329dd64df9a6749a7e4a92b919f40470946cc17c38d0f9e9281bf3f109edd'}
+2025-03-21 05:32:28,082 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-21 05:32:28,082 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000349', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 05:32:28,092 - INFO - Generated ticket ID: 25032118431
+2025-03-21 05:32:28,092 - INFO - Generated ticket ID: e81fdff5-f0f2-424c-a223-b48706bc869f - 25032118431
+2025-03-21 05:32:28,102 - INFO - IDKH: 
+2025-03-21 05:32:28,114 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"\u0110\u1ed7 ho\u00e0i \u0111\u1ee9c\", \"email\": \"ducbk432@gmail.com\", \"phoneNumber\": \"0816579777\", \"address\": \"T\u1ec9nh B\u00ecnh D\u01b0\u01a1ng-Huy\u1ec7...
+2025-03-21 05:32:28,115 - INFO - 127.0.0.1 - - [21/Mar/2025 05:32:28] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 07:18:05,192 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 07:18:05,193 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 07:18:05,193 - INFO - 127.0.0.1 - - [21/Mar/2025 07:18:05] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 07:18:05,199 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Lê Thị Hồng', 'email': '', 'phoneNumber': '0973379511', 'address': 'Tỉnh Tây Ninh-Huyện Gò Dầu-Phòng Giao dịch Gò Dầu', 'company': 'VN0013603', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay Hưu trí', 'description': 'Vay', 'mac': '71527b06b0e0b3bdff6829a36da7471c3a11e62e78336c5171e6b0616c3a2785'}
+2025-03-21 07:18:05,208 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 07:18:05,208 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 07:18:05,219 - INFO - Generated ticket ID: 25032118432
+2025-03-21 07:18:05,219 - INFO - Generated ticket ID: efe18920-7287-4677-a7e2-5cf6339bc222 - 25032118432
+2025-03-21 07:18:05,229 - INFO - IDKH: 
+2025-03-21 07:18:05,239 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"L\u00ea Th\u1ecb H\u1ed3ng\", \"email\": \"\", \"phoneNumber\": \"0973379511\", \"address\": \"T\u1ec9nh T\u00e2y Ninh-Huy\u1ec7n G\u00f2 D\u1ea7u-Ph\u00f2ng Giao d\u1e...
+2025-03-21 07:18:05,240 - INFO - 127.0.0.1 - - [21/Mar/2025 07:18:05] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 07:29:50,398 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 07:29:50,399 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 07:29:50,399 - INFO - 127.0.0.1 - - [21/Mar/2025 07:29:50] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 07:29:50,405 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Lý quốc bảo', 'email': 'lyt10622@gmail.com', 'phoneNumber': '0968381076', 'address': 'Thành phố Cần Thơ-Quận Ô Môn-Phòng Giao dịch Ô Môn', 'company': 'VN0017692', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Thấu chi Khách hàng cá nhân', 'description': 'Vay tín chấp', 'mac': 'b9434539f2ad583b063a16c4dca8af829f55b85ecaabbb0aa7a0260239f314f2'}
+2025-03-21 07:29:50,415 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 07:29:50,415 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 07:29:50,424 - INFO - Generated ticket ID: 25032118433
+2025-03-21 07:29:50,425 - INFO - Generated ticket ID: 3eaaf611-fb93-478a-8882-e138072b0aed - 25032118433
+2025-03-21 07:29:50,436 - INFO - IDKH: 
+2025-03-21 07:29:50,473 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"L\u00fd qu\u1ed1c b\u1ea3o\", \"email\": \"lyt10622@gmail.com\", \"phoneNumber\": \"0968381076\", \"address\": \"Th\u00e0nh ph\u1ed1 C\u1ea7n Th\u01a1-Qu\u1eadn \u00d4 ...
+2025-03-21 07:29:50,474 - INFO - 127.0.0.1 - - [21/Mar/2025 07:29:50] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 08:13:51,956 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 08:13:51,956 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 08:13:51,957 - INFO - 127.0.0.1 - - [21/Mar/2025 08:13:51] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 08:13:51,968 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Phạm Công Sơn', 'email': 'sonpc1008@gmail.com', 'phoneNumber': '0983351445', 'address': 'Thành phố Hồ Chí Minh-Thành phố Thủ Đức-Phòng Giao dịch Thủ Đức', 'company': 'VN0013355', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng không Tài sản đảm bảo cán bộ, công chức, viên chức, lực lượng vũ trang', 'description': 'kv 100-200tr', 'mac': '898b55db8190c5530335759de5b83200068d157fb66a7096ae8cfd53fc57c726'}
+2025-03-21 08:13:51,979 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 08:13:51,979 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 08:13:51,989 - INFO - Generated ticket ID: 25032118434
+2025-03-21 08:13:51,989 - INFO - Generated ticket ID: 9357333b-0ea6-4a15-9885-4e7088480fbd - 25032118434
+2025-03-21 08:13:52,000 - INFO - IDKH: 
+2025-03-21 08:13:52,062 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Ph\u1ea1m C\u00f4ng S\u01a1n\", \"email\": \"sonpc1008@gmail.com\", \"phoneNumber\": \"0983351445\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh-Th\u00e0nh...
+2025-03-21 08:13:52,063 - INFO - 127.0.0.1 - - [21/Mar/2025 08:13:52] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 08:35:30,152 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 08:35:30,153 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 08:35:30,154 - INFO - 127.0.0.1 - - [21/Mar/2025 08:35:30] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 08:35:30,160 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn Ngọc Hải', 'email': '', 'phoneNumber': '0908426575', 'address': 'Tỉnh Bình Thuận-Thị xã La Gi-Phòng Giao dịch La Gi', 'company': 'VN0017521', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Tính năng Sinh lời Lộc Phát', 'description': '', 'mac': '749fa0184ed652d78854d2e3acb0185c6ae015895b83cec8c93c4f82c36e8c1f'}
+2025-03-21 08:35:30,171 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-21 08:35:30,171 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000350', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 08:35:30,181 - INFO - Generated ticket ID: 25032118435
+2025-03-21 08:35:30,181 - INFO - Generated ticket ID: 021b3338-0b21-4609-b34c-96f57be84812 - 25032118435
+2025-03-21 08:35:30,194 - INFO - IDKH: 
+2025-03-21 08:35:30,381 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n Ng\u1ecdc H\u1ea3i\", \"email\": \"\", \"phoneNumber\": \"0908426575\", \"address\": \"T\u1ec9nh B\u00ecnh Thu\u1eadn-Th\u1ecb x\u00e3 La Gi-Ph\u00f2ng Giao...
+2025-03-21 08:35:30,382 - INFO - 127.0.0.1 - - [21/Mar/2025 08:35:30] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 09:05:33,009 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 09:05:33,010 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 09:05:33,010 - INFO - 127.0.0.1 - - [21/Mar/2025 09:05:33] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 09:05:33,015 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Bùi Thanh Lâm', 'email': 'ttrau1960@gmail.com', 'phoneNumber': '0971263079', 'address': 'Tỉnh Lào Cai-Thành phố Lào Cai-Phòng Giao dịch Cam Đường', 'company': 'VN0017020', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ ghi nợ quốc tế Visa', 'description': '', 'mac': 'e797e7013273d240094ea6343e4910423ca8cca4f87935f54f731afb49c3bccc'}
+2025-03-21 09:05:33,025 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-21 09:05:33,025 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000349', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 09:05:33,036 - INFO - Generated ticket ID: 25032118436
+2025-03-21 09:05:33,036 - INFO - Generated ticket ID: 7dc2aa7a-0950-431b-bff3-14542ca48087 - 25032118436
+2025-03-21 09:05:33,047 - INFO - IDKH: 
+2025-03-21 09:05:33,130 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"B\u00f9i Thanh L\u00e2m\", \"email\": \"ttrau1960@gmail.com\", \"phoneNumber\": \"0971263079\", \"address\": \"T\u1ec9nh L\u00e0o Cai-Th\u00e0nh ph\u1ed1 L\u00e0o Cai-P...
+2025-03-21 09:05:33,131 - INFO - 127.0.0.1 - - [21/Mar/2025 09:05:33] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 09:21:51,007 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 09:21:51,007 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 09:21:51,008 - INFO - 127.0.0.1 - - [21/Mar/2025 09:21:51] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 09:21:51,014 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'CHÂU THÁI AN', 'email': '', 'phoneNumber': '0908790818', 'address': 'Tỉnh Đồng Tháp-Thành phố Cao Lãnh-Chi nhánh Đồng Tháp', 'company': 'VN0013850', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Dịch vụ mở tài khoản thanh toán online trên LPBank', 'description': '', 'mac': '20fa1431c4f00f359b56831c0756f48a2f7cfc5ec18cae72d9160edbec3f237a'}
+2025-03-21 09:21:51,023 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-21 09:21:51,023 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000350', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 09:21:51,032 - INFO - Generated ticket ID: 25032118437
+2025-03-21 09:21:51,032 - INFO - Generated ticket ID: 38b32aab-e2bc-44b5-959b-09f0927522b1 - 25032118437
+2025-03-21 09:21:51,043 - INFO - IDKH: 
+2025-03-21 09:21:51,132 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"CH\u00c2U TH\u00c1I AN\", \"email\": \"\", \"phoneNumber\": \"0908790818\", \"address\": \"T\u1ec9nh \u0110\u1ed3ng Th\u00e1p-Th\u00e0nh ph\u1ed1 Cao L\u00e3nh-Chi nh\u...
+2025-03-21 09:21:51,132 - INFO - 127.0.0.1 - - [21/Mar/2025 09:21:51] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 09:46:41,694 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 09:46:41,695 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 09:46:41,695 - INFO - 127.0.0.1 - - [21/Mar/2025 09:46:41] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 09:46:41,700 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Đỗ Thái Dương', 'email': '', 'phoneNumber': '0858088868', 'address': 'Tỉnh Thái Nguyên-Thành phố Thái Nguyên-Chi nhánh Thái Nguyên', 'company': 'VN0011650', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank Visa Platinum', 'description': 'Tôi đang công tác trong lực lượng vũ trang, cụ thể là ngành Công an. Hiện đang công tác ở Công an tỉnh Thái Nguyên, cấp bậc Thượng uý. Cho tôi hỏi muốn mở thẻ tín dụng bên ngân hàng có hỗ trợ không? Và hạn mức tín dụng được gấp bao nhiêu lần mức lương? Thủ tục để cấp như nào? Xin cảm ơn', 'mac': '79ff14e0b61b6f9c1b27de2f82cad4026994dff8f0b170e3c7ac93e64fe2daa3'}
+2025-03-21 09:46:41,710 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-21 09:46:41,710 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000349', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 09:46:41,719 - INFO - Generated ticket ID: 25032118438
+2025-03-21 09:46:41,719 - INFO - Generated ticket ID: 142e8dd8-845b-455c-88e6-36f2a43e5bf8 - 25032118438
+2025-03-21 09:46:41,732 - INFO - IDKH: 
+2025-03-21 09:46:41,783 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"\u0110\u1ed7 Th\u00e1i D\u01b0\u01a1ng\", \"email\": \"\", \"phoneNumber\": \"0858088868\", \"address\": \"T\u1ec9nh Th\u00e1i Nguy\u00ean-Th\u00e0nh ph\u1ed1 Th\u00e1i...
+2025-03-21 09:46:41,784 - INFO - 127.0.0.1 - - [21/Mar/2025 09:46:41] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 09:49:37,010 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 09:49:37,010 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 09:49:37,010 - INFO - 127.0.0.1 - - [21/Mar/2025 09:49:37] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 09:49:37,018 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Tran Hoang Minh', 'email': '', 'phoneNumber': '0902200033', 'address': 'Thành phố Hồ Chí Minh-Quận 6-Phòng Giao dịch Bình Tây', 'company': 'VN0013362', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng Quốc tế JCB Ultimate', 'description': 'Thủ tục mở Thẻ.Có chương trình khuyến mãi gì cho đợt này không?\n', 'mac': '576a8e6d01e34d28f9e6fe26c8fb71dab317fd842028a931a0315fc24f716738'}
+2025-03-21 09:49:37,028 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-21 09:49:37,028 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000349', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 09:49:37,037 - INFO - Generated ticket ID: 25032118439
+2025-03-21 09:49:37,038 - INFO - Generated ticket ID: fa7dfeaf-cf22-47da-8876-73c880781828 - 25032118439
+2025-03-21 09:49:37,050 - INFO - IDKH: 
+2025-03-21 09:49:37,088 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Tran Hoang Minh\", \"email\": \"\", \"phoneNumber\": \"0902200033\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh-Qu\u1eadn 6-Ph\u00f2ng Giao d\u1ecbch B\u0...
+2025-03-21 09:49:37,089 - INFO - 127.0.0.1 - - [21/Mar/2025 09:49:37] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 10:02:21,101 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 10:02:21,102 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 10:02:21,103 - INFO - 127.0.0.1 - - [21/Mar/2025 10:02:21] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 10:02:21,108 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Trịnh văn lượng', 'email': '13101990t@gmail.com', 'phoneNumber': '0978321019', 'address': 'Thành phố Hà Nội-Huyện Mê Linh-Phòng giao dịch Mê Linh', 'company': 'VN0017000', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay sản xuất kinh doanh hàng tiêu dùng', 'description': '', 'mac': '011b5e02529fb97474258d1873363e3a282731b52f927e96d3fabfd8154114a4'}
+2025-03-21 10:02:21,120 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 10:02:21,120 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 10:02:21,131 - INFO - Generated ticket ID: 25032118440
+2025-03-21 10:02:21,132 - INFO - Generated ticket ID: f8238abe-c3ed-43aa-87e6-20f7f0c665ec - 25032118440
+2025-03-21 10:02:21,143 - INFO - IDKH: 
+2025-03-21 10:02:21,154 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Tr\u1ecbnh v\u0103n l\u01b0\u1ee3ng\", \"email\": \"13101990t@gmail.com\", \"phoneNumber\": \"0978321019\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i-Huy\u1ec...
+2025-03-21 10:02:21,155 - INFO - 127.0.0.1 - - [21/Mar/2025 10:02:21] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 10:09:45,125 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 10:09:45,126 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 10:09:45,127 - INFO - 127.0.0.1 - - [21/Mar/2025 10:09:45] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 10:09:45,133 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'LÊ QUỐC HƯNG', 'email': 'lequochunglaanh@gmail.com', 'phoneNumber': '0708348468', 'address': 'Tỉnh Tiền Giang-Huyện Cái Bè-Phòng Giao dịch Cái Bè', 'company': 'VN0017757', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Dịch vụ mở tài khoản thanh toán online trên LPBank', 'description': '', 'mac': 'e748edc7f76633092939961520f26d2d820bd6e1ef7efed8d8b3a99fa807ab2a'}
+2025-03-21 10:09:45,143 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-21 10:09:45,143 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000350', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 10:09:45,153 - INFO - Generated ticket ID: 25032118441
+2025-03-21 10:09:45,153 - INFO - Generated ticket ID: bd1fe69c-5d59-4f11-8a20-0e403a27afab - 25032118441
+2025-03-21 10:09:45,163 - INFO - IDKH: 
+2025-03-21 10:09:45,192 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"L\u00ca QU\u1ed0C H\u01afNG\", \"email\": \"lequochunglaanh@gmail.com\", \"phoneNumber\": \"0708348468\", \"address\": \"T\u1ec9nh Ti\u1ec1n Giang-Huy\u1ec7n C\u00e1i B...
+2025-03-21 10:09:45,193 - INFO - 127.0.0.1 - - [21/Mar/2025 10:09:45] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 10:25:12,007 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 10:25:12,007 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 10:25:12,008 - INFO - 127.0.0.1 - - [21/Mar/2025 10:25:12] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 10:25:12,013 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Hà Xuân Tùng', 'email': '', 'phoneNumber': '0348996917', 'address': 'Tỉnh Phú Thọ-Huyện Cẩm Khê-Phòng Giao dịch Cẩm Khê', 'company': 'VN0011701', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Dịch vụ mở tài khoản thanh toán online trên LPBank', 'description': '', 'mac': '663234d7e0131f8775e869fb7517829405acff34dfb9c44ad9baf243936a42c4'}
+2025-03-21 10:25:12,024 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-21 10:25:12,024 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000350', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 10:25:12,038 - INFO - Generated ticket ID: 25032118442
+2025-03-21 10:25:12,038 - INFO - Generated ticket ID: 40555b80-d84b-415d-a653-e802c0b174e5 - 25032118442
+2025-03-21 10:25:12,049 - INFO - IDKH: 
+2025-03-21 10:25:12,240 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"H\u00e0 Xu\u00e2n T\u00f9ng\", \"email\": \"\", \"phoneNumber\": \"0348996917\", \"address\": \"T\u1ec9nh Ph\u00fa Th\u1ecd-Huy\u1ec7n C\u1ea9m Kh\u00ea-Ph\u00f2ng Giao...
+2025-03-21 10:25:12,241 - INFO - 127.0.0.1 - - [21/Mar/2025 10:25:12] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 10:39:36,607 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 10:39:36,608 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 10:39:36,608 - INFO - 127.0.0.1 - - [21/Mar/2025 10:39:36] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 10:39:36,615 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Hoàng thị giang', 'email': 'hoangthigiang02061993@gmail.com', 'phoneNumber': '0393475851', 'address': 'Tỉnh Bắc Ninh-Huyện Yên Phong-Phòng Giao dịch Yên Phong', 'company': 'VN0012253', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Tính năng Sinh lời Lộc Phát', 'description': '', 'mac': 'c13de4377d3124a64d79d4c3a33dcee3d3b23a0064571743715354492842e627'}
+2025-03-21 10:39:36,630 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-21 10:39:36,631 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000350', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 10:39:36,641 - INFO - Generated ticket ID: 25032118444
+2025-03-21 10:39:36,641 - INFO - Generated ticket ID: f55e6467-e6c3-42a0-8a78-44726ce06230 - 25032118444
+2025-03-21 10:39:36,653 - INFO - IDKH: 
+2025-03-21 10:39:36,667 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Ho\u00e0ng th\u1ecb giang\", \"email\": \"hoangthigiang02061993@gmail.com\", \"phoneNumber\": \"0393475851\", \"address\": \"T\u1ec9nh B\u1eafc Ninh-Huy\u1ec7n Y\u00ean...
+2025-03-21 10:39:36,668 - INFO - 127.0.0.1 - - [21/Mar/2025 10:39:36] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 11:10:52,553 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 11:10:52,554 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 11:10:52,554 - INFO - 127.0.0.1 - - [21/Mar/2025 11:10:52] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 11:10:52,560 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Huynh Thi Thanh Ngan', 'email': 'nganthanhh231@gmail.com', 'phoneNumber': '0902620402', 'address': 'Thành phố Hồ Chí Minh-Quận 7-Phòng Giao dịch Nam Sài Gòn', 'company': 'VN0013365', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank Mastercard Standard', 'description': 'cần hỗ trợ mở thẻ tín dụng', 'mac': 'a3ccb33603b198eb64c0487b1c179b89db5bc1c1516d9f8f59a0ee1f14e9dba5'}
+2025-03-21 11:10:52,571 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-21 11:10:52,572 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000349', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 11:10:52,581 - INFO - Generated ticket ID: 25032118445
+2025-03-21 11:10:52,581 - INFO - Generated ticket ID: 92315bf7-6f53-4564-ba71-c89ad30d3542 - 25032118445
+2025-03-21 11:10:52,593 - INFO - IDKH: 
+2025-03-21 11:10:52,611 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Huynh Thi Thanh Ngan\", \"email\": \"nganthanhh231@gmail.com\", \"phoneNumber\": \"0902620402\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh-Qu\u1eadn 7-Ph...
+2025-03-21 11:10:52,611 - INFO - 127.0.0.1 - - [21/Mar/2025 11:10:52] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 12:37:11,329 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 12:37:11,329 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 12:37:11,330 - INFO - 127.0.0.1 - - [21/Mar/2025 12:37:11] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 12:37:11,337 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Tạ Thị Yến', 'email': 'yenhip85@gmail.com', 'phoneNumber': '0329218535', 'address': 'Tỉnh Phú Thọ-Huyện Tam Nông-Phòng Giao dịch Tam Nông', 'company': 'VN0017183', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Dịch vụ mở tài khoản thanh toán online trên LPBank', 'description': 'Mở tài khoản ghanh toán online trên LPBank', 'mac': 'cfe277b4339babe8cd273e35d664c157d6377a03f19021b30d462f14eddeab8d'}
+2025-03-21 12:37:11,348 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-21 12:37:11,348 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000350', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 12:37:11,357 - INFO - Generated ticket ID: 25032118449
+2025-03-21 12:37:11,357 - INFO - Generated ticket ID: e18d81c2-195c-4593-aabf-7c2592620f05 - 25032118449
+2025-03-21 12:37:11,370 - INFO - IDKH: 
+2025-03-21 12:37:11,384 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"T\u1ea1 Th\u1ecb Y\u1ebfn\", \"email\": \"yenhip85@gmail.com\", \"phoneNumber\": \"0329218535\", \"address\": \"T\u1ec9nh Ph\u00fa Th\u1ecd-Huy\u1ec7n Tam N\u00f4ng-Ph\...
+2025-03-21 12:37:11,386 - INFO - 127.0.0.1 - - [21/Mar/2025 12:37:11] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 12:50:37,907 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 12:50:37,908 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 12:50:37,908 - INFO - 127.0.0.1 - - [21/Mar/2025 12:50:37] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 12:50:37,913 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn Bá Trung', 'email': 'riayz0000@gmail.com', 'phoneNumber': '0563520388', 'address': 'Thành phố Hồ Chí Minh-Quận Phú Nhuận-Phòng Giao dịch Phú Nhuận', 'company': 'VN0013363', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng không có TSBĐ – Tín dụng thân nhân', 'description': 'Mình cần hỗ trợ vay tiêu dùng ạ', 'mac': '3b6cf0ec559151d7690dee72d78b80a4c08a458b5fb4b2b11c733eb4ae089c54'}
+2025-03-21 12:50:37,922 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 12:50:37,923 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 12:50:37,931 - INFO - Generated ticket ID: 25032118450
+2025-03-21 12:50:37,931 - INFO - Generated ticket ID: 9cf6bd49-2ddb-4f2b-be91-ab14bea0bda4 - 25032118450
+2025-03-21 12:50:37,941 - INFO - IDKH: 
+2025-03-21 12:50:37,952 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n B\u00e1 Trung\", \"email\": \"riayz0000@gmail.com\", \"phoneNumber\": \"0563520388\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh-Qu\u1eadn Ph\...
+2025-03-21 12:50:37,952 - INFO - 127.0.0.1 - - [21/Mar/2025 12:50:37] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 13:19:16,199 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 13:19:16,200 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 13:19:16,200 - INFO - 127.0.0.1 - - [21/Mar/2025 13:19:16] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 13:19:16,205 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'le thi thu thuy', 'email': 'lekubo13@gmai.com', 'phoneNumber': '0927948442', 'address': 'Thành phố Hồ Chí Minh-Quận 6-Phòng Giao dịch Bình Tây', 'company': 'VN0013362', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Tiết kiệm an nhàn tuổi hưu', 'description': '', 'mac': '71edee3f5a7306a84722e0243c9c92e98519c90efa962da82305af11725266cf'}
+2025-03-21 13:19:16,217 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-21 13:19:16,217 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000350', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 13:19:16,226 - INFO - Generated ticket ID: 25032118451
+2025-03-21 13:19:16,226 - INFO - Generated ticket ID: f87abac7-cf26-4ef9-b096-d6b2a6d888a8 - 25032118451
+2025-03-21 13:19:16,236 - INFO - IDKH: 
+2025-03-21 13:19:16,248 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"le thi thu thuy\", \"email\": \"lekubo13@gmai.com\", \"phoneNumber\": \"0927948442\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh-Qu\u1eadn 6-Ph\u00f2ng Gi...
+2025-03-21 13:19:16,248 - INFO - 127.0.0.1 - - [21/Mar/2025 13:19:16] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 13:26:56,001 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 13:26:56,002 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 13:26:56,002 - INFO - 127.0.0.1 - - [21/Mar/2025 13:26:56] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 13:26:56,007 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Mai Khắc Tuấn', 'email': 'maikhactuan3103@gmail.com', 'phoneNumber': '0773944446', 'address': 'Thành phố Hồ Chí Minh-Quận 5-Chi nhánh Chợ Lớn', 'company': 'VN0013356', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng không Tài sản đảm bảo cán bộ, công chức, viên chức, lực lượng vũ trang', 'description': '', 'mac': 'bbb308f4e416781ad91b1576f55cc02953565059e71f8b2016e853e4a9e0206b'}
+2025-03-21 13:26:56,017 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 13:26:56,017 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 13:26:56,027 - INFO - Generated ticket ID: 25032118452
+2025-03-21 13:26:56,027 - INFO - Generated ticket ID: c0a0eebb-377d-472b-8e32-1e766e381aae - 25032118452
+2025-03-21 13:26:56,041 - INFO - IDKH: 
+2025-03-21 13:26:56,126 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Mai Kh\u1eafc Tu\u1ea5n\", \"email\": \"maikhactuan3103@gmail.com\", \"phoneNumber\": \"0773944446\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh-Qu\u1eadn...
+2025-03-21 13:26:56,127 - INFO - 127.0.0.1 - - [21/Mar/2025 13:26:56] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 13:41:25,085 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 13:41:25,087 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 13:41:25,088 - INFO - 127.0.0.1 - - [21/Mar/2025 13:41:25] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 13:41:25,110 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Truong thi ngoc anh', 'email': 'Truonganhhb2005@gmail.com', 'phoneNumber': '0977186403', 'address': 'Thành phố Hà Nội-Thị xã Sơn Tây-Chi nhánh Sơn Tây', 'company': 'VN0011023', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank JCB Ultimate', 'description': '', 'mac': '6d79b4d33f5184eb7410e4859c5a2124d5c074c775d1c399de077fca791bff41'}
+2025-03-21 13:41:25,134 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-21 13:41:25,134 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000349', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 13:41:25,156 - INFO - Generated ticket ID: 25032118453
+2025-03-21 13:41:25,156 - INFO - Generated ticket ID: ad48e102-645c-45a3-a2b4-3f720d6285a7 - 25032118453
+2025-03-21 13:41:25,166 - INFO - IDKH: 
+2025-03-21 13:41:25,383 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Truong thi ngoc anh\", \"email\": \"Truonganhhb2005@gmail.com\", \"phoneNumber\": \"0977186403\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i-Th\u1ecb x\u00e3 S...
+2025-03-21 13:41:25,384 - INFO - 127.0.0.1 - - [21/Mar/2025 13:41:25] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 13:44:09,406 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 13:44:09,406 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 13:44:09,407 - INFO - 127.0.0.1 - - [21/Mar/2025 13:44:09] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 13:44:09,414 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'le thi may', 'email': 'may1991@gmail.com', 'phoneNumber': '0337859225', 'address': 'Tỉnh Quảng Nam-Huyện Tiên Phước-Phòng Giao dịch Tiên Phước', 'company': 'VN0017467', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Dịch vụ mở tài khoản thanh toán online trên LPBank', 'description': '', 'mac': '634a633fe696e28772316f982a6e9944dba5c934f60d6fe31e8cb219c50c4fba'}
+2025-03-21 13:44:09,430 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-21 13:44:09,431 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000350', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 13:44:09,440 - INFO - Generated ticket ID: 25032118454
+2025-03-21 13:44:09,440 - INFO - Generated ticket ID: e87f0c0c-6977-4911-b692-93f842754887 - 25032118454
+2025-03-21 13:44:09,450 - INFO - IDKH: 
+2025-03-21 13:44:09,525 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"le thi may\", \"email\": \"may1991@gmail.com\", \"phoneNumber\": \"0337859225\", \"address\": \"T\u1ec9nh Qu\u1ea3ng Nam-Huy\u1ec7n Ti\u00ean Ph\u01b0\u1edbc-Ph\u00f2ng...
+2025-03-21 13:44:09,525 - INFO - 127.0.0.1 - - [21/Mar/2025 13:44:09] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 13:59:47,948 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 13:59:47,949 - INFO - 127.0.0.1 - - [21/Mar/2025 13:59:47] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 13:59:47,958 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 13:59:47,959 - INFO - 127.0.0.1 - - [21/Mar/2025 13:59:47] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 13:59:47,966 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118433'}
+2025-03-21 13:59:47,968 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118433'}
+2025-03-21 13:59:47,982 - INFO - data: Log-Lv1-000265 Log-Lv2-000351 None
+2025-03-21 13:59:47,984 - INFO - data: Log-Lv1-000265 Log-Lv2-000351 None
+2025-03-21 13:59:47,986 - INFO - don_vi_gan: VN0017692
+2025-03-21 13:59:47,986 - INFO - jobcode: CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 13:59:47,986 - INFO - PGD VN0017692
+2025-03-21 13:59:47,987 - INFO - jobcode:  CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 13:59:47,987 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 13:59:47,987 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 13:59:47,988 - INFO - don_vi_gan: VN0017692
+2025-03-21 13:59:47,989 - INFO - jobcode: CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 13:59:47,989 - INFO - PGD VN0017692
+2025-03-21 13:59:47,989 - INFO - jobcode:  CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 13:59:47,989 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 13:59:47,989 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 13:59:47,997 - INFO - result ('huyenntm3@lpbank.com.vn;nhiemnt@lpbank.com.vn',)
+2025-03-21 13:59:47,997 - INFO - start
+2025-03-21 13:59:47,997 - INFO - VN0017692
+2025-03-21 13:59:47,998 - INFO - donvigan_cha VN0013700
+2025-03-21 13:59:47,998 - INFO - jobcode:  CN0001,CN0002,CN0318
+2025-03-21 13:59:47,998 - INFO - placeholders %s,%s,%s
+2025-03-21 13:59:47,998 - INFO - placeholders %s,%s,%s
+2025-03-21 13:59:48,001 - INFO - result ('huyenntm3@lpbank.com.vn;nhiemnt@lpbank.com.vn',)
+2025-03-21 13:59:48,001 - INFO - start
+2025-03-21 13:59:48,001 - INFO - VN0017692
+2025-03-21 13:59:48,002 - INFO - donvigan_cha VN0013700
+2025-03-21 13:59:48,003 - INFO - jobcode:  CN0001,CN0002,CN0318
+2025-03-21 13:59:48,003 - INFO - placeholders %s,%s,%s
+2025-03-21 13:59:48,003 - INFO - placeholders %s,%s,%s
+2025-03-21 13:59:48,006 - INFO - result ('duymhd@lpbank.com.vn;phongth@lpbank.com.vn;truongnt@lpbank.com.vn',)
+2025-03-21 13:59:48,006 - INFO - ['duymhd@lpbank.com.vn', 'huyenntm3@lpbank.com.vn', 'nhiemnt@lpbank.com.vn', 'phongth@lpbank.com.vn', 'truongnt@lpbank.com.vn']
+2025-03-21 13:59:48,007 - INFO - 127.0.0.1 - - [21/Mar/2025 13:59:48] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 13:59:48,016 - INFO - result ('duymhd@lpbank.com.vn;phongth@lpbank.com.vn;truongnt@lpbank.com.vn',)
+2025-03-21 13:59:48,016 - INFO - ['duymhd@lpbank.com.vn', 'huyenntm3@lpbank.com.vn', 'nhiemnt@lpbank.com.vn', 'phongth@lpbank.com.vn', 'truongnt@lpbank.com.vn']
+2025-03-21 13:59:48,018 - INFO - 127.0.0.1 - - [21/Mar/2025 13:59:48] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:10:20,150 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:10:20,151 - INFO - 127.0.0.1 - - [21/Mar/2025 14:10:20] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:10:20,155 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:10:20,155 - INFO - 127.0.0.1 - - [21/Mar/2025 14:10:20] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:10:20,158 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:10:20,163 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:10:20,170 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000465
+2025-03-21 14:10:20,173 - INFO - jobcode:  HS2125;HS2126;HS2127;HS2142;HS2143;HS2157
+2025-03-21 14:10:20,173 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:10:20,173 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:10:20,176 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000465
+2025-03-21 14:10:20,178 - INFO - jobcode:  HS2125;HS2126;HS2127;HS2142;HS2143;HS2157
+2025-03-21 14:10:20,178 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:10:20,178 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:10:20,181 - INFO - ['anhlc@lpbank.com.vn', 'dungvm@lpbank.com.vn', 'namtt4@lpbank.com.vn', 'thuybt1@lpbank.com.vn', 'p.ktgsnb@lpbank.com.vn', 'b.rrhd@lpbank.com.vn', 'p.dvkh247@lpbank.com.vn']
+2025-03-21 14:10:20,182 - INFO - 127.0.0.1 - - [21/Mar/2025 14:10:20] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:10:20,190 - INFO - ['anhlc@lpbank.com.vn', 'dungvm@lpbank.com.vn', 'namtt4@lpbank.com.vn', 'thuybt1@lpbank.com.vn', 'p.ktgsnb@lpbank.com.vn', 'b.rrhd@lpbank.com.vn', 'p.dvkh247@lpbank.com.vn']
+2025-03-21 14:10:20,191 - INFO - 127.0.0.1 - - [21/Mar/2025 14:10:20] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:10:45,323 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:10:45,324 - INFO - 127.0.0.1 - - [21/Mar/2025 14:10:45] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:10:45,333 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:10:45,334 - INFO - 127.0.0.1 - - [21/Mar/2025 14:10:45] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:10:45,336 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:10:45,350 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000465
+2025-03-21 14:10:45,352 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:10:45,355 - INFO - jobcode:  HS2125;HS2126;HS2127;HS2142;HS2143;HS2157
+2025-03-21 14:10:45,355 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:10:45,355 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:10:45,364 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000465
+2025-03-21 14:10:45,367 - INFO - jobcode:  HS2125;HS2126;HS2127;HS2142;HS2143;HS2157
+2025-03-21 14:10:45,367 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:10:45,367 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:10:45,368 - INFO - ['anhlc@lpbank.com.vn', 'dungvm@lpbank.com.vn', 'namtt4@lpbank.com.vn', 'thuybt1@lpbank.com.vn', 'p.ktgsnb@lpbank.com.vn', 'b.rrhd@lpbank.com.vn', 'p.dvkh247@lpbank.com.vn']
+2025-03-21 14:10:45,370 - INFO - 127.0.0.1 - - [21/Mar/2025 14:10:45] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:10:45,374 - INFO - ['anhlc@lpbank.com.vn', 'dungvm@lpbank.com.vn', 'namtt4@lpbank.com.vn', 'thuybt1@lpbank.com.vn', 'p.ktgsnb@lpbank.com.vn', 'b.rrhd@lpbank.com.vn', 'p.dvkh247@lpbank.com.vn']
+2025-03-21 14:10:45,376 - INFO - 127.0.0.1 - - [21/Mar/2025 14:10:45] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:11:35,304 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:11:35,304 - INFO - 127.0.0.1 - - [21/Mar/2025 14:11:35] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:11:35,314 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:11:35,326 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:11:35,331 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000465
+2025-03-21 14:11:35,335 - INFO - jobcode:  HS2125;HS2126;HS2127;HS2142;HS2143;HS2157
+2025-03-21 14:11:35,335 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:11:35,335 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:11:35,340 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000465
+2025-03-21 14:11:35,342 - INFO - jobcode:  HS2125;HS2126;HS2127;HS2142;HS2143;HS2157
+2025-03-21 14:11:35,342 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:11:35,342 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:11:35,343 - INFO - ['anhlc@lpbank.com.vn', 'dungvm@lpbank.com.vn', 'namtt4@lpbank.com.vn', 'thuybt1@lpbank.com.vn', 'p.ktgsnb@lpbank.com.vn', 'b.rrhd@lpbank.com.vn', 'p.dvkh247@lpbank.com.vn']
+2025-03-21 14:11:35,345 - INFO - 127.0.0.1 - - [21/Mar/2025 14:11:35] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:11:35,349 - INFO - ['anhlc@lpbank.com.vn', 'dungvm@lpbank.com.vn', 'namtt4@lpbank.com.vn', 'thuybt1@lpbank.com.vn', 'p.ktgsnb@lpbank.com.vn', 'b.rrhd@lpbank.com.vn', 'p.dvkh247@lpbank.com.vn']
+2025-03-21 14:11:35,351 - INFO - 127.0.0.1 - - [21/Mar/2025 14:11:35] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:12:27,830 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:12:27,830 - INFO - 127.0.0.1 - - [21/Mar/2025 14:12:27] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:12:27,843 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:12:27,844 - INFO - 127.0.0.1 - - [21/Mar/2025 14:12:27] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:12:27,871 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:12:27,886 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000465
+2025-03-21 14:12:27,890 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:12:27,894 - INFO - jobcode:  HS2125;HS2126;HS2127;HS2142;HS2143;HS2157
+2025-03-21 14:12:27,894 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:12:27,894 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:12:27,902 - INFO - ['anhlc@lpbank.com.vn', 'dungvm@lpbank.com.vn', 'namtt4@lpbank.com.vn', 'thuybt1@lpbank.com.vn', 'p.ktgsnb@lpbank.com.vn', 'b.rrhd@lpbank.com.vn', 'p.dvkh247@lpbank.com.vn']
+2025-03-21 14:12:27,910 - INFO - 127.0.0.1 - - [21/Mar/2025 14:12:27] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:12:27,929 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000465
+2025-03-21 14:12:27,945 - INFO - jobcode:  HS2125;HS2126;HS2127;HS2142;HS2143;HS2157
+2025-03-21 14:12:27,945 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:12:27,945 - INFO - placeholders %s,%s,%s,%s,%s,%s
+2025-03-21 14:12:27,957 - INFO - ['anhlc@lpbank.com.vn', 'dungvm@lpbank.com.vn', 'namtt4@lpbank.com.vn', 'thuybt1@lpbank.com.vn', 'p.ktgsnb@lpbank.com.vn', 'b.rrhd@lpbank.com.vn', 'p.dvkh247@lpbank.com.vn']
+2025-03-21 14:12:27,962 - INFO - 127.0.0.1 - - [21/Mar/2025 14:12:27] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:13:41,137 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:13:41,138 - INFO - 127.0.0.1 - - [21/Mar/2025 14:13:41] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:13:41,147 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:13:41,148 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:13:41,160 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000458
+2025-03-21 14:13:41,161 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000458
+2025-03-21 14:13:41,164 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:13:41,164 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:13:41,164 - INFO - don_vi_gan 
+2025-03-21 14:13:41,164 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:13:41,165 - INFO - 127.0.0.1 - - [21/Mar/2025 14:13:41] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:13:41,165 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:13:41,165 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:13:41,165 - INFO - don_vi_gan 
+2025-03-21 14:13:41,165 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:13:41,166 - INFO - 127.0.0.1 - - [21/Mar/2025 14:13:41] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:14:49,398 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 14:14:49,399 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 14:14:49,399 - INFO - 127.0.0.1 - - [21/Mar/2025 14:14:49] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 14:14:49,405 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Xuân', 'email': 'nguyenluuxuan1990@gmail.com', 'phoneNumber': '0354455899', 'address': 'Thành phố Cần Thơ-Quận Cái Răng-Phòng Giao dịch Cái Răng', 'company': 'VN0017690', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng không có TSBĐ – Tín dụng thân nhân', 'description': '', 'mac': '46b35323bdbb7a7acd48f3ca125ddaf24081a5450d7c68a49544bcd8122a8779'}
+2025-03-21 14:14:49,419 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 14:14:49,420 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 14:14:49,433 - INFO - Generated ticket ID: 25032118456
+2025-03-21 14:14:49,433 - INFO - Generated ticket ID: 3a1ad4a4-c0d4-429c-a42d-f4238c575d84 - 25032118456
+2025-03-21 14:14:49,446 - INFO - IDKH: 
+2025-03-21 14:14:49,703 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Xu\u00e2n\", \"email\": \"nguyenluuxuan1990@gmail.com\", \"phoneNumber\": \"0354455899\", \"address\": \"Th\u00e0nh ph\u1ed1 C\u1ea7n Th\u01a1-Qu\u1eadn C\u00e1i R\u010...
+2025-03-21 14:14:49,703 - INFO - 127.0.0.1 - - [21/Mar/2025 14:14:49] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 14:14:50,591 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:14:50,592 - INFO - 127.0.0.1 - - [21/Mar/2025 14:14:50] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:14:50,606 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:14:50,607 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:14:50,623 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000458
+2025-03-21 14:14:50,628 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000458
+2025-03-21 14:14:50,628 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:14:50,628 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:14:50,628 - INFO - don_vi_gan 
+2025-03-21 14:14:50,628 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:14:50,629 - INFO - 127.0.0.1 - - [21/Mar/2025 14:14:50] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:14:50,632 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:14:50,632 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:14:50,632 - INFO - don_vi_gan 
+2025-03-21 14:14:50,632 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:14:50,632 - INFO - 127.0.0.1 - - [21/Mar/2025 14:14:50] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:16:21,630 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:16:21,631 - INFO - 127.0.0.1 - - [21/Mar/2025 14:16:21] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:16:21,638 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:16:21,638 - INFO - 127.0.0.1 - - [21/Mar/2025 14:16:21] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:16:21,640 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:16:21,647 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:16:21,652 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000458
+2025-03-21 14:16:21,656 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:16:21,656 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:16:21,656 - INFO - don_vi_gan 
+2025-03-21 14:16:21,656 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:16:21,657 - INFO - 127.0.0.1 - - [21/Mar/2025 14:16:21] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:16:21,664 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000458
+2025-03-21 14:16:21,668 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:16:21,669 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:16:21,669 - INFO - don_vi_gan 
+2025-03-21 14:16:21,669 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:16:21,670 - INFO - 127.0.0.1 - - [21/Mar/2025 14:16:21] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:17:40,952 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:17:40,952 - INFO - 127.0.0.1 - - [21/Mar/2025 14:17:40] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:17:40,961 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:17:40,961 - INFO - 127.0.0.1 - - [21/Mar/2025 14:17:40] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:17:40,963 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:17:40,972 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:17:40,978 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000458
+2025-03-21 14:17:40,980 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:17:40,980 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:17:40,980 - INFO - don_vi_gan 
+2025-03-21 14:17:40,981 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:17:40,981 - INFO - 127.0.0.1 - - [21/Mar/2025 14:17:40] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:17:40,983 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000458
+2025-03-21 14:17:40,986 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:17:40,986 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:17:40,986 - INFO - don_vi_gan 
+2025-03-21 14:17:40,986 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:17:40,987 - INFO - 127.0.0.1 - - [21/Mar/2025 14:17:40] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:18:53,290 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:18:53,291 - INFO - 127.0.0.1 - - [21/Mar/2025 14:18:53] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:18:53,299 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:18:53,301 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118455'}
+2025-03-21 14:18:53,313 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000458
+2025-03-21 14:18:53,313 - INFO - data: Log-Lv1-000446 Log-Lv2-000447 Log-Lv3-000458
+2025-03-21 14:18:53,317 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:18:53,318 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:18:53,318 - INFO - don_vi_gan 
+2025-03-21 14:18:53,318 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:18:53,319 - INFO - 127.0.0.1 - - [21/Mar/2025 14:18:53] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:18:53,319 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:18:53,320 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:18:53,320 - INFO - don_vi_gan 
+2025-03-21 14:18:53,320 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:18:53,320 - INFO - 127.0.0.1 - - [21/Mar/2025 14:18:53] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:22:11,327 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:22:11,328 - INFO - 127.0.0.1 - - [21/Mar/2025 14:22:11] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:22:11,336 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:22:11,336 - INFO - 127.0.0.1 - - [21/Mar/2025 14:22:11] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:22:11,337 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118458'}
+2025-03-21 14:22:11,344 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118458'}
+2025-03-21 14:22:11,349 - INFO - data: Log-Lv1-000268 Log-Lv2-000281 Lv3-000318
+2025-03-21 14:22:11,354 - INFO - don_vi_gan: ITs
+2025-03-21 14:22:11,355 - ERROR - Get info data: cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 296, in get_email_by_jodcode
+    email = get_email_TV(Nhom, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 198, in get_email_TV
+    jobcode, jobcode_cha = get_jobcode(don_vi_gan, "KHDN", cursor, logging)
+TypeError: cannot unpack non-iterable NoneType object
+2025-03-21 14:22:11,355 - INFO - 127.0.0.1 - - [21/Mar/2025 14:22:11] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:22:11,356 - INFO - data: Log-Lv1-000268 Log-Lv2-000281 Lv3-000318
+2025-03-21 14:22:11,360 - INFO - don_vi_gan: ITs
+2025-03-21 14:22:11,361 - ERROR - Get info data: cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 296, in get_email_by_jodcode
+    email = get_email_TV(Nhom, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 198, in get_email_TV
+    jobcode, jobcode_cha = get_jobcode(don_vi_gan, "KHDN", cursor, logging)
+TypeError: cannot unpack non-iterable NoneType object
+2025-03-21 14:22:11,362 - INFO - 127.0.0.1 - - [21/Mar/2025 14:22:11] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:34:07,242 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:34:07,243 - INFO - 127.0.0.1 - - [21/Mar/2025 14:34:07] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:34:07,251 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 14:34:07,267 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 14:34:07,273 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:34:07,273 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:34:07,273 - INFO - don_vi_gan 
+2025-03-21 14:34:07,273 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:34:07,274 - INFO - 127.0.0.1 - - [21/Mar/2025 14:34:07] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:34:07,288 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 14:34:07,300 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 14:34:07,304 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:34:07,304 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:34:07,304 - INFO - don_vi_gan 
+2025-03-21 14:34:07,304 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:34:07,305 - INFO - 127.0.0.1 - - [21/Mar/2025 14:34:07] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:40:36,022 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:40:36,023 - INFO - 127.0.0.1 - - [21/Mar/2025 14:40:36] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:40:36,034 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118460'}
+2025-03-21 14:40:36,046 - INFO - data: Log-Lv1-000268 Log-Lv2-000281 Lv3-000318
+2025-03-21 14:40:36,052 - INFO - don_vi_gan: Tổng đài 24/7
+2025-03-21 14:40:36,053 - ERROR - Get info data: cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 296, in get_email_by_jodcode
+    email = get_email_TV(Nhom, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 196, in get_email_TV
+    jobcode, jobcode_cha = get_jobcode(don_vi_gan, "KHCN", cursor, logging)
+TypeError: cannot unpack non-iterable NoneType object
+2025-03-21 14:40:36,054 - INFO - 127.0.0.1 - - [21/Mar/2025 14:40:36] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:40:36,066 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118460'}
+2025-03-21 14:40:36,077 - INFO - data: Log-Lv1-000268 Log-Lv2-000281 Lv3-000318
+2025-03-21 14:40:36,081 - INFO - don_vi_gan: Tổng đài 24/7
+2025-03-21 14:40:36,082 - ERROR - Get info data: cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 296, in get_email_by_jodcode
+    email = get_email_TV(Nhom, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 196, in get_email_TV
+    jobcode, jobcode_cha = get_jobcode(don_vi_gan, "KHCN", cursor, logging)
+TypeError: cannot unpack non-iterable NoneType object
+2025-03-21 14:40:36,083 - INFO - 127.0.0.1 - - [21/Mar/2025 14:40:36] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:40:56,970 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:40:56,971 - INFO - 127.0.0.1 - - [21/Mar/2025 14:40:56] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:40:56,979 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 14:40:56,992 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 14:40:56,995 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:40:56,995 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:40:56,995 - INFO - don_vi_gan 
+2025-03-21 14:40:56,996 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:40:56,996 - INFO - 127.0.0.1 - - [21/Mar/2025 14:40:56] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:40:57,010 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 14:40:57,024 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 14:40:57,028 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:40:57,028 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:40:57,028 - INFO - don_vi_gan 
+2025-03-21 14:40:57,028 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:40:57,029 - INFO - 127.0.0.1 - - [21/Mar/2025 14:40:57] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:41:45,658 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:41:45,658 - INFO - 127.0.0.1 - - [21/Mar/2025 14:41:45] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:41:45,674 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 14:41:45,713 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 14:41:45,717 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:41:45,717 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:41:45,717 - INFO - don_vi_gan 
+2025-03-21 14:41:45,717 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:41:45,718 - INFO - 127.0.0.1 - - [21/Mar/2025 14:41:45] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:41:45,739 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 14:41:45,763 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 14:41:45,768 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:41:45,768 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:41:45,768 - INFO - don_vi_gan 
+2025-03-21 14:41:45,768 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:41:45,769 - INFO - 127.0.0.1 - - [21/Mar/2025 14:41:45] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:45:09,007 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 14:45:09,007 - INFO - 127.0.0.1 - - [21/Mar/2025 14:45:09] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 14:45:09,017 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 14:45:09,029 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 14:45:09,035 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:45:09,035 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:45:09,035 - INFO - don_vi_gan 
+2025-03-21 14:45:09,035 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:45:09,036 - INFO - 127.0.0.1 - - [21/Mar/2025 14:45:09] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 14:45:09,057 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 14:45:09,070 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 14:45:09,075 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 14:45:09,075 - INFO - l3 Rủi ro giao dịch
+2025-03-21 14:45:09,075 - INFO - don_vi_gan 
+2025-03-21 14:45:09,075 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 14:45:09,076 - INFO - 127.0.0.1 - - [21/Mar/2025 14:45:09] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 15:00:09,962 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 15:00:09,963 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 15:00:09,964 - INFO - 127.0.0.1 - - [21/Mar/2025 15:00:09] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 15:00:09,970 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn Trần Thanh Thùy', 'email': 'nguyentranthanhthuy4241@gmail.com', 'phoneNumber': '0942489290', 'address': 'Tỉnh Bạc Liêu-Thành phố Bạc Liêu-Chi nhánh Bạc Liêu', 'company': 'VN0014250', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay sản xuất kinh doanh hàng tiêu dùng', 'description': 'Hỗ trợ vay vốn sản xuất kinh doanh', 'mac': '8a1e92572f896ff2e65a48d22c325424072cb0b88b8894406e8f11ecca96eba7'}
+2025-03-21 15:00:10,003 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 15:00:10,003 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 15:00:10,026 - INFO - Generated ticket ID: 25032118462
+2025-03-21 15:00:10,027 - INFO - Generated ticket ID: b72b71d0-c35b-4fe5-9e26-c0b392afe37f - 25032118462
+2025-03-21 15:00:10,065 - INFO - IDKH: 
+2025-03-21 15:00:10,145 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n Tr\u1ea7n Thanh Th\u00f9y\", \"email\": \"nguyentranthanhthuy4241@gmail.com\", \"phoneNumber\": \"0942489290\", \"address\": \"T\u1ec9nh B\u1ea1c Li\u00eau-...
+2025-03-21 15:00:10,146 - INFO - 127.0.0.1 - - [21/Mar/2025 15:00:10] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 15:02:08,643 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 15:02:08,644 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 15:02:08,644 - INFO - 127.0.0.1 - - [21/Mar/2025 15:02:08] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 15:02:08,674 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Trần Xuân Đạt', 'email': 'tranxuandat642003@gmail.com', 'phoneNumber': '0987257470', 'address': 'Thành phố Hà Nội-Quận Hai Bà Trưng-Chi nhánh Đông Đô - Phòng Giao dịch Thanh Nhàn', 'company': 'VN0011008', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay sinh viên đóng học phí', 'description': '30.000.000-50.000.000', 'mac': 'f1a6e20428efd87b32e0fc7a341a2a2b7b7ecfc712bcfba3278dad7b577b1a2d'}
+2025-03-21 15:02:08,691 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 15:02:08,691 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 15:02:08,702 - INFO - Generated ticket ID: 25032118463
+2025-03-21 15:02:08,702 - INFO - Generated ticket ID: 1d5ebc55-545d-4c4c-8840-f6d21bf48f5e - 25032118463
+2025-03-21 15:02:08,716 - INFO - IDKH: 
+2025-03-21 15:02:08,834 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Tr\u1ea7n Xu\u00e2n \u0110\u1ea1t\", \"email\": \"tranxuandat642003@gmail.com\", \"phoneNumber\": \"0987257470\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i-Qu...
+2025-03-21 15:02:08,835 - INFO - 127.0.0.1 - - [21/Mar/2025 15:02:08] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 15:17:34,478 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 15:17:34,478 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 15:17:34,479 - INFO - 127.0.0.1 - - [21/Mar/2025 15:17:34] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 15:17:34,485 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn Hoàng Anh Tài', 'email': 'anhtai.hoang8688@gmail.com', 'phoneNumber': '0583031530', 'address': 'Thành phố Hồ Chí Minh-Quận Tân Bình-Phòng Giao dịch Trường Chinh', 'company': 'VN0013352', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng không có TSBĐ – Tín dụng thân nhân', 'description': 'Liệ hệ', 'mac': '4d77ff099ca872b6ac858631ed264e52a9bdc9383cc2a6c95c77b532d7cffbb3'}
+2025-03-21 15:17:34,496 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 15:17:34,496 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 15:17:34,509 - INFO - Generated ticket ID: 25032118465
+2025-03-21 15:17:34,509 - INFO - Generated ticket ID: 98676705-eb8e-41cf-bf60-8803975f43a7 - 25032118465
+2025-03-21 15:17:34,520 - INFO - IDKH: 
+2025-03-21 15:17:34,681 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n Ho\u00e0ng Anh T\u00e0i\", \"email\": \"anhtai.hoang8688@gmail.com\", \"phoneNumber\": \"0583031530\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed M...
+2025-03-21 15:17:34,682 - INFO - 127.0.0.1 - - [21/Mar/2025 15:17:34] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 15:54:08,550 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 15:54:08,550 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 15:54:08,551 - INFO - 127.0.0.1 - - [21/Mar/2025 15:54:08] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 15:54:08,564 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Lưu Phương Anh', 'email': 'linhhuong703@gmail.com', 'phoneNumber': '0965703782', 'address': 'Thành phố Hồ Chí Minh-Quận Phú Nhuận-Phòng Giao dịch Phú Nhuận', 'company': 'VN0013363', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank JCB Standard', 'description': 'mở thẻ tín dụng', 'mac': '9e330975c033f59283dafb412a0e07efe705a06bed3714950b068e34bba49502'}
+2025-03-21 15:54:08,575 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-21 15:54:08,575 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000349', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 15:54:08,586 - INFO - Generated ticket ID: 25032118468
+2025-03-21 15:54:08,586 - INFO - Generated ticket ID: 30a63f3f-de2a-4cb1-9d42-a1a7a655e5f0 - 25032118468
+2025-03-21 15:54:08,598 - INFO - IDKH: 
+2025-03-21 15:54:08,638 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"L\u01b0u Ph\u01b0\u01a1ng Anh\", \"email\": \"linhhuong703@gmail.com\", \"phoneNumber\": \"0965703782\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh-Qu\u1e...
+2025-03-21 15:54:08,638 - INFO - 127.0.0.1 - - [21/Mar/2025 15:54:08] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 16:22:16,574 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 16:22:16,575 - INFO - 127.0.0.1 - - [21/Mar/2025 16:22:16] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 16:22:16,579 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 16:22:16,580 - INFO - 127.0.0.1 - - [21/Mar/2025 16:22:16] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 16:22:16,590 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118472'}
+2025-03-21 16:22:16,594 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118472'}
+2025-03-21 16:22:21,602 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000585
+2025-03-21 16:22:21,604 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000585
+2025-03-21 16:22:21,606 - INFO - don_vi_gan: VN0017376
+2025-03-21 16:22:21,606 - INFO - l3 KHCN
+2025-03-21 16:22:21,606 - INFO - don_vi_gan PGD
+2025-03-21 16:22:21,607 - INFO - jobcode: CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 16:22:21,607 - INFO - PGD VN0017376
+2025-03-21 16:22:21,607 - INFO - don_vi_gan: VN0017376
+2025-03-21 16:22:21,607 - INFO - l3 KHCN
+2025-03-21 16:22:21,607 - INFO - don_vi_gan PGD
+2025-03-21 16:22:21,608 - INFO - jobcode:  CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 16:22:21,608 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 16:22:21,608 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 16:22:21,608 - INFO - jobcode: CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 16:22:21,608 - INFO - PGD VN0017376
+2025-03-21 16:22:21,609 - INFO - jobcode:  CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 16:22:21,609 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 16:22:21,609 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 16:22:21,616 - INFO - result ('phupv@lpbank.com.vn',)
+2025-03-21 16:22:21,616 - INFO - start
+2025-03-21 16:22:21,616 - INFO - VN0017376
+2025-03-21 16:22:21,616 - INFO - result ('phupv@lpbank.com.vn',)
+2025-03-21 16:22:21,616 - INFO - start
+2025-03-21 16:22:21,616 - INFO - VN0017376
+2025-03-21 16:22:21,617 - INFO - donvigan_cha VN0012400
+2025-03-21 16:22:21,617 - INFO - donvigan_cha VN0012400
+2025-03-21 16:22:21,618 - INFO - jobcode:  CN0001,CN0002,CN0318
+2025-03-21 16:22:21,618 - INFO - placeholders %s,%s,%s
+2025-03-21 16:22:21,618 - INFO - placeholders %s,%s,%s
+2025-03-21 16:22:21,618 - INFO - jobcode:  CN0001,CN0002,CN0318
+2025-03-21 16:22:21,620 - INFO - placeholders %s,%s,%s
+2025-03-21 16:22:21,620 - INFO - placeholders %s,%s,%s
+2025-03-21 16:22:21,625 - INFO - result ('congtt@lpbank.com.vn;namlh1@lpbank.com.vn;phuongvh@lpbank.com.vn;thangdn@lpbank.com.vn',)
+2025-03-21 16:22:21,625 - INFO - ['namlh1@lpbank.com.vn', 'thangdn@lpbank.com.vn', 'phupv@lpbank.com.vn', 'phuongvh@lpbank.com.vn', 'congtt@lpbank.com.vn']
+2025-03-21 16:22:21,626 - INFO - 127.0.0.1 - - [21/Mar/2025 16:22:21] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 16:22:21,627 - INFO - result ('congtt@lpbank.com.vn;namlh1@lpbank.com.vn;phuongvh@lpbank.com.vn;thangdn@lpbank.com.vn',)
+2025-03-21 16:22:21,627 - INFO - ['namlh1@lpbank.com.vn', 'thangdn@lpbank.com.vn', 'phupv@lpbank.com.vn', 'phuongvh@lpbank.com.vn', 'congtt@lpbank.com.vn']
+2025-03-21 16:22:21,628 - INFO - 127.0.0.1 - - [21/Mar/2025 16:22:21] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 16:23:28,458 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 16:23:28,458 - INFO - 127.0.0.1 - - [21/Mar/2025 16:23:28] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 16:23:28,498 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118472'}
+2025-03-21 16:23:28,510 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118472'}
+2025-03-21 16:23:28,545 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000585
+2025-03-21 16:23:28,555 - INFO - don_vi_gan: VN0017376
+2025-03-21 16:23:28,555 - INFO - l3 KHCN
+2025-03-21 16:23:28,556 - INFO - don_vi_gan PGD
+2025-03-21 16:23:28,557 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000585
+2025-03-21 16:23:28,560 - INFO - jobcode: CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 16:23:28,560 - INFO - PGD VN0017376
+2025-03-21 16:23:28,564 - INFO - jobcode:  CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 16:23:28,573 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 16:23:28,573 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 16:23:28,571 - INFO - don_vi_gan: VN0017376
+2025-03-21 16:23:28,573 - INFO - l3 KHCN
+2025-03-21 16:23:28,573 - INFO - don_vi_gan PGD
+2025-03-21 16:23:28,577 - INFO - jobcode: CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 16:23:28,577 - INFO - PGD VN0017376
+2025-03-21 16:23:28,579 - INFO - jobcode:  CN0001,CN0002,CN0318,CN0047,CN0301,CN0245,CN0183,CN0263
+2025-03-21 16:23:28,579 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 16:23:28,579 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-21 16:23:28,587 - INFO - result ('phupv@lpbank.com.vn',)
+2025-03-21 16:23:28,587 - INFO - start
+2025-03-21 16:23:28,587 - INFO - VN0017376
+2025-03-21 16:23:28,587 - INFO - result ('phupv@lpbank.com.vn',)
+2025-03-21 16:23:28,587 - INFO - start
+2025-03-21 16:23:28,587 - INFO - VN0017376
+2025-03-21 16:23:28,588 - INFO - donvigan_cha VN0012400
+2025-03-21 16:23:28,588 - INFO - donvigan_cha VN0012400
+2025-03-21 16:23:28,589 - INFO - jobcode:  CN0001,CN0002,CN0318
+2025-03-21 16:23:28,589 - INFO - placeholders %s,%s,%s
+2025-03-21 16:23:28,589 - INFO - placeholders %s,%s,%s
+2025-03-21 16:23:28,589 - INFO - jobcode:  CN0001,CN0002,CN0318
+2025-03-21 16:23:28,589 - INFO - placeholders %s,%s,%s
+2025-03-21 16:23:28,589 - INFO - placeholders %s,%s,%s
+2025-03-21 16:23:28,598 - INFO - result ('congtt@lpbank.com.vn;namlh1@lpbank.com.vn;phuongvh@lpbank.com.vn;thangdn@lpbank.com.vn',)
+2025-03-21 16:23:28,598 - INFO - ['namlh1@lpbank.com.vn', 'thangdn@lpbank.com.vn', 'phupv@lpbank.com.vn', 'phuongvh@lpbank.com.vn', 'congtt@lpbank.com.vn']
+2025-03-21 16:23:28,599 - INFO - result ('congtt@lpbank.com.vn;namlh1@lpbank.com.vn;phuongvh@lpbank.com.vn;thangdn@lpbank.com.vn',)
+2025-03-21 16:23:28,599 - INFO - 127.0.0.1 - - [21/Mar/2025 16:23:28] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 16:23:28,599 - INFO - ['namlh1@lpbank.com.vn', 'thangdn@lpbank.com.vn', 'phupv@lpbank.com.vn', 'phuongvh@lpbank.com.vn', 'congtt@lpbank.com.vn']
+2025-03-21 16:23:28,601 - INFO - 127.0.0.1 - - [21/Mar/2025 16:23:28] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 16:23:37,809 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 16:23:37,810 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 16:23:37,810 - INFO - 127.0.0.1 - - [21/Mar/2025 16:23:37] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 16:23:37,816 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Võ vạn anh khoa', 'email': 'yeuvolinh@gmail.com', 'phoneNumber': '0344509480', 'address': 'Tỉnh Lâm Đồng-Thành phố Đà Lạt-Phòng Giao dịch Đà Lạt', 'company': 'VN0017612', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng đối với Cán bộ, nhân viên, Tổng Công ty Bưu điện Việt Nam', 'description': 'tôi cần vay 10000000', 'mac': '4502351784870199d1a3aa64b5d0d846d0d1d2499ffc484e236913c8205ad485'}
+2025-03-21 16:23:37,825 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 16:23:37,825 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 16:23:37,835 - INFO - Generated ticket ID: 25032118473
+2025-03-21 16:23:37,835 - INFO - Generated ticket ID: f4f247e0-a1df-4f22-8c03-9f740df41d4e - 25032118473
+2025-03-21 16:23:37,848 - INFO - IDKH: 
+2025-03-21 16:23:38,186 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"V\u00f5 v\u1ea1n anh khoa\", \"email\": \"yeuvolinh@gmail.com\", \"phoneNumber\": \"0344509480\", \"address\": \"T\u1ec9nh L\u00e2m \u0110\u1ed3ng-Th\u00e0nh ph\u1ed1 \...
+2025-03-21 16:23:38,186 - INFO - 127.0.0.1 - - [21/Mar/2025 16:23:38] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 16:42:11,304 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 16:42:11,305 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 16:42:11,305 - INFO - 127.0.0.1 - - [21/Mar/2025 16:42:11] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 16:42:11,311 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Vũ tuấn anh', 'email': 'anhvu.17993@gmail.com', 'phoneNumber': '0898292688', 'address': 'Thành phố Hải Phòng-Quận Lê Chân-Phòng Giao dịch Lê Chân', 'company': 'VN0012051', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank JCB Platinum', 'description': '', 'mac': 'e5c2e57b3e1236354508b5292d7a7631d7b42280bfcad015538bff849e6c3364'}
+2025-03-21 16:42:11,324 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-21 16:42:11,324 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000349', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 16:42:11,335 - INFO - Generated ticket ID: 25032118477
+2025-03-21 16:42:11,336 - INFO - Generated ticket ID: 15b70cc0-f04d-4237-8074-06ac40b0ca6f - 25032118477
+2025-03-21 16:42:11,347 - INFO - IDKH: 
+2025-03-21 16:42:11,373 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"V\u0169 tu\u1ea5n anh\", \"email\": \"anhvu.17993@gmail.com\", \"phoneNumber\": \"0898292688\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ea3i Ph\u00f2ng-Qu\u1eadn L\u00ea...
+2025-03-21 16:42:11,374 - INFO - 127.0.0.1 - - [21/Mar/2025 16:42:11] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 16:43:20,535 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 16:43:20,535 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 16:43:20,536 - INFO - 127.0.0.1 - - [21/Mar/2025 16:43:20] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 16:43:20,541 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn Lữ Hoàng Linh', 'email': 'nlhlinh2002@gmail.com', 'phoneNumber': '0817712731', 'address': 'Tỉnh Bình Dương-Thành phố Thủ Dầu Một-Chi nhánh Bình Dương', 'company': 'VN0013500', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank JCB Ultimate', 'description': 'Mở thẻ tín dụnv', 'mac': '5131c572f54a6ad5b4e34d35c09f5530551dc557a9e6cd53277432c6b693de04'}
+2025-03-21 16:43:20,551 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-21 16:43:20,551 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000349', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 16:43:20,589 - INFO - Generated ticket ID: 25032118478
+2025-03-21 16:43:20,589 - INFO - Generated ticket ID: 8eac631e-9b27-4a57-b067-c0c3e808f2cf - 25032118478
+2025-03-21 16:43:20,625 - INFO - IDKH: 
+2025-03-21 16:43:20,835 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n L\u1eef Ho\u00e0ng Linh\", \"email\": \"nlhlinh2002@gmail.com\", \"phoneNumber\": \"0817712731\", \"address\": \"T\u1ec9nh B\u00ecnh D\u01b0\u01a1ng-Th\u00e...
+2025-03-21 16:43:20,835 - INFO - 127.0.0.1 - - [21/Mar/2025 16:43:20] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 16:46:41,131 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 16:46:41,132 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 16:46:41,132 - INFO - 127.0.0.1 - - [21/Mar/2025 16:46:41] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 16:46:41,140 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'xuanbui', 'email': 'buithixuan01122000@gmail.com', 'phoneNumber': '0983086215', 'address': 'Tỉnh Tuyên Quang-Huyện Sơn Dương-Phòng Giao dịch Sơn Dương', 'company': 'VN0017153', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Tính năng Sinh lời Lộc Phát', 'description': '7304618', 'mac': 'cd7f813df78d6220dc4f5c057dbfabae8dfc40d1eca2d131760f16a92daef317'}
+2025-03-21 16:46:41,154 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-21 16:46:41,154 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000350', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 16:46:41,164 - INFO - Generated ticket ID: 25032118479
+2025-03-21 16:46:41,164 - INFO - Generated ticket ID: 689914a5-0256-4880-a41e-fb8165aae5e6 - 25032118479
+2025-03-21 16:46:41,175 - INFO - IDKH: 
+2025-03-21 16:46:41,186 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"xuanbui\", \"email\": \"buithixuan01122000@gmail.com\", \"phoneNumber\": \"0983086215\", \"address\": \"T\u1ec9nh Tuy\u00ean Quang-Huy\u1ec7n S\u01a1n D\u01b0\u01a1ng-P...
+2025-03-21 16:46:41,187 - INFO - 127.0.0.1 - - [21/Mar/2025 16:46:41] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 17:10:23,001 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 17:10:23,002 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 17:10:23,003 - INFO - 127.0.0.1 - - [21/Mar/2025 17:10:23] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 17:10:23,008 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn Thu Anh', 'email': 'tahn14102003@gmail.com', 'phoneNumber': '0979377435', 'address': 'Thành phố Hà Nội-Quận Tây Hồ-Chi nhánh Tây Hồ', 'company': 'VN0011016', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay sinh viên đóng học phí', 'description': 'Tư vấn dịch vụ', 'mac': '5cd8dc4ac96d0d71138274e20574c2049f508c09064c78d98bc7f34a122fb71f'}
+2025-03-21 17:10:23,020 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 17:10:23,020 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 17:10:23,033 - INFO - Generated ticket ID: 25032118481
+2025-03-21 17:10:23,033 - INFO - Generated ticket ID: 6cabffca-f92b-4a92-8eb1-b3bacb86c6fe - 25032118481
+2025-03-21 17:10:23,046 - INFO - IDKH: 
+2025-03-21 17:10:23,060 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n Thu Anh\", \"email\": \"tahn14102003@gmail.com\", \"phoneNumber\": \"0979377435\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i-Qu\u1eadn T\u00e2y H\...
+2025-03-21 17:10:23,060 - INFO - 127.0.0.1 - - [21/Mar/2025 17:10:23] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 17:11:56,715 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 17:11:56,716 - INFO - 127.0.0.1 - - [21/Mar/2025 17:11:56] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 17:11:56,723 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 17:11:56,734 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 17:11:56,737 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 17:11:56,737 - INFO - l3 Rủi ro giao dịch
+2025-03-21 17:11:56,737 - INFO - don_vi_gan 
+2025-03-21 17:11:56,737 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 17:11:56,738 - INFO - 127.0.0.1 - - [21/Mar/2025 17:11:56] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 17:11:56,747 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 17:11:56,762 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 17:11:56,767 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 17:11:56,767 - INFO - l3 Rủi ro giao dịch
+2025-03-21 17:11:56,767 - INFO - don_vi_gan 
+2025-03-21 17:11:56,767 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 17:11:56,768 - INFO - 127.0.0.1 - - [21/Mar/2025 17:11:56] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 17:12:55,932 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 17:12:55,933 - INFO - 127.0.0.1 - - [21/Mar/2025 17:12:55] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 17:12:55,943 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 17:12:55,958 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 17:12:55,961 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 17:12:55,962 - INFO - l3 Rủi ro giao dịch
+2025-03-21 17:12:55,962 - INFO - don_vi_gan 
+2025-03-21 17:12:55,962 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 17:12:55,962 - INFO - 127.0.0.1 - - [21/Mar/2025 17:12:55] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 17:12:56,008 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 17:12:56,019 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 17:12:56,023 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 17:12:56,023 - INFO - l3 Rủi ro giao dịch
+2025-03-21 17:12:56,023 - INFO - don_vi_gan 
+2025-03-21 17:12:56,023 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 17:12:56,024 - INFO - 127.0.0.1 - - [21/Mar/2025 17:12:56] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 17:14:20,018 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 17:14:20,018 - INFO - 127.0.0.1 - - [21/Mar/2025 17:14:20] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 17:14:20,030 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 17:14:20,041 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 17:14:20,044 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 17:14:20,044 - INFO - l3 Rủi ro giao dịch
+2025-03-21 17:14:20,044 - INFO - don_vi_gan 
+2025-03-21 17:14:20,044 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 17:14:20,045 - INFO - 127.0.0.1 - - [21/Mar/2025 17:14:20] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 17:14:20,067 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 17:14:20,083 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 17:14:20,086 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 17:14:20,086 - INFO - l3 Rủi ro giao dịch
+2025-03-21 17:14:20,086 - INFO - don_vi_gan 
+2025-03-21 17:14:20,086 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 17:14:20,087 - INFO - 127.0.0.1 - - [21/Mar/2025 17:14:20] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 17:14:29,594 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 17:14:29,594 - INFO - 127.0.0.1 - - [21/Mar/2025 17:14:29] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 17:14:29,603 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 17:14:29,614 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 17:14:29,617 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 17:14:29,617 - INFO - l3 Rủi ro giao dịch
+2025-03-21 17:14:29,617 - INFO - don_vi_gan 
+2025-03-21 17:14:29,617 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 17:14:29,618 - INFO - 127.0.0.1 - - [21/Mar/2025 17:14:29] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 17:14:29,650 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118461'}
+2025-03-21 17:14:29,662 - INFO - data: Log-Lv1-000446 Log-Lv2-000450 Log-Lv3-000460
+2025-03-21 17:14:29,665 - INFO - don_vi_gan: Vận hành Thẻ
+2025-03-21 17:14:29,665 - INFO - l3 Rủi ro giao dịch
+2025-03-21 17:14:29,665 - INFO - don_vi_gan 
+2025-03-21 17:14:29,666 - ERROR - Get info data: local variable 'jobcode' referenced before assignment
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 243, in get_from_L3
+    if jobcode is None:
+UnboundLocalError: local variable 'jobcode' referenced before assignment
+2025-03-21 17:14:29,666 - INFO - 127.0.0.1 - - [21/Mar/2025 17:14:29] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 17:16:02,384 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 17:16:02,385 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 17:16:02,385 - INFO - 127.0.0.1 - - [21/Mar/2025 17:16:02] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 17:16:02,390 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Đinh Hoàng Anh', 'email': 'dinhhoanganh.vk@gmail.com', 'phoneNumber': '0969709298', 'address': 'Thành phố Hà Nội-Huyện Mê Linh-Phòng giao dịch Mê Linh', 'company': 'VN0017000', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Chuyển tiền quốc tế', 'l3': 'Nhận tiền về từ nước ngoài', 'description': '', 'mac': '06f21867164c686cd95e4dc9dd2503986c60d97103d26ef7408eaaf841b2a6f2'}
+2025-03-21 17:16:02,400 - ERROR - No matching data found for Cá nhân,Tư vấn,Chuyển tiền quốc tế,,None
+2025-03-21 17:16:02,411 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"\u0110inh Ho\u00e0ng Anh\", \"email\": \"dinhhoanganh.vk@gmail.com\", \"phoneNumber\": \"0969709298\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i-Huy\u1ec7n M\...
+2025-03-21 17:16:02,412 - INFO - 127.0.0.1 - - [21/Mar/2025 17:16:02] "[31m[1mPOST /api/v1/its/create-ticket-website HTTP/1.0[0m" 400 -
+2025-03-21 17:18:00,451 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 17:18:00,452 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 17:18:00,452 - INFO - 127.0.0.1 - - [21/Mar/2025 17:18:00] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 17:18:00,458 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Hoàng Anh', 'email': 'dinhhoanganh.vk@gmail.com', 'phoneNumber': '0969709298', 'address': 'Thành phố Hà Nội-Huyện Mê Linh-Phòng giao dịch Mê Linh', 'company': 'VN0017000', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Chuyển tiền quốc tế', 'l3': 'Nhận tiền về từ nước ngoài', 'description': '', 'mac': '65fbbcf4ba0dc4dd4f7ad72828a9fce2f933f46484e570113303e0f364f62ea1'}
+2025-03-21 17:18:00,467 - ERROR - No matching data found for Cá nhân,Tư vấn,Chuyển tiền quốc tế,,None
+2025-03-21 17:18:00,786 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Ho\u00e0ng Anh\", \"email\": \"dinhhoanganh.vk@gmail.com\", \"phoneNumber\": \"0969709298\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i-Huy\u1ec7n M\u00ea Linh...
+2025-03-21 17:18:00,786 - INFO - 127.0.0.1 - - [21/Mar/2025 17:18:00] "[31m[1mPOST /api/v1/its/create-ticket-website HTTP/1.0[0m" 400 -
+2025-03-21 17:21:15,200 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-21 17:21:15,200 - INFO - 127.0.0.1 - - [21/Mar/2025 17:21:15] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-21 17:21:15,208 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118482'}
+2025-03-21 17:21:15,222 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000585
+2025-03-21 17:21:15,225 - INFO - don_vi_gan: QL DVKH&KQ
+2025-03-21 17:21:15,225 - INFO - l3 KHCN
+2025-03-21 17:21:15,225 - INFO - don_vi_gan 
+2025-03-21 17:21:15,226 - ERROR - Get info data: cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 238, in get_from_L3
+    jobcode,jobcode_cha = get_jobcode(don_vi_gan, "KHCN", cursor, logging)
+TypeError: cannot unpack non-iterable NoneType object
+2025-03-21 17:21:15,226 - INFO - 127.0.0.1 - - [21/Mar/2025 17:21:15] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 17:21:15,520 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25032118482'}
+2025-03-21 17:21:15,535 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000585
+2025-03-21 17:21:15,540 - INFO - don_vi_gan: QL DVKH&KQ
+2025-03-21 17:21:15,540 - INFO - l3 KHCN
+2025-03-21 17:21:15,540 - INFO - don_vi_gan 
+2025-03-21 17:21:15,541 - ERROR - Get info data: cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1472, in get_by_jodcode
+    email = get_email_by_jodcode(cursor, ma_ticket, logger)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 300, in get_email_by_jodcode
+    email = get_from_L3(L3, ticket.get("c_DonViGan", ""), cursor, logging)
+  File "/home/Python/OutBoxTrigger/ITS/get_email_from_jodcode.py", line 238, in get_from_L3
+    jobcode,jobcode_cha = get_jobcode(don_vi_gan, "KHCN", cursor, logging)
+TypeError: cannot unpack non-iterable NoneType object
+2025-03-21 17:21:15,542 - INFO - 127.0.0.1 - - [21/Mar/2025 17:21:15] "[35m[1mPOST /api/v1/ho/get-mail-by-jodcode HTTP/1.0[0m" 500 -
+2025-03-21 17:46:57,097 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 17:46:57,098 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 17:46:57,098 - INFO - 127.0.0.1 - - [21/Mar/2025 17:46:57] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 17:46:57,104 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Đặng Như Ý', 'email': 'dangy0808@gmail.com', 'phoneNumber': '0349048824', 'address': 'Tỉnh Bình Dương-Thành phố Thủ Dầu Một-Chi nhánh Bình Dương', 'company': 'VN0013500', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank Mastercard Standard', 'description': '', 'mac': '50c87f943d9385fdc0194572d0a25fe16b3c0e9acd4d9b7877b83a96fd46ede0'}
+2025-03-21 17:46:57,115 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-21 17:46:57,115 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000349', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 17:46:57,126 - INFO - Generated ticket ID: 25032118483
+2025-03-21 17:46:57,126 - INFO - Generated ticket ID: 1934f7cf-0eea-45bf-b244-6cfddf0f20b9 - 25032118483
+2025-03-21 17:46:57,141 - INFO - IDKH: 
+2025-03-21 17:46:57,152 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"\u0110\u1eb7ng Nh\u01b0 \u00dd\", \"email\": \"dangy0808@gmail.com\", \"phoneNumber\": \"0349048824\", \"address\": \"T\u1ec9nh B\u00ecnh D\u01b0\u01a1ng-Th\u00e0nh ph\...
+2025-03-21 17:46:57,153 - INFO - 127.0.0.1 - - [21/Mar/2025 17:46:57] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 17:47:55,922 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 17:47:55,923 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 17:47:55,923 - INFO - 127.0.0.1 - - [21/Mar/2025 17:47:55] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 17:47:55,934 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn Thị Quỳnh Chi', 'email': 'quynhchi9008@gmail.com', 'phoneNumber': '0979039622', 'address': 'Thành phố Hà Nội-Quận Nam Từ Liêm-Phòng giao dịch Mỹ Đình', 'company': 'VN0011005', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank JCB Ultimate', 'description': 'Tôi cần hỗ trợ thủ tục mở thẻ tín dụng quốc tế LPBank JCB Ultimate', 'mac': 'f73846210a7dc1d2ff29a8a5582d64bcb61a1113bf7cc170f69a1b74ac37312a'}
+2025-03-21 17:47:55,965 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-21 17:47:55,965 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000349', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 17:47:55,997 - INFO - Generated ticket ID: 25032118484
+2025-03-21 17:47:55,997 - INFO - Generated ticket ID: d069c4f5-c8ed-4509-b650-db795a09e1b8 - 25032118484
+2025-03-21 17:47:56,036 - INFO - IDKH: 
+2025-03-21 17:47:56,280 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n Th\u1ecb Qu\u1ef3nh Chi\", \"email\": \"quynhchi9008@gmail.com\", \"phoneNumber\": \"0979039622\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i-Qu\u1...
+2025-03-21 17:47:56,281 - INFO - 127.0.0.1 - - [21/Mar/2025 17:47:56] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 17:52:03,808 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 17:52:03,808 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 17:52:03,809 - INFO - 127.0.0.1 - - [21/Mar/2025 17:52:03] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 17:52:03,815 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'NGO XUAN VI', 'email': 'ngoxuanvi10@gmail.com', 'phoneNumber': '0824380170', 'address': 'Tỉnh Đắk Lắk-Thành phố Buôn Ma Thuột-Chi nhánh Đắk Lắk', 'company': 'VN0013200', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank Visa Platinum', 'description': '', 'mac': '01e29947090398b4eea2dec58de40d52f45f16e65e3c74a819fbf945bcccf83d'}
+2025-03-21 17:52:03,824 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-21 17:52:03,824 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000349', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 17:52:03,834 - INFO - Generated ticket ID: 25032118485
+2025-03-21 17:52:03,834 - INFO - Generated ticket ID: 4807d1ae-3410-43d0-8191-5ebb3eabc716 - 25032118485
+2025-03-21 17:52:03,844 - INFO - IDKH: 
+2025-03-21 17:52:03,867 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"NGO XUAN VI\", \"email\": \"ngoxuanvi10@gmail.com\", \"phoneNumber\": \"0824380170\", \"address\": \"T\u1ec9nh \u0110\u1eafk L\u1eafk-Th\u00e0nh ph\u1ed1 Bu\u00f4n Ma T...
+2025-03-21 17:52:03,869 - INFO - 127.0.0.1 - - [21/Mar/2025 17:52:03] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 17:56:22,081 - INFO - Application started
+2025-03-21 17:56:22,081 - INFO - LOG_CURL: True
+2025-03-21 17:56:22,119 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8082
+ * Running on http://10.163.69.49:8082
+2025-03-21 17:56:22,119 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 17:56:22,844 - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2025-03-21 17:56:22,844 - INFO - [>] Received message: {"type": "ITS", "ticket": "e6425bf2-4757-412b-b346-86dcd97a3692", "template": "", "message": "606+A. D\u1ecbch v\u1ee5 \u1ee9ng d\u1ee5ng KH Online;650+A01. App LPBank;993+A01.1. Ki\u1ec3m tra giao d\u1ecbch/ s\u1ed1 li\u1ec7u", "attachments": null, "subj
+2025-03-21 17:56:22,853 - INFO - [*] Id ITs: (None, '25032118474', 'Đóng')
+2025-03-21 17:57:39,374 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 17:57:39,375 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 17:57:39,376 - INFO - 127.0.0.1 - - [21/Mar/2025 17:57:39] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 17:57:39,390 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'test', 'phoneNumber': '0337599493', 'address': 'Tỉnh Hà Giang-Huyện Đồng Văn-Phòng Giao dịch Đồng Văn', 'company': 'VN0017113', 'group': 'Cá nhân', 'l1': 'Chất lượng dịch vụ', 'l2': 'Khen ngợi', 'l3': 'Sản phẩm KHCN', 'description': 'test', 'mac': '6b7bf931af647e74d1b09057f34da5b86bbf9fb2d6d0837e3d2dc8062dd4ea8b'}
+2025-03-21 17:57:39,562 - INFO - Data matching: Cá nhân,Chất lượng dịch vụ,Khen ngợi,Sản phẩm KHCN,None
+2025-03-21 17:57:39,562 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Chất lượng dịch vụ', 'l2': 'Khen ngợi', 'l3': 'Sản phẩm KHCN', 'l1_crm': 'Log-Lv1-000371', 'l2_crm': 'Log-Lv2-000377', 'l3_crm': 'Log-Lv3-000622', 'l4_crm': ''}
+2025-03-21 17:57:39,578 - INFO - IDKH: 
+2025-03-21 17:57:39,583 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:57:39,590 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:57:41,592 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:57:41,605 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:57:43,605 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:57:43,613 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:57:45,613 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:57:45,619 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:57:47,625 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:57:47,641 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:57:49,643 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:57:49,650 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:57:51,652 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:57:51,658 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:57:53,661 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:57:53,667 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:57:55,673 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:57:55,685 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:57:57,685 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:57:57,692 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:57:59,695 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:57:59,702 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:01,709 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:01,737 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:03,741 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:03,769 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:05,772 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:05,778 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:07,780 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:07,786 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:09,788 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:09,795 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:11,797 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:11,804 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:13,817 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:13,824 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:15,829 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:15,844 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:17,849 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:17,873 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:19,877 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:19,888 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:21,889 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:21,895 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:23,897 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:23,903 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:25,905 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:25,911 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:27,913 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:27,920 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:29,921 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:29,929 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:31,929 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:31,953 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:32,190 - INFO - Message sent to RabbitMQ: {"Host": "api-gw-dev.lpbank.com.vn", "Path": "/gw/internal/esb-auth-service", "RequestBody": "{\"username\": \"CRM\", \"password\": \"oV6/taBNIwtOPeAbBxZAUQVdmT6AYJyyk2XV9Fe5Dwy92wQnizIPs/nCk8Hfi41y4hrlgdxBLfkVw78SEcneLwyjaBy+u4KOmSNvDeDNAFujNPO6+5PzxAyiP...
+2025-03-21 17:58:32,190 - ERROR - Error getting JWT token: HTTPSConnectionPool(host='api-gw-dev.lpbank.com.vn', port=443): Max retries exceeded with url: /gw/internal/esb-auth-service (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7ff09b36e200>, 'Connection to api-gw-dev.lpbank.com.vn timed out. (connect timeout=None)'))
+2025-03-21 17:58:32,190 - ERROR - HTTPSConnectionPool(host='api-gw-dev.lpbank.com.vn', port=443): Max retries exceeded with url: /gw/internal/esb-auth-service (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7ff09b36e200>, 'Connection to api-gw-dev.lpbank.com.vn timed out. (connect timeout=None)'))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 205, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7ff09b36e200>, 'Connection to api-gw-dev.lpbank.com.vn timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-gw-dev.lpbank.com.vn', port=443): Max retries exceeded with url: /gw/internal/esb-auth-service (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7ff09b36e200>, 'Connection to api-gw-dev.lpbank.com.vn timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1603, in callback
+    token = get_jwt_token()
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 320, in get_jwt_token
+    raise e
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 293, in get_jwt_token
+    response = requests.post(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 504, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api-gw-dev.lpbank.com.vn', port=443): Max retries exceeded with url: /gw/internal/esb-auth-service (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7ff09b36e200>, 'Connection to api-gw-dev.lpbank.com.vn timed out. (connect timeout=None)'))
+2025-03-21 17:58:32,192 - INFO - [>] Received message: {"type": "ITS", "ticket": "7be71915-01b8-4465-9512-1b5a96770e63", "template": "", "message": "606+A. D\u1ecbch v\u1ee5 \u1ee9ng d\u1ee5ng KH Online;650+A01. App LPBank;993+A01.1. Ki\u1ec3m tra giao d\u1ecbch/ s\u1ed1 li\u1ec7u", "attachments": null, "subj
+2025-03-21 17:58:32,203 - INFO - [*] Id ITs: (None, '25032118475', 'Đã chuyển tiếp')
+2025-03-21 17:58:33,955 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:33,962 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:35,964 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:35,971 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:37,973 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:37,979 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:39,981 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:39,989 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:41,989 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:41,995 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:43,997 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:44,005 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:46,013 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:46,037 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:48,041 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:48,065 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:50,067 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:50,073 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:52,073 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:52,080 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:54,081 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:54,088 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:56,089 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:56,096 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:58:58,097 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:58:58,104 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:59:00,105 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:59:00,129 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:59:02,132 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:59:02,139 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:59:04,141 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:59:04,147 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:59:06,153 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:59:06,166 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:59:08,168 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:59:08,175 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:59:10,179 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:59:10,200 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:59:12,205 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:59:12,212 - INFO - Đã lấy được ma_ticket: 1df7408e-9b61-4cc4-894a-8ffacc0ddc82
+2025-03-21 17:59:12,212 - INFO - Generated ticket ID: 1df7408e-9b61-4cc4-894a-8ffacc0ddc82 - 25032118486
+2025-03-21 17:59:12,244 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"test\", \"phoneNumber\": \"0337599493\", \"address\": \"T\u1ec9nh H\u00e0 Giang-Huy\u1ec7n \u0110\u1ed3ng V\u0103n-Ph\u00f2ng Giao d\u1ecbch \u0110\u1ed3ng V\u0103n\", ...
+2025-03-21 17:59:12,245 - INFO - 127.0.0.1 - - [21/Mar/2025 17:59:12] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 17:59:56,923 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 17:59:56,923 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 17:59:56,924 - INFO - 127.0.0.1 - - [21/Mar/2025 17:59:56] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 17:59:56,929 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'test', 'phoneNumber': '0337599493', 'address': 'Tỉnh Hà Giang-Huyện Đồng Văn-Phòng Giao dịch Đồng Văn', 'company': 'VN0017113', 'group': 'Cá nhân', 'l1': 'Chất lượng dịch vụ', 'l2': 'Khen ngợi', 'l3': 'Sản phẩm KHCN', 'description': 'test', 'mac': '3e4e1aaebac8e9172ac8f16c011e070606ed5dd3e2e8ed11e7ef2776bc2f81fb'}
+2025-03-21 17:59:56,940 - INFO - Data matching: Cá nhân,Chất lượng dịch vụ,Khen ngợi,Sản phẩm KHCN,None
+2025-03-21 17:59:56,940 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Chất lượng dịch vụ', 'l2': 'Khen ngợi', 'l3': 'Sản phẩm KHCN', 'l1_crm': 'Log-Lv1-000371', 'l2_crm': 'Log-Lv2-000377', 'l3_crm': 'Log-Lv3-000622', 'l4_crm': ''}
+2025-03-21 17:59:56,954 - INFO - IDKH: 
+2025-03-21 17:59:56,958 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:59:56,965 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 17:59:58,965 - INFO - Đang lấy ma_ticket...
+2025-03-21 17:59:58,973 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:00:00,977 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:00:01,005 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:00:03,008 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:00:03,037 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:00:05,039 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:00:05,049 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:00:07,049 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:00:07,055 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:00:09,057 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:00:09,065 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:00:11,065 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:00:11,072 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:00:13,073 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:00:13,080 - INFO - Đã lấy được ma_ticket: e38f5245-67d1-4abd-9cb8-e00da2ebf54e
+2025-03-21 18:00:13,080 - INFO - Generated ticket ID: e38f5245-67d1-4abd-9cb8-e00da2ebf54e - 25032118487
+2025-03-21 18:00:13,139 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"test\", \"phoneNumber\": \"0337599493\", \"address\": \"T\u1ec9nh H\u00e0 Giang-Huy\u1ec7n \u0110\u1ed3ng V\u0103n-Ph\u00f2ng Giao d\u1ecbch \u0110\u1ed3ng V\u0103n\", ...
+2025-03-21 18:00:13,139 - INFO - 127.0.0.1 - - [21/Mar/2025 18:00:13] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 18:00:43,318 - INFO - Message sent to RabbitMQ: {"Host": "api-gw-dev.lpbank.com.vn", "Path": "/gw/internal/esb-auth-service", "RequestBody": "{\"username\": \"CRM\", \"password\": \"oV6/taBNIwtOPeAbBxZAUQVdmT6AYJyyk2XV9Fe5Dwy92wQnizIPs/nCk8Hfi41y4hrlgdxBLfkVw78SEcneLwyjaBy+u4KOmSNvDeDNAFujNPO6+5PzxAyiP...
+2025-03-21 18:00:43,319 - ERROR - Error getting JWT token: HTTPSConnectionPool(host='api-gw-dev.lpbank.com.vn', port=443): Max retries exceeded with url: /gw/internal/esb-auth-service (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7ff0999be1a0>, 'Connection to api-gw-dev.lpbank.com.vn timed out. (connect timeout=None)'))
+2025-03-21 18:00:43,319 - ERROR - HTTPSConnectionPool(host='api-gw-dev.lpbank.com.vn', port=443): Max retries exceeded with url: /gw/internal/esb-auth-service (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7ff0999be1a0>, 'Connection to api-gw-dev.lpbank.com.vn timed out. (connect timeout=None)'))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 205, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7ff0999be1a0>, 'Connection to api-gw-dev.lpbank.com.vn timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/dist-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-gw-dev.lpbank.com.vn', port=443): Max retries exceeded with url: /gw/internal/esb-auth-service (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7ff0999be1a0>, 'Connection to api-gw-dev.lpbank.com.vn timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 1603, in callback
+    token = get_jwt_token()
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 320, in get_jwt_token
+    raise e
+  File "/home/Python/OutBoxTrigger/ITS/serviceITS.py", line 293, in get_jwt_token
+    response = requests.post(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 504, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api-gw-dev.lpbank.com.vn', port=443): Max retries exceeded with url: /gw/internal/esb-auth-service (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7ff0999be1a0>, 'Connection to api-gw-dev.lpbank.com.vn timed out. (connect timeout=None)'))
+2025-03-21 18:00:43,319 - WARNING - Received remote Channel.Close (406): 'PRECONDITION_FAILED - unknown delivery tag 1' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff09b346c20> params=<ConnectionParameters host=10.163.69.49 port=5672 virtual_host=/ ssl=False>>>
+2025-03-21 18:05:51,595 - INFO - Application started
+2025-03-21 18:05:51,595 - INFO - LOG_CURL: True
+2025-03-21 18:05:51,620 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8082
+ * Running on http://10.163.69.49:8082
+2025-03-21 18:05:51,620 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 18:05:51,721 - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2025-03-21 18:09:57,317 - INFO - Application started
+2025-03-21 18:09:57,317 - INFO - LOG_CURL: True
+2025-03-21 18:09:57,347 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8082
+ * Running on http://10.163.69.49:8082
+2025-03-21 18:09:57,347 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 18:09:57,658 - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2025-03-21 18:11:30,378 - INFO - Application started
+2025-03-21 18:11:30,378 - INFO - LOG_CURL: True
+2025-03-21 18:11:30,403 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8082
+ * Running on http://10.163.69.49:8082
+2025-03-21 18:11:30,403 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 18:11:30,690 - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2025-03-21 18:13:15,747 - INFO - Application started
+2025-03-21 18:13:15,747 - INFO - LOG_CURL: True
+2025-03-21 18:13:15,762 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8082
+ * Running on http://10.163.69.49:8082
+2025-03-21 18:13:15,762 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 18:13:15,953 - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2025-03-21 18:29:26,059 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 18:29:26,060 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 18:29:26,061 - INFO - 127.0.0.1 - - [21/Mar/2025 18:29:26] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 18:29:26,074 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Lý Quốc Bảo', 'email': 'lybao9988ok@gmail.com', 'phoneNumber': '0968381073', 'address': 'Thành phố Cần Thơ-Quận Ô Môn-Phòng Giao dịch Ô Môn', 'company': 'VN0017692', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank Mastercard Standard', 'description': '', 'mac': '9ee959f7fab6bb6b15991519497e8df2204cc1cfb5c7ff787d03c1f82d6d5737'}
+2025-03-21 18:29:26,342 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-21 18:29:26,342 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000349', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 18:29:26,355 - INFO - IDKH: 
+2025-03-21 18:29:26,359 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:29:26,365 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:29:28,365 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:29:28,373 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:29:30,373 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:29:30,384 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:29:32,389 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:29:32,417 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:29:34,419 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:29:34,427 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:29:36,429 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:29:36,436 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:29:38,437 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:29:38,444 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:29:40,445 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:29:40,455 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:29:42,457 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:29:42,464 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:29:44,467 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:29:44,474 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:29:46,481 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:29:46,496 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:29:48,499 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:29:48,529 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:29:50,531 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:29:50,538 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 18:29:52,540 - INFO - Đang lấy ma_ticket...
+2025-03-21 18:29:52,547 - INFO - Đã lấy được ma_ticket: a1815334-743c-4a2c-bc71-dd2e99d1fd40
+2025-03-21 18:29:52,547 - INFO - Generated ticket ID: a1815334-743c-4a2c-bc71-dd2e99d1fd40 - 25032118488
+2025-03-21 18:29:52,556 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"L\u00fd Qu\u1ed1c B\u1ea3o\", \"email\": \"lybao9988ok@gmail.com\", \"phoneNumber\": \"0968381073\", \"address\": \"Th\u00e0nh ph\u1ed1 C\u1ea7n Th\u01a1-Qu\u1eadn \u00...
+2025-03-21 18:29:52,557 - INFO - 127.0.0.1 - - [21/Mar/2025 18:29:52] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 18:56:25,928 - INFO - Application started
+2025-03-21 18:56:25,928 - INFO - LOG_CURL: True
+2025-03-21 18:56:25,948 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8082
+ * Running on http://10.163.69.49:8082
+2025-03-21 18:56:25,948 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 18:56:25,949 - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2025-03-21 20:57:30,109 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 20:57:30,109 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 20:57:30,110 - INFO - 127.0.0.1 - - [21/Mar/2025 20:57:30] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 20:57:30,116 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'NGUYỄN NGỌC SÁNG', 'email': 'sn3404459@gmail.com', 'phoneNumber': '0366756846', 'address': 'Tỉnh Bình Dương-Thành phố Thủ Dầu Một-Chi nhánh Bình Dương', 'company': 'VN0013500', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay sản xuất kinh doanh ngắn hạn hoặc trả góp', 'description': 'Duyệt hồ sơ ạ', 'mac': 'a5f240b6e76ac7ff634c945c0d384c1ef2d255a55ca849e6afadeaa785178b42'}
+2025-03-21 20:57:30,274 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 20:57:30,274 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 20:57:30,285 - INFO - IDKH: 
+2025-03-21 20:57:30,289 - INFO - Đang lấy ma_ticket...
+2025-03-21 20:57:30,294 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 20:57:32,296 - INFO - Đang lấy ma_ticket...
+2025-03-21 20:57:32,303 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 20:57:34,305 - INFO - Đang lấy ma_ticket...
+2025-03-21 20:57:34,311 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 20:57:36,316 - INFO - Đang lấy ma_ticket...
+2025-03-21 20:57:36,322 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 20:57:38,325 - INFO - Đang lấy ma_ticket...
+2025-03-21 20:57:38,349 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 20:57:40,351 - INFO - Đang lấy ma_ticket...
+2025-03-21 20:57:40,357 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 20:57:42,359 - INFO - Đang lấy ma_ticket...
+2025-03-21 20:57:42,366 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 20:57:44,368 - INFO - Đang lấy ma_ticket...
+2025-03-21 20:57:44,376 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 20:57:46,377 - INFO - Đang lấy ma_ticket...
+2025-03-21 20:57:46,383 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 20:57:48,385 - INFO - Đang lấy ma_ticket...
+2025-03-21 20:57:48,391 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 20:57:50,393 - INFO - Đang lấy ma_ticket...
+2025-03-21 20:57:50,399 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 20:57:52,401 - INFO - Đang lấy ma_ticket...
+2025-03-21 20:57:52,408 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 20:57:54,409 - INFO - Đang lấy ma_ticket...
+2025-03-21 20:57:54,452 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 20:57:56,453 - INFO - Đang lấy ma_ticket...
+2025-03-21 20:57:56,459 - INFO - Đã lấy được ma_ticket: 169c1abf-c0b3-4e81-ad21-f16ae3fd4c86
+2025-03-21 20:57:56,459 - INFO - Generated ticket ID: 169c1abf-c0b3-4e81-ad21-f16ae3fd4c86 - 25032118489
+2025-03-21 20:57:56,469 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"NGUY\u1ec4N NG\u1eccC S\u00c1NG\", \"email\": \"sn3404459@gmail.com\", \"phoneNumber\": \"0366756846\", \"address\": \"T\u1ec9nh B\u00ecnh D\u01b0\u01a1ng-Th\u00e0nh ph...
+2025-03-21 20:57:56,470 - INFO - 127.0.0.1 - - [21/Mar/2025 20:57:56] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-21 23:18:15,664 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-21 23:18:15,665 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-21 23:18:15,665 - INFO - 127.0.0.1 - - [21/Mar/2025 23:18:15] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-21 23:18:15,670 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'trịnh trường trung', 'email': 'trinhtranhieu240714@gmail.com', 'phoneNumber': '0355399431', 'address': 'Tỉnh Thanh Hóa-Huyện Hậu Lộc-Phòng Giao dịch Hậu Lộc', 'company': 'VN0012303', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng đối với Cán bộ, nhân viên, Tổng Công ty Bưu điện Việt Nam', 'description': 'vay vốn', 'mac': '882c02d62e99b170bd9c4a6a8cf6651a84a84f5e1e59d628c7ffcaafc3fa05fd'}
+2025-03-21 23:18:15,681 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-21 23:18:15,681 - INFO - ID level: {'nhom': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': '', 'l1_crm': 'Log-Lv1-000265', 'l2_crm': 'Log-Lv2-000351', 'l3_crm': None, 'l4_crm': None}
+2025-03-21 23:18:15,691 - INFO - IDKH: 
+2025-03-21 23:18:15,701 - INFO - Đang lấy ma_ticket...
+2025-03-21 23:18:15,707 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 23:18:17,709 - INFO - Đang lấy ma_ticket...
+2025-03-21 23:18:17,715 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 23:18:19,717 - INFO - Đang lấy ma_ticket...
+2025-03-21 23:18:19,723 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 23:18:21,725 - INFO - Đang lấy ma_ticket...
+2025-03-21 23:18:21,731 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 23:18:23,733 - INFO - Đang lấy ma_ticket...
+2025-03-21 23:18:23,754 - INFO - Không có ma_ticket, thử lại sau...
+2025-03-21 23:18:25,757 - INFO - Đang lấy ma_ticket...
+2025-03-21 23:18:25,762 - INFO - Đã lấy được ma_ticket: b7caabdb-1b18-4a07-a7ac-6aba76af4cde
+2025-03-21 23:18:25,762 - INFO - Generated ticket ID: b7caabdb-1b18-4a07-a7ac-6aba76af4cde - 25032118490
+2025-03-21 23:18:25,769 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"tr\u1ecbnh tr\u01b0\u1eddng trung\", \"email\": \"trinhtranhieu240714@gmail.com\", \"phoneNumber\": \"0355399431\", \"address\": \"T\u1ec9nh Thanh H\u00f3a-Huy\u1ec7n H...
+2025-03-21 23:18:25,769 - INFO - 127.0.0.1 - - [21/Mar/2025 23:18:25] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -

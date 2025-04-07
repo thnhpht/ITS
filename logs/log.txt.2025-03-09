@@ -1,0 +1,522 @@
+2025-03-09 00:19:15,955 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 00:19:15,956 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 00:19:15,956 - INFO - 127.0.0.1 - - [09/Mar/2025 00:19:15] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 00:19:15,961 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'DUONG CONG HUNG', 'email': 'duonghung200599@gmail.com', 'phoneNumber': '0817026898', 'address': 'Tỉnh Bắc Ninh-Thị xã Quế Võ-Phòng Giao dịch Quế Võ', 'company': 'VN0012251', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank Mastercard Gold', 'description': '', 'mac': '433f10f54815387dedf239f6aa5b5ba30834f4bd0fa45062b50d3d494ddd1f27'}
+2025-03-09 00:19:15,971 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-09 00:19:15,980 - INFO - Generated ticket ID: 25030901067
+2025-03-09 00:19:15,980 - INFO - Generated ticket ID: 039696c4-6359-4e0c-892d-a9d1d5a5652d - 25030901067
+2025-03-09 00:19:16,001 - INFO - IDKH: a2475be4-f619-489a-bde3-887f4947190b
+2025-03-09 00:19:16,013 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"DUONG CONG HUNG\", \"email\": \"duonghung200599@gmail.com\", \"phoneNumber\": \"0817026898\", \"address\": \"T\u1ec9nh B\u1eafc Ninh-Th\u1ecb x\u00e3 Qu\u1ebf V\u00f5-P...
+2025-03-09 00:19:16,013 - INFO - 127.0.0.1 - - [09/Mar/2025 00:19:16] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 00:20:40,996 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 00:20:40,996 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 00:20:40,997 - INFO - 127.0.0.1 - - [09/Mar/2025 00:20:40] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 00:20:41,012 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Trương Thị Ngọc Trinh', 'email': 'ngoctrinhdep0604@gmail.com', 'phoneNumber': '0789838306', 'address': 'Thành phố Hồ Chí Minh-Quận 1-Phòng Giao dịch Sài Gòn', 'company': 'VN0013361', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank JCB Ultimate', 'description': '', 'mac': '9516863924c8c9a50ab115304a6968a78c0ac7a0fbe3fffd8361899120d184cc'}
+2025-03-09 00:20:41,033 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-09 00:20:41,042 - INFO - Generated ticket ID: 25030901068
+2025-03-09 00:20:41,042 - INFO - Generated ticket ID: e8fb96b5-feb8-4276-a78c-a7ee9b77327c - 25030901068
+2025-03-09 00:20:41,059 - INFO - IDKH: e5948e09-5080-424f-a341-5e74390f3de6
+2025-03-09 00:20:41,075 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Tr\u01b0\u01a1ng Th\u1ecb Ng\u1ecdc Trinh\", \"email\": \"ngoctrinhdep0604@gmail.com\", \"phoneNumber\": \"0789838306\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u...
+2025-03-09 00:20:41,076 - INFO - 127.0.0.1 - - [09/Mar/2025 00:20:41] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 00:23:16,022 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 00:23:16,022 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 00:23:16,023 - INFO - 127.0.0.1 - - [09/Mar/2025 00:23:16] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 00:23:16,041 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Trương Thị Ngọc Trinh', 'email': 'ngoctrinhdep0604@gmail.com', 'phoneNumber': '0789838306', 'address': 'Thành phố Hồ Chí Minh-Quận 1-Phòng Giao dịch Sài Gòn', 'company': 'VN0013361', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng linh hoạt', 'description': '', 'mac': '52d8565a8a913aa90ab84e4529365cb6b8fe2d4a5116669a5c7102e284fcb0ed'}
+2025-03-09 00:23:16,061 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 00:23:16,070 - INFO - Generated ticket ID: 25030901069
+2025-03-09 00:23:16,070 - INFO - Generated ticket ID: 709f9048-6360-4351-a453-f94719734351 - 25030901069
+2025-03-09 00:23:16,085 - INFO - IDKH: e5948e09-5080-424f-a341-5e74390f3de6
+2025-03-09 00:23:16,099 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Tr\u01b0\u01a1ng Th\u1ecb Ng\u1ecdc Trinh\", \"email\": \"ngoctrinhdep0604@gmail.com\", \"phoneNumber\": \"0789838306\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u...
+2025-03-09 00:23:16,100 - INFO - 127.0.0.1 - - [09/Mar/2025 00:23:16] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 00:39:35,035 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 00:39:35,036 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 00:39:35,036 - INFO - 127.0.0.1 - - [09/Mar/2025 00:39:35] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 00:39:35,041 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Hà', 'email': 'thanhha3179@gmail..com', 'phoneNumber': '0932346134', 'address': 'Thành phố Hồ Chí Minh-Quận Bình Tân-Phòng Giao dịch Bình Tân', 'company': 'VN0013369', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay mua nhà đất', 'description': 'Vay mua nhà chung cư', 'mac': 'e11da76d4da17f8ac15e3bae0cbbff0a3c19d0e62f45cf52200f45322489b68b'}
+2025-03-09 00:39:35,052 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 00:39:35,061 - INFO - Generated ticket ID: 25030901072
+2025-03-09 00:39:35,062 - INFO - Generated ticket ID: 75ff4e27-d46f-4e33-92ce-679f201cba01 - 25030901072
+2025-03-09 00:39:35,082 - INFO - IDKH: 6a952e6c-81ad-451c-96c6-9de6b139c803
+2025-03-09 00:39:35,092 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"H\u00e0\", \"email\": \"thanhha3179@gmail..com\", \"phoneNumber\": \"0932346134\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh-Qu\u1eadn B\u00ecnh T\u00e2n...
+2025-03-09 00:39:35,093 - INFO - 127.0.0.1 - - [09/Mar/2025 00:39:35] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 00:42:33,608 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 00:42:33,609 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 00:42:33,609 - INFO - 127.0.0.1 - - [09/Mar/2025 00:42:33] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 00:42:33,614 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Vũ Việt Vương', 'email': '', 'phoneNumber': '0948128993', 'address': 'Thành phố Hà Nội-Quận Cầu Giấy-Chi nhánh Đông Đô - Phòng Giao dịch Cầu Giấy', 'company': 'VN0011003', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng linh hoạt', 'description': '', 'mac': 'c1e30e2d2e7cc435358a4e832af23c45d28424844677854d14195779d126203b'}
+2025-03-09 00:42:33,623 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 00:42:33,631 - INFO - Generated ticket ID: 25030901073
+2025-03-09 00:42:33,631 - INFO - Generated ticket ID: 0c543b66-d589-4a9b-8587-da0add216d4a - 25030901073
+2025-03-09 00:42:33,653 - INFO - IDKH: 47ac074a-59ab-4f8e-b048-7b2674d28436
+2025-03-09 00:42:33,663 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"V\u0169 Vi\u1ec7t V\u01b0\u01a1ng\", \"email\": \"\", \"phoneNumber\": \"0948128993\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i-Qu\u1eadn C\u1ea7u Gi\u1ea5y-...
+2025-03-09 00:42:33,664 - INFO - 127.0.0.1 - - [09/Mar/2025 00:42:33] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 03:06:12,280 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 03:06:12,281 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 03:06:12,281 - INFO - 127.0.0.1 - - [09/Mar/2025 03:06:12] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 03:06:12,287 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Lâm Diện', 'email': 'dienlamcf1@gmail.com', 'phoneNumber': '0394533220', 'address': 'Tỉnh Sóc Trăng-Thành phố Sóc Trăng-Chi nhánh Sóc Trăng', 'company': 'VN0014150', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng linh hoạt', 'description': 'Em có lịch sử nợ xấu trên cic ạ, lúc trước e có mở tài khoản trả sau trên momo được 500k mà trả chậm hiện tại e thanh toán hết rồi mà vẫn bị nợ xấu trên cic ạ', 'mac': '96495949d9dd205dd27f28c70d77dc659a90a3e6976889584a8322330191190d'}
+2025-03-09 03:06:12,298 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 03:06:12,307 - INFO - Generated ticket ID: 25030901082
+2025-03-09 03:06:12,307 - INFO - Generated ticket ID: 835612ca-6f38-464b-9b1d-053f813b6c50 - 25030901082
+2025-03-09 03:06:12,326 - INFO - IDKH: dae74f5f-8bb3-477b-8bd9-c8565474e650
+2025-03-09 03:06:12,336 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"L\u00e2m Di\u1ec7n\", \"email\": \"dienlamcf1@gmail.com\", \"phoneNumber\": \"0394533220\", \"address\": \"T\u1ec9nh S\u00f3c Tr\u0103ng-Th\u00e0nh ph\u1ed1 S\u00f3c Tr...
+2025-03-09 03:06:12,337 - INFO - 127.0.0.1 - - [09/Mar/2025 03:06:12] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 06:25:11,236 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 06:25:11,237 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 06:25:11,237 - INFO - 127.0.0.1 - - [09/Mar/2025 06:25:11] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 06:25:11,243 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'PHAM CONG MINH', 'email': 'minhteolk@gmail.com', 'phoneNumber': '0586551383', 'address': 'Tỉnh Đồng Nai-Huyện Xuân Lộc-Phòng Giao dịch Xuân Lộc', 'company': 'VN0017652', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Dịch vụ mở tài khoản thanh toán online trên LPBank', 'description': 'mở tài khoản thanh toán', 'mac': '7cbfdc5f74d074e8c65b14ec9e5b4101006216f41ce353f824fbd1267dca50ee'}
+2025-03-09 06:25:11,253 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-09 06:25:11,264 - INFO - Generated ticket ID: 25030901091
+2025-03-09 06:25:11,264 - INFO - Generated ticket ID: 55bf9687-14e0-4c97-a90f-b9649b802f3a - 25030901091
+2025-03-09 06:25:11,284 - INFO - IDKH: 1b8bd6c2-8834-4c40-a52e-eccfaccc5ccf
+2025-03-09 06:25:11,296 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"PHAM CONG MINH\", \"email\": \"minhteolk@gmail.com\", \"phoneNumber\": \"0586551383\", \"address\": \"T\u1ec9nh \u0110\u1ed3ng Nai-Huy\u1ec7n Xu\u00e2n L\u1ed9c-Ph\u00f...
+2025-03-09 06:25:11,296 - INFO - 127.0.0.1 - - [09/Mar/2025 06:25:11] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 09:08:16,619 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 09:08:16,620 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 09:08:16,620 - INFO - 127.0.0.1 - - [09/Mar/2025 09:08:16] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 09:08:16,626 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Mai Thái Yến Vy', 'email': 'maithaiyenvy@gmail.com', 'phoneNumber': '0901514778', 'address': 'Tỉnh Đồng Nai-Thành phố Biên Hòa-Chi nhánh Đồng Nai', 'company': 'VN0013550', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng linh hoạt', 'description': '', 'mac': 'ce237299e31e6dd07bac7d6f2e8b39193bac29b66b93db4d9119ba7acbce9314'}
+2025-03-09 09:08:16,637 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 09:08:16,647 - INFO - Generated ticket ID: 25030901206
+2025-03-09 09:08:16,648 - INFO - Generated ticket ID: 8c483743-86c6-4306-823b-b05edf7785a9 - 25030901206
+2025-03-09 09:08:16,667 - INFO - IDKH: e73a3d05-b431-40ef-873e-0466be7ba6c1
+2025-03-09 09:08:16,679 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Mai Th\u00e1i Y\u1ebfn Vy\", \"email\": \"maithaiyenvy@gmail.com\", \"phoneNumber\": \"0901514778\", \"address\": \"T\u1ec9nh \u0110\u1ed3ng Nai-Th\u00e0nh ph\u1ed1 Bi\...
+2025-03-09 09:08:16,680 - INFO - 127.0.0.1 - - [09/Mar/2025 09:08:16] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 10:26:52,755 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 10:26:52,756 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 10:26:52,757 - INFO - 127.0.0.1 - - [09/Mar/2025 10:26:52] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 10:26:52,762 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn Đức Việt', 'email': '', 'phoneNumber': '0846119450', 'address': 'Tỉnh Bắc Giang-Huyện Việt Yên-Chi nhánh Việt Yên', 'company': 'VN0011770', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Tài khoản thanh toán', 'description': '', 'mac': '178b443c8b6ac5f74d2e4f0b5e7f7a770a536390b1a80e370c213ea189ff6df0'}
+2025-03-09 10:26:52,774 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-09 10:26:52,785 - INFO - Generated ticket ID: 25030901353
+2025-03-09 10:26:52,786 - INFO - Generated ticket ID: d8533b76-8905-4c79-9038-6d4443c4dd1f - 25030901353
+2025-03-09 10:26:52,808 - INFO - IDKH: 45114935-ccf2-47ac-b5f2-ef9afa02aed3
+2025-03-09 10:26:52,820 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n \u0110\u1ee9c Vi\u1ec7t\", \"email\": \"\", \"phoneNumber\": \"0846119450\", \"address\": \"T\u1ec9nh B\u1eafc Giang-Huy\u1ec7n Vi\u1ec7t Y\u00ean-Chi nh\u0...
+2025-03-09 10:26:52,821 - INFO - 127.0.0.1 - - [09/Mar/2025 10:26:52] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 10:37:35,649 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 10:37:35,649 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 10:37:35,649 - INFO - 127.0.0.1 - - [09/Mar/2025 10:37:35] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 10:37:35,655 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Bao', 'email': 'songtinh.qb@gmail.con', 'phoneNumber': '0964094104', 'address': 'Thành phố Hồ Chí Minh-Huyện Hóc Môn-Phòng Giao dịch Trung tâm Hóc Môn', 'company': 'VN0017620', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay mua nhà đất', 'description': 'Tư vấn khoản vay nhà đất', 'mac': '59f18ceeba0ca28c54293fadb60a4ea80cb29e71b3b7d2f078b862b65e1a22b0'}
+2025-03-09 10:37:35,667 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 10:37:35,678 - INFO - Generated ticket ID: 25030901380
+2025-03-09 10:37:35,678 - INFO - Generated ticket ID: edd3abd2-8a32-49a4-a768-8ff3d95ddcb3 - 25030901380
+2025-03-09 10:37:35,700 - INFO - IDKH: c24104ce-cea2-43a5-921e-fdd33515fd71
+2025-03-09 10:37:35,791 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Bao\", \"email\": \"songtinh.qb@gmail.con\", \"phoneNumber\": \"0964094104\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh-Huy\u1ec7n H\u00f3c M\u00f4n-Ph\u...
+2025-03-09 10:37:35,792 - INFO - 127.0.0.1 - - [09/Mar/2025 10:37:35] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 10:41:20,525 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 10:41:20,526 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 10:41:20,526 - INFO - 127.0.0.1 - - [09/Mar/2025 10:41:20] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 10:41:20,551 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Pham Ngoc Huyen', 'email': 'phamngochuyen080913@gmail.com', 'phoneNumber': '0911540088', 'address': 'Tỉnh Lào Cai-Thành phố Lào Cai-Chi nhánh Lào Cai', 'company': 'VN0011100', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'SmartPOS', 'description': '', 'mac': 'cec787fac90df0b8d0546ea3ed72e8f0e1cb90f0bbfb811081555426adeb370e'}
+2025-03-09 10:41:20,568 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-09 10:41:20,582 - INFO - Generated ticket ID: 25030901395
+2025-03-09 10:41:20,583 - INFO - Generated ticket ID: 1682af7e-55a4-4e8d-a3ad-964494f94001 - 25030901395
+2025-03-09 10:41:20,607 - INFO - IDKH: 344039c1-5181-488a-9130-540ce2ecc389
+2025-03-09 10:41:20,620 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Pham Ngoc Huyen\", \"email\": \"phamngochuyen080913@gmail.com\", \"phoneNumber\": \"0911540088\", \"address\": \"T\u1ec9nh L\u00e0o Cai-Th\u00e0nh ph\u1ed1 L\u00e0o Cai...
+2025-03-09 10:41:20,620 - INFO - 127.0.0.1 - - [09/Mar/2025 10:41:20] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 11:14:02,190 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 11:14:02,210 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 11:14:02,211 - INFO - 127.0.0.1 - - [09/Mar/2025 11:14:02] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 11:14:02,231 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn Thành Nhân', 'email': 'Ntn110405@gmail.com', 'phoneNumber': '0774488750', 'address': 'Tỉnh Quảng Nam-Huyện Phước Sơn-Phòng Giao dịch Phước Sơn', 'company': 'VN0017466', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng linh hoạt', 'description': '', 'mac': 'aa7d1411af9b65317f48d53e82aafad6bdc804333cdff4ececa6876d09bff8b3'}
+2025-03-09 11:14:02,248 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 11:14:02,256 - INFO - Generated ticket ID: 25030901450
+2025-03-09 11:14:02,256 - INFO - Generated ticket ID: f92833df-f752-4359-9688-98dd08999c36 - 25030901450
+2025-03-09 11:14:02,280 - INFO - IDKH: ac6caf09-c4a2-4455-9e36-608b0add4f4a
+2025-03-09 11:14:02,291 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n Th\u00e0nh Nh\u00e2n\", \"email\": \"Ntn110405@gmail.com\", \"phoneNumber\": \"0774488750\", \"address\": \"T\u1ec9nh Qu\u1ea3ng Nam-Huy\u1ec7n Ph\u01b0\u1e...
+2025-03-09 11:14:02,292 - INFO - 127.0.0.1 - - [09/Mar/2025 11:14:02] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 11:58:05,624 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 11:58:05,624 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 11:58:05,625 - INFO - 127.0.0.1 - - [09/Mar/2025 11:58:05] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 11:58:05,632 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Trường', 'email': 'viettruong9a3@gmail.com', 'phoneNumber': '0365417897', 'address': 'Tỉnh Bắc Giang-Thành phố Bắc Giang-Chi nhánh Bắc Giang', 'company': 'VN0011750', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l3': 'Dịch vụ nạp tiền tài khoản giao thông VETC', 'description': 'Nạp tiền tài khoản giao thông VETC trên app ngân hàng VPBank kiểu gì', 'mac': 'e7d672da0b1abcdf9ca6e15e1fa07840ed79f10c5c1d705bfd70a2c7ac8dc7c7'}
+2025-03-09 11:58:05,633 - ERROR - Invalid fields: ['l2']
+2025-03-09 11:58:05,646 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Tr\u01b0\u1eddng\", \"email\": \"viettruong9a3@gmail.com\", \"phoneNumber\": \"0365417897\", \"address\": \"T\u1ec9nh B\u1eafc Giang-Th\u00e0nh ph\u1ed1 B\u1eafc Giang-...
+2025-03-09 11:58:05,646 - INFO - 127.0.0.1 - - [09/Mar/2025 11:58:05] "[31m[1mPOST /api/v1/its/create-ticket-website HTTP/1.0[0m" 400 -
+2025-03-09 12:14:03,114 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 12:14:03,114 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 12:14:03,115 - INFO - 127.0.0.1 - - [09/Mar/2025 12:14:03] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 12:14:03,134 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Hoang van thai', 'email': 'hoangvanvanthang@gmail.com', 'phoneNumber': '0333453607', 'address': 'Tỉnh Tuyên Quang-Huyện Hàm Yên-Phòng Giao dịch Hàm Yên', 'company': 'VN0017152', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay siêu nhanh sản xuất kinh doanh trong 24h', 'description': 'Tôi muốn vay vốn', 'mac': 'af9dcffd79dcdfece74b279545f8eff38a79c7d677791767e34751525f79cd3b'}
+2025-03-09 12:14:03,151 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 12:14:03,160 - INFO - Generated ticket ID: 25030901510
+2025-03-09 12:14:03,160 - INFO - Generated ticket ID: 14d65b0e-4fd2-46ee-be1f-c11b8c6ecf61 - 25030901510
+2025-03-09 12:14:03,179 - INFO - IDKH: f7e8e7bc-0e9e-46a9-b7f7-df8909c6ecf8
+2025-03-09 12:14:03,200 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Hoang van thai\", \"email\": \"hoangvanvanthang@gmail.com\", \"phoneNumber\": \"0333453607\", \"address\": \"T\u1ec9nh Tuy\u00ean Quang-Huy\u1ec7n H\u00e0m Y\u00ean-Ph\...
+2025-03-09 12:14:03,201 - INFO - 127.0.0.1 - - [09/Mar/2025 12:14:03] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 12:17:21,158 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 12:17:21,158 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 12:17:21,158 - INFO - 127.0.0.1 - - [09/Mar/2025 12:17:21] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 12:17:21,163 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'LE DUC HUNG', 'email': 'leduchung23012009@gmail.com', 'phoneNumber': '0384914353', 'address': 'Tỉnh Thanh Hóa-Thành phố Thanh Hóa-Chi nhánh Thanh Hóa', 'company': 'VN0012300', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Dịch vụ mở tài khoản thanh toán online trên LPBank', 'description': 'Mở tk ngân hàng', 'mac': '46cdf6ce97164b255c7c30c5f93989a274794b418d3a23ca40a356ca7f41fffc'}
+2025-03-09 12:17:21,172 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-09 12:17:21,182 - INFO - Generated ticket ID: 25030901513
+2025-03-09 12:17:21,182 - INFO - Generated ticket ID: 31bb64d5-221d-4cd9-ba22-1268b68f45ab - 25030901513
+2025-03-09 12:17:21,203 - INFO - IDKH: a404975f-5227-4d40-a280-4d649754b592
+2025-03-09 12:17:21,214 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"LE DUC HUNG\", \"email\": \"leduchung23012009@gmail.com\", \"phoneNumber\": \"0384914353\", \"address\": \"T\u1ec9nh Thanh H\u00f3a-Th\u00e0nh ph\u1ed1 Thanh H\u00f3a-C...
+2025-03-09 12:17:21,214 - INFO - 127.0.0.1 - - [09/Mar/2025 12:17:21] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 12:27:32,040 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 12:27:32,041 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 12:27:32,041 - INFO - 127.0.0.1 - - [09/Mar/2025 12:27:32] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 12:27:32,068 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'NGUYEN THI THUONG', 'email': 'Nguyenthithuongnt0802@gmail.com', 'phoneNumber': '0338037302', 'address': 'Tỉnh Đắk Lắk-Huyện Ea Súp-Phòng Giao dịch Ea Súp', 'company': 'VN0017578', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank JCB Ultimate', 'description': '', 'mac': '721748098d4666772555d352f48e24858ee6c13f59a1acfcc643a055a45cfd51'}
+2025-03-09 12:27:32,081 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-09 12:27:32,109 - INFO - Generated ticket ID: 25030901520
+2025-03-09 12:27:32,110 - INFO - Generated ticket ID: e44d246d-c0d7-40a3-a89c-37bc2fe37846 - 25030901520
+2025-03-09 12:27:32,172 - INFO - IDKH: 3d7afa28-e170-4312-9783-56b034bd45e8
+2025-03-09 12:27:32,236 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"NGUYEN THI THUONG\", \"email\": \"Nguyenthithuongnt0802@gmail.com\", \"phoneNumber\": \"0338037302\", \"address\": \"T\u1ec9nh \u0110\u1eafk L\u1eafk-Huy\u1ec7n Ea S\u0...
+2025-03-09 12:27:32,236 - INFO - 127.0.0.1 - - [09/Mar/2025 12:27:32] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 12:43:08,462 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 12:43:08,462 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 12:43:08,463 - INFO - 127.0.0.1 - - [09/Mar/2025 12:43:08] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 12:43:08,469 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn bá tùng', 'email': 'nguyenbatung050899@gmail.com', 'phoneNumber': '0347774872', 'address': 'Thành phố Hà Nội-Huyện Đông Anh-Chi nhánh Đông Anh', 'company': 'VN0011022', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng linh hoạt', 'description': '', 'mac': '95691c042de23bfe44f5c8b4b0d690ccd646c6aa5ed9deeaca8093583f47e616'}
+2025-03-09 12:43:08,479 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 12:43:08,490 - INFO - Generated ticket ID: 25030901548
+2025-03-09 12:43:08,490 - INFO - Generated ticket ID: 7c69b47e-5956-4a80-b364-3d977cb109ad - 25030901548
+2025-03-09 12:43:08,511 - INFO - IDKH: ef7dd136-b7e7-4abc-909d-c449deed74d9
+2025-03-09 12:43:08,526 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n b\u00e1 t\u00f9ng\", \"email\": \"nguyenbatung050899@gmail.com\", \"phoneNumber\": \"0347774872\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i-Huy\u...
+2025-03-09 12:43:08,527 - INFO - 127.0.0.1 - - [09/Mar/2025 12:43:08] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 12:47:03,417 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 12:47:03,418 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 12:47:03,418 - INFO - 127.0.0.1 - - [09/Mar/2025 12:47:03] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 12:47:03,424 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn Đình Vinh', 'email': 'nguyendinhvinh270293@gmail.com', 'phoneNumber': '0933867599', 'address': 'Thành phố Hồ Chí Minh-Thành phố Thủ Đức-Phòng Giao dịch An Phú', 'company': 'VN0013360', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay Hưu trí', 'description': 'Em muốn hỏi về vay hưu trí cho mẹ ạ', 'mac': '45dae568852ef051750387b3264a414342768bdbd3e49d1285d9b8ddea944fd0'}
+2025-03-09 12:47:03,433 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 12:47:03,441 - INFO - Generated ticket ID: 25030901551
+2025-03-09 12:47:03,441 - INFO - Generated ticket ID: 7e12426c-fa4d-4375-8ab3-1b8f24aff54e - 25030901551
+2025-03-09 12:47:03,462 - INFO - IDKH: 81ad65f9-1958-4b04-afb3-65c9ea449938
+2025-03-09 12:47:03,841 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n \u0110\u00ecnh Vinh\", \"email\": \"nguyendinhvinh270293@gmail.com\", \"phoneNumber\": \"0933867599\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed M...
+2025-03-09 12:47:03,842 - INFO - 127.0.0.1 - - [09/Mar/2025 12:47:03] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 12:59:41,592 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 12:59:41,592 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 12:59:41,592 - INFO - 127.0.0.1 - - [09/Mar/2025 12:59:41] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 12:59:41,598 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Thanh phong', 'email': 'vup9680@gmail.com', 'phoneNumber': '0865830644', 'address': 'Tỉnh Bến Tre-Huyện Bình Đại-Phòng giao dịch Bình Đại', 'company': 'VN0017770', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Dịch vụ mở tài khoản thanh toán online trên LPBank', 'description': '', 'mac': 'f045aea7e6fe2fe2b17c1d3b7d14e309a484d6ae5632c187f226a103aefd04ff'}
+2025-03-09 12:59:41,606 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-09 12:59:41,614 - INFO - Generated ticket ID: 25030901568
+2025-03-09 12:59:41,614 - INFO - Generated ticket ID: ac37cac4-684f-4aee-adba-9e9fb6d3b0aa - 25030901568
+2025-03-09 12:59:41,633 - INFO - IDKH: 823185bd-f3eb-4c70-863b-7827205ccb37
+2025-03-09 12:59:41,645 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Thanh phong\", \"email\": \"vup9680@gmail.com\", \"phoneNumber\": \"0865830644\", \"address\": \"T\u1ec9nh B\u1ebfn Tre-Huy\u1ec7n B\u00ecnh \u0110\u1ea1i-Ph\u00f2ng gi...
+2025-03-09 12:59:41,646 - INFO - 127.0.0.1 - - [09/Mar/2025 12:59:41] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 14:02:01,164 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 14:02:01,167 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 14:02:01,167 - INFO - 127.0.0.1 - - [09/Mar/2025 14:02:01] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 14:02:01,174 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Đặng Hoàng Sơn', 'email': 'hoangson.ph@gmail.com', 'phoneNumber': '0938269929', 'address': 'Thành phố Hồ Chí Minh-Quận Bình Tân-Phòng Giao dịch Bình Tân', 'company': 'VN0013369', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay mua nhà dự án', 'description': 'Tôi cần vay mua căn hộ VinHome Grand Park TP Thủ Đức. Hiện tôi đã thanh toán 40% và cần vay 1.6 tỷ để nhận nhà', 'mac': '0c8c5200f13b7a27e7e3c550ffdf63ced6abd85f46be5e51ad5d8184576aee71'}
+2025-03-09 14:02:01,185 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 14:02:01,193 - INFO - Generated ticket ID: 25030901667
+2025-03-09 14:02:01,194 - INFO - Generated ticket ID: c3d6cdbc-5aa0-478a-84a7-5390ddfb503f - 25030901667
+2025-03-09 14:02:01,219 - INFO - IDKH: 64c5e6b0-7881-4239-80c2-64a20db01c47
+2025-03-09 14:02:01,300 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"\u0110\u1eb7ng Ho\u00e0ng S\u01a1n\", \"email\": \"hoangson.ph@gmail.com\", \"phoneNumber\": \"0938269929\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh-Qu...
+2025-03-09 14:02:01,301 - INFO - 127.0.0.1 - - [09/Mar/2025 14:02:01] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 14:33:31,457 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 14:33:31,458 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 14:33:31,458 - INFO - 127.0.0.1 - - [09/Mar/2025 14:33:31] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 14:33:31,466 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Bùi Thị Ánh Hồng', 'email': 'hongtruongloc@gmail.com', 'phoneNumber': '0963625519', 'address': 'Thành phố Hà Nội-Quận Cầu Giấy-Phòng Giao dịch Trung Yên', 'company': 'VN0011013', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng linh hoạt', 'description': 'Mình có nhu cầu vay 30tr trong vòng 36 tháng', 'mac': '277c2e74abc11a165bfbbee11c36cd346db74aeaa91ac5c657feb5015c749b27'}
+2025-03-09 14:33:31,481 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 14:33:31,491 - INFO - Generated ticket ID: 25030901732
+2025-03-09 14:33:31,491 - INFO - Generated ticket ID: bc2169fc-e0ec-4af2-a106-1a0737e3e7ea - 25030901732
+2025-03-09 14:33:31,512 - INFO - IDKH: ae0ded2d-1b4b-41a4-91a9-fb3e9cdc03e9
+2025-03-09 14:33:31,613 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"B\u00f9i Th\u1ecb \u00c1nh H\u1ed3ng\", \"email\": \"hongtruongloc@gmail.com\", \"phoneNumber\": \"0963625519\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i-Qu\...
+2025-03-09 14:33:31,614 - INFO - 127.0.0.1 - - [09/Mar/2025 14:33:31] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 15:13:15,470 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 15:13:15,470 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 15:13:15,471 - INFO - 127.0.0.1 - - [09/Mar/2025 15:13:15] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 15:13:15,490 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Lê phương anh', 'email': 'a@gmail.com', 'phoneNumber': '0388964447', 'address': 'Tỉnh Đồng Nai-Thành phố Long Khánh-Phòng Giao dịch Long Khánh', 'company': 'VN0017650', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng linh hoạt', 'description': '', 'mac': '31b227f6a2580908cb157691814b22da69ec1ab6a5cba45914dfa4dfae3522c2'}
+2025-03-09 15:13:15,511 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 15:13:15,524 - INFO - Generated ticket ID: 25030901829
+2025-03-09 15:13:15,524 - INFO - Generated ticket ID: 1bee7df3-3125-4716-becb-009028de68bb - 25030901829
+2025-03-09 15:13:15,584 - INFO - IDKH: 96541d30-e660-4a01-ac11-36890eec963d
+2025-03-09 15:13:15,857 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"L\u00ea ph\u01b0\u01a1ng anh\", \"email\": \"a@gmail.com\", \"phoneNumber\": \"0388964447\", \"address\": \"T\u1ec9nh \u0110\u1ed3ng Nai-Th\u00e0nh ph\u1ed1 Long Kh\u00...
+2025-03-09 15:13:15,858 - INFO - 127.0.0.1 - - [09/Mar/2025 15:13:15] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 15:22:32,851 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 15:22:32,852 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 15:22:32,852 - INFO - 127.0.0.1 - - [09/Mar/2025 15:22:32] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 15:22:32,857 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Lê trọng nghĩa', 'email': 'lenghia19111997@gmail.com', 'phoneNumber': '0967167403', 'address': 'Tỉnh Đắk Lắk-Huyện Krông Năng-Phòng Giao dịch Krông Năng', 'company': 'VN0013202', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng linh hoạt', 'description': 'Muôn vay ạ', 'mac': '7bc09efe743af343ac24848dddaba12a34e99d5de2fbaa5e0f5fdbafef21a85c'}
+2025-03-09 15:22:32,868 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 15:22:32,878 - INFO - Generated ticket ID: 25030901854
+2025-03-09 15:22:32,878 - INFO - Generated ticket ID: a7093ab4-8778-4b1c-8933-018486c2a98f - 25030901854
+2025-03-09 15:22:32,905 - INFO - IDKH: e5d3033c-c53b-4d8e-8015-768285d025d9
+2025-03-09 15:22:33,301 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"L\u00ea tr\u1ecdng ngh\u0129a\", \"email\": \"lenghia19111997@gmail.com\", \"phoneNumber\": \"0967167403\", \"address\": \"T\u1ec9nh \u0110\u1eafk L\u1eafk-Huy\u1ec7n K...
+2025-03-09 15:22:33,302 - INFO - 127.0.0.1 - - [09/Mar/2025 15:22:33] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 15:26:18,864 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 15:26:18,864 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 15:26:18,865 - INFO - 127.0.0.1 - - [09/Mar/2025 15:26:18] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 15:26:18,882 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Bùi Đức Thắng', 'email': 'buiducthang200319988@gmail.com', 'phoneNumber': '0814910096', 'address': 'Thành phố Hải Phòng-Huyện An Lão-Phòng Giao dịch An Lão', 'company': 'VN0017282', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Thấu chi Khách hàng cá nhân', 'description': 'Tôi muốn vay mấy triệu để chi tiêu hàng tháng', 'mac': 'e40c36bfce8b3aaaa6f245fb838fdb890e9020b5b0d5e06956002fb8b3c1c00e'}
+2025-03-09 15:26:18,892 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 15:26:18,909 - INFO - Generated ticket ID: 25030901867
+2025-03-09 15:26:18,909 - INFO - Generated ticket ID: 0540e657-c320-4d4c-95a3-0c4e36855f55 - 25030901867
+2025-03-09 15:26:18,930 - INFO - IDKH: 4bb0e236-79df-442d-b221-7be00655534a
+2025-03-09 15:26:18,979 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"B\u00f9i \u0110\u1ee9c Th\u1eafng\", \"email\": \"buiducthang200319988@gmail.com\", \"phoneNumber\": \"0814910096\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ea3i Ph\u00f...
+2025-03-09 15:26:18,980 - INFO - 127.0.0.1 - - [09/Mar/2025 15:26:18] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 15:27:37,887 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 15:27:37,887 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 15:27:37,888 - INFO - 127.0.0.1 - - [09/Mar/2025 15:27:37] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 15:27:37,898 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Bùi Đức Thắng', 'email': 'buiducthang200319988@gmail.com', 'phoneNumber': '0814910096', 'address': 'Thành phố Hải Phòng-Huyện An Lão-Phòng Giao dịch An Lão', 'company': 'VN0017282', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank JCB Ultimate', 'description': 'Tôi muốn mở thẻ tín dụng', 'mac': '18b73941f0ecb1f3181ea71b1d92ecc931aa4fdebb0a52ddf250696950dae63d'}
+2025-03-09 15:27:37,931 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-09 15:27:37,946 - INFO - Generated ticket ID: 25030901868
+2025-03-09 15:27:37,946 - INFO - Generated ticket ID: 38636cf6-1c7f-4679-b812-bbb3e6f806a8 - 25030901868
+2025-03-09 15:27:37,991 - INFO - IDKH: 4bb0e236-79df-442d-b221-7be00655534a
+2025-03-09 15:27:38,097 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"B\u00f9i \u0110\u1ee9c Th\u1eafng\", \"email\": \"buiducthang200319988@gmail.com\", \"phoneNumber\": \"0814910096\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ea3i Ph\u00f...
+2025-03-09 15:27:38,098 - INFO - 127.0.0.1 - - [09/Mar/2025 15:27:38] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 15:34:55,509 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 15:34:55,510 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 15:34:55,510 - INFO - 127.0.0.1 - - [09/Mar/2025 15:34:55] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 15:34:55,516 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'ta thi thuy', 'email': 'khanhnghia141609@gmail.com', 'phoneNumber': '0362375084', 'address': 'Thành phố Hà Nội-Huyện Chương Mỹ-Phòng Giao dịch Chương Mỹ', 'company': 'VN0017009', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank JCB Platinum', 'description': 'toi hoi tim ngan hang ben minh ko thay', 'mac': '99a9c0c2e63872ebe34da87ead99e1973eac1290e0310bd1f498c3b4d8f84177'}
+2025-03-09 15:34:55,526 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-09 15:34:55,535 - INFO - Generated ticket ID: 25030901887
+2025-03-09 15:34:55,535 - INFO - Generated ticket ID: 9aeb58a5-2c9a-4d2e-8a55-82dd237d2996 - 25030901887
+2025-03-09 15:34:55,554 - INFO - IDKH: f264f774-cc31-46df-8221-0568a00409c0
+2025-03-09 15:34:55,580 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"ta thi thuy\", \"email\": \"khanhnghia141609@gmail.com\", \"phoneNumber\": \"0362375084\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i-Huy\u1ec7n Ch\u01b0\u01a1...
+2025-03-09 15:34:55,581 - INFO - 127.0.0.1 - - [09/Mar/2025 15:34:55] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 15:37:28,507 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 15:37:28,508 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 15:37:28,508 - INFO - 127.0.0.1 - - [09/Mar/2025 15:37:28] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 15:37:28,513 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'ta thi thuy', 'email': 'khanhnghia141609@gmail.com', 'phoneNumber': '0362375084', 'address': 'Thành phố Hà Nội-Huyện Chương Mỹ-Phòng Giao dịch Chương Mỹ', 'company': 'VN0017009', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay siêu nhanh sản xuất kinh doanh trong 24h', 'description': '', 'mac': 'cce0e626cb06e2cf65f7c3e249f93a15f325246befea3599e21e8602c9c4b35f'}
+2025-03-09 15:37:28,522 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 15:37:28,531 - INFO - Generated ticket ID: 25030901893
+2025-03-09 15:37:28,531 - INFO - Generated ticket ID: f78be9bc-ed0b-4614-bdef-af9075d8cdb0 - 25030901893
+2025-03-09 15:37:28,549 - INFO - IDKH: f264f774-cc31-46df-8221-0568a00409c0
+2025-03-09 15:37:28,699 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"ta thi thuy\", \"email\": \"khanhnghia141609@gmail.com\", \"phoneNumber\": \"0362375084\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i-Huy\u1ec7n Ch\u01b0\u01a1...
+2025-03-09 15:37:28,699 - INFO - 127.0.0.1 - - [09/Mar/2025 15:37:28] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 15:50:46,362 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 15:50:46,377 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 15:50:46,377 - INFO - 127.0.0.1 - - [09/Mar/2025 15:50:46] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 15:50:46,385 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyen van tuan', 'email': 'dolatrang12@gmail.com', 'phoneNumber': '0384585883', 'address': 'Tỉnh Bình Dương-Thành phố Thuận An-Phòng giao dịch Thuận An', 'company': 'VN0013502', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Bộ giải pháp quản lý doanh thu QR shop', 'description': '', 'mac': '250edcdc5fe711adb2e6226b9cd984c93c72f5fa0cacfb471c85d6c64e5552a5'}
+2025-03-09 15:50:46,397 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-09 15:50:46,407 - INFO - Generated ticket ID: 25030901941
+2025-03-09 15:50:46,407 - INFO - Generated ticket ID: acf62d87-8a11-4e9e-8531-0846f7e8109c - 25030901941
+2025-03-09 15:50:46,430 - INFO - IDKH: e18475b0-f101-4d3a-a2e4-138630767215
+2025-03-09 15:50:46,454 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguyen van tuan\", \"email\": \"dolatrang12@gmail.com\", \"phoneNumber\": \"0384585883\", \"address\": \"T\u1ec9nh B\u00ecnh D\u01b0\u01a1ng-Th\u00e0nh ph\u1ed1 Thu\u1e...
+2025-03-09 15:50:46,455 - INFO - 127.0.0.1 - - [09/Mar/2025 15:50:46] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 16:14:58,361 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 16:14:58,362 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 16:14:58,362 - INFO - 127.0.0.1 - - [09/Mar/2025 16:14:58] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 16:14:58,368 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn Văn Thành', 'email': '', 'phoneNumber': '0925394382', 'address': 'Thành phố Hồ Chí Minh-Quận Tân Bình-Chi nhánh Tân Bình', 'company': 'VN0013351', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Thấu chi Khách hàng cá nhân', 'description': '', 'mac': 'f8d53f0ae159128c4e6e071d0847f61faec9473e389c50dc08503305d78a2e65'}
+2025-03-09 16:14:58,378 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 16:14:58,389 - INFO - Generated ticket ID: 25030902031
+2025-03-09 16:14:58,389 - INFO - Generated ticket ID: 10def3d9-2656-499b-9116-15fba160b924 - 25030902031
+2025-03-09 16:14:58,415 - INFO - IDKH: 70e3a9db-68d6-4b0f-90a9-151ba921b939
+2025-03-09 16:14:58,428 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n V\u0103n Th\u00e0nh\", \"email\": \"\", \"phoneNumber\": \"0925394382\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh-Qu\u1eadn T\u00e2n B\u00ec...
+2025-03-09 16:14:58,428 - INFO - 127.0.0.1 - - [09/Mar/2025 16:14:58] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 16:50:01,279 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 16:50:01,280 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 16:50:01,281 - INFO - 127.0.0.1 - - [09/Mar/2025 16:50:01] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 16:50:01,288 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn Chí Công', 'email': 'congnguyen02031996@gmail.com', 'phoneNumber': '0939121726', 'address': 'Thành phố Hồ Chí Minh-Quận 1-Chi nhánh TP Hồ Chí Minh', 'company': 'VN0013350', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank Visa Platinum', 'description': '', 'mac': '5a280ee42f2ceefa66b05f32826274303096449206a6e0f4e7a332ca099f024e'}
+2025-03-09 16:50:01,298 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-09 16:50:01,308 - INFO - Generated ticket ID: 25030902149
+2025-03-09 16:50:01,308 - INFO - Generated ticket ID: 9775f01c-a2da-401f-b277-f054634ac909 - 25030902149
+2025-03-09 16:50:01,330 - INFO - IDKH: 01104682-eb28-4157-adf8-604d883bebc5
+2025-03-09 16:50:01,439 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n Ch\u00ed C\u00f4ng\", \"email\": \"congnguyen02031996@gmail.com\", \"phoneNumber\": \"0939121726\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh...
+2025-03-09 16:50:01,439 - INFO - 127.0.0.1 - - [09/Mar/2025 16:50:01] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 17:02:43,958 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 17:02:43,958 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 17:02:43,959 - INFO - 127.0.0.1 - - [09/Mar/2025 17:02:43] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 17:02:43,964 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Huỳnh Thị Kim Thảo', 'email': 'thaodp3007@gmail.com', 'phoneNumber': '0369456853', 'address': 'Tỉnh Quảng Ngãi-Thị xã Đức Phổ-Phòng Giao dịch Đức Phổ', 'company': 'VN0012703', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank Visa Platinum', 'description': '', 'mac': 'fa0248fa2c436a4e8cf1cafa870ee601cb3876e00f04d83c856c1def7b3643e3'}
+2025-03-09 17:02:43,973 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-09 17:02:43,982 - INFO - Generated ticket ID: 25030902172
+2025-03-09 17:02:43,982 - INFO - Generated ticket ID: e455904b-18b6-4d7a-ba68-f1bcfd8f5ec3 - 25030902172
+2025-03-09 17:02:44,007 - INFO - IDKH: 13f46772-eefb-4a15-ac3b-0cbfc953a09c
+2025-03-09 17:02:44,019 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Hu\u1ef3nh Th\u1ecb Kim Th\u1ea3o\", \"email\": \"thaodp3007@gmail.com\", \"phoneNumber\": \"0369456853\", \"address\": \"T\u1ec9nh Qu\u1ea3ng Ng\u00e3i-Th\u1ecb x\u00e...
+2025-03-09 17:02:44,019 - INFO - 127.0.0.1 - - [09/Mar/2025 17:02:44] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 17:39:06,199 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 17:39:06,200 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 17:39:06,200 - INFO - 127.0.0.1 - - [09/Mar/2025 17:39:06] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 17:39:06,206 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': '', 'email': '', 'phoneNumber': '', 'address': 'Tỉnh Gia Lai-Thị xã Ayun Pa-Phòng Giao dịch Ayun Pa', 'company': 'VN0013151', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Dịch vụ tài khoản số đẹp', 'description': '', 'mac': '91ce85b4d4ee949cf4639f4324142638ef8f86a6948c53f68ef33ae93edff447'}
+2025-03-09 17:39:06,206 - ERROR - Invalid fields: ['name', 'phoneNumber']
+2025-03-09 17:39:06,221 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"\", \"email\": \"\", \"phoneNumber\": \"\", \"address\": \"T\u1ec9nh Gia Lai-Th\u1ecb x\u00e3 Ayun Pa-Ph\u00f2ng Giao d\u1ecbch Ayun Pa\", \"company\": \"VN0013151\", \...
+2025-03-09 17:39:06,221 - INFO - 127.0.0.1 - - [09/Mar/2025 17:39:06] "[31m[1mPOST /api/v1/its/create-ticket-website HTTP/1.0[0m" 400 -
+2025-03-09 18:10:31,378 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 18:10:31,379 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 18:10:31,379 - INFO - 127.0.0.1 - - [09/Mar/2025 18:10:31] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 18:10:31,385 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Hồ Quốc Kiệt', 'email': 'shooshee265@gmail.com', 'phoneNumber': '0342013194', 'address': 'Tỉnh Bình Dương-Thành phố Thuận An-Phòng giao dịch Thuận An', 'company': 'VN0013502', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Bộ giải pháp quản lý doanh thu QR shop', 'description': 'Mở Tài Khoản Thanh Toán Trực Tuyến', 'mac': '20700b476356c9c1f58cf9fc0e37cff9a0eeeeabbf3ede6b9c289ce73be12646'}
+2025-03-09 18:10:31,393 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-09 18:10:31,402 - INFO - Generated ticket ID: 25030902270
+2025-03-09 18:10:31,402 - INFO - Generated ticket ID: 1d34e3c8-6ef0-4b16-8f7c-57d11b5432a7 - 25030902270
+2025-03-09 18:10:31,420 - INFO - IDKH: 42223ccb-354b-488f-bfd3-f022eabb85f0
+2025-03-09 18:10:31,460 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"H\u1ed3 Qu\u1ed1c Ki\u1ec7t\", \"email\": \"shooshee265@gmail.com\", \"phoneNumber\": \"0342013194\", \"address\": \"T\u1ec9nh B\u00ecnh D\u01b0\u01a1ng-Th\u00e0nh ph\u...
+2025-03-09 18:10:31,460 - INFO - 127.0.0.1 - - [09/Mar/2025 18:10:31] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 18:25:06,401 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 18:25:06,402 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 18:25:06,402 - INFO - 127.0.0.1 - - [09/Mar/2025 18:25:06] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 18:25:06,414 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Huỳnh Văn Tuấn', 'email': 'gantuwj@gmail.com', 'phoneNumber': '0814572035', 'address': 'Tỉnh Bình Thuận-Huyện Tuy Phong-Phòng Giao dịch Tuy Phong', 'company': 'VN0017525', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Tính năng Sinh lời Lộc Phát', 'description': '', 'mac': 'b8e690b66bb6b5ce796adff3685e36f1c7350fff72e6c663c3455247f9eaad50'}
+2025-03-09 18:25:06,443 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-09 18:25:06,452 - INFO - Generated ticket ID: 25030902299
+2025-03-09 18:25:06,452 - INFO - Generated ticket ID: 332388a7-2bb1-47e2-8dfd-5435f7640933 - 25030902299
+2025-03-09 18:25:06,474 - INFO - IDKH: 494d22bb-2ab6-48cf-b4fd-e30a95804af7
+2025-03-09 18:25:06,523 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Hu\u1ef3nh V\u0103n Tu\u1ea5n\", \"email\": \"gantuwj@gmail.com\", \"phoneNumber\": \"0814572035\", \"address\": \"T\u1ec9nh B\u00ecnh Thu\u1eadn-Huy\u1ec7n Tuy Phong-P...
+2025-03-09 18:25:06,523 - INFO - 127.0.0.1 - - [09/Mar/2025 18:25:06] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 18:44:02,001 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 18:44:02,002 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 18:44:02,002 - INFO - 127.0.0.1 - - [09/Mar/2025 18:44:02] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 18:44:02,007 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn Văn Toàn', 'email': 'boybuon1276@gmail.com', 'phoneNumber': '0971453803', 'address': 'Tỉnh Bình Phước-Huyện Lộc Ninh-Phòng Giao dịch Lộc Ninh', 'company': 'VN0017633', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng linh hoạt', 'description': 'Vay tiêu dùng không tài sản đảm bảo', 'mac': 'eeb0d36591746843b98c6bcc2c3b7bf3238871f8680cbda23b4f32787842f07e'}
+2025-03-09 18:44:02,017 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 18:44:02,026 - INFO - Generated ticket ID: 25030902320
+2025-03-09 18:44:02,026 - INFO - Generated ticket ID: 41d4d133-521b-4ff1-965a-36f6beadf15b - 25030902320
+2025-03-09 18:44:02,047 - INFO - IDKH: 47465f03-d431-49b4-8df2-15da7ae7dcca
+2025-03-09 18:44:02,181 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n V\u0103n To\u00e0n\", \"email\": \"boybuon1276@gmail.com\", \"phoneNumber\": \"0971453803\", \"address\": \"T\u1ec9nh B\u00ecnh Ph\u01b0\u1edbc-Huy\u1ec7n L...
+2025-03-09 18:44:02,182 - INFO - 127.0.0.1 - - [09/Mar/2025 18:44:02] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 18:55:04,752 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 18:55:04,753 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 18:55:04,753 - INFO - 127.0.0.1 - - [09/Mar/2025 18:55:04] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 18:55:04,759 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'TRANG THU NGUYEN', 'email': 'kelvinphuongtrinh9@gmail.com', 'phoneNumber': '0375768177', 'address': 'Thành phố Hồ Chí Minh-Quận 11-Phòng Giao dịch Bình Thới', 'company': 'VN0013353', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Tài khoản thanh toán', 'description': 'Mở Tài khoản thanh toán', 'mac': '57562be2c4028d4e69a4b41f5831478b975e4ead2d7cd2f2e106f7db5589ad1a'}
+2025-03-09 18:55:04,769 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-09 18:55:04,779 - INFO - Generated ticket ID: 25030902335
+2025-03-09 18:55:04,779 - INFO - Generated ticket ID: 6d1b7813-b702-4f61-a75d-08fdb116770d - 25030902335
+2025-03-09 18:55:04,803 - INFO - IDKH: 8c9757ac-550d-4c5e-84c3-c416664b2d54
+2025-03-09 18:55:04,864 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"TRANG THU NGUYEN\", \"email\": \"kelvinphuongtrinh9@gmail.com\", \"phoneNumber\": \"0375768177\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh-Qu\u1eadn 11-...
+2025-03-09 18:55:04,865 - INFO - 127.0.0.1 - - [09/Mar/2025 18:55:04] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 20:47:20,211 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 20:47:20,212 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 20:47:20,212 - INFO - 127.0.0.1 - - [09/Mar/2025 20:47:20] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 20:47:20,218 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Phùng Ngọc Long', 'email': '100anhphong@gmail.com', 'phoneNumber': '0898432704', 'address': 'Thành phố Hà Nội-Huyện Ba Vì-Chi nhánh Ba Vì', 'company': 'VN0011020', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng linh hoạt', 'description': '', 'mac': 'fa6204c752558637112009fe78a58987e16f750e794205c9175977bb0a144b53'}
+2025-03-09 20:47:20,230 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 20:47:20,244 - INFO - Generated ticket ID: 25030902450
+2025-03-09 20:47:20,245 - INFO - Generated ticket ID: 988ca86e-55a3-4026-b0ec-6ae0d55845c7 - 25030902450
+2025-03-09 20:47:20,266 - INFO - IDKH: dcbb0890-9da7-4fa5-97a5-352c8f2fb751
+2025-03-09 20:47:20,304 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Ph\u00f9ng Ng\u1ecdc Long\", \"email\": \"100anhphong@gmail.com\", \"phoneNumber\": \"0898432704\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i-Huy\u1ec7n Ba V\...
+2025-03-09 20:47:20,305 - INFO - 127.0.0.1 - - [09/Mar/2025 20:47:20] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 21:32:39,329 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 21:32:39,329 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 21:32:39,330 - INFO - 127.0.0.1 - - [09/Mar/2025 21:32:39] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 21:32:39,335 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Phạm Huỳnh Anh Tiến', 'email': 'binbinnt1997@gmail.com', 'phoneNumber': '0375367055', 'address': 'Tỉnh Khánh Hòa-Thành phố Nha Trang-Chi nhánh Khánh Hòa', 'company': 'VN0012950', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng linh hoạt', 'description': '', 'mac': '798d98530c4403ccfb48955338c193ac8157e143addf44e416371a99c310d49d'}
+2025-03-09 21:32:39,346 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 21:32:39,354 - INFO - Generated ticket ID: 25030902479
+2025-03-09 21:32:39,355 - INFO - Generated ticket ID: 825bfb59-16f2-4720-944c-6e02fdef440d - 25030902479
+2025-03-09 21:32:39,377 - INFO - IDKH: 7f5e5ec0-0781-4553-81e1-40cdbd114bf9
+2025-03-09 21:32:39,387 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Ph\u1ea1m Hu\u1ef3nh Anh Ti\u1ebfn\", \"email\": \"binbinnt1997@gmail.com\", \"phoneNumber\": \"0375367055\", \"address\": \"T\u1ec9nh Kh\u00e1nh H\u00f2a-Th\u00e0nh ph...
+2025-03-09 21:32:39,387 - INFO - 127.0.0.1 - - [09/Mar/2025 21:32:39] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 21:39:12,703 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 21:39:12,703 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 21:39:12,704 - INFO - 127.0.0.1 - - [09/Mar/2025 21:39:12] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 21:39:12,709 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'LÊ THÀNH DUY', 'email': 'thanhduy220604@icloud.com', 'phoneNumber': '0964367521', 'address': 'Tỉnh Tây Ninh-Thành phố Tây Ninh-Chi nhánh Tây Ninh', 'company': 'VN0013600', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay tiêu dùng linh hoạt', 'description': 'cần vay', 'mac': '89e141082d5dcc2592384d03ef3db16e3d47126a9b4bae2b177229235fbc32a7'}
+2025-03-09 21:39:12,718 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 21:39:12,726 - INFO - Generated ticket ID: 25030902482
+2025-03-09 21:39:12,726 - INFO - Generated ticket ID: e5df0d3d-8aa8-4f16-8d5a-dea8b252c278 - 25030902482
+2025-03-09 21:39:12,749 - INFO - IDKH: 5dee39bb-fb21-49e3-9145-b8db4fa6e11e
+2025-03-09 21:39:12,761 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"L\u00ca TH\u00c0NH DUY\", \"email\": \"thanhduy220604@icloud.com\", \"phoneNumber\": \"0964367521\", \"address\": \"T\u1ec9nh T\u00e2y Ninh-Th\u00e0nh ph\u1ed1 T\u00e2y...
+2025-03-09 21:39:12,761 - INFO - 127.0.0.1 - - [09/Mar/2025 21:39:12] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 21:40:46,629 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 21:40:46,629 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 21:40:46,630 - INFO - 127.0.0.1 - - [09/Mar/2025 21:40:46] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 21:40:46,635 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Trần Thế Anh', 'email': 'theanh256@gmail.com', 'phoneNumber': '0977668679', 'address': 'Thành phố Hồ Chí Minh-Quận Tân Bình-Phòng Giao dịch Trường Chinh', 'company': 'VN0013352', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank JCB Standard', 'description': '', 'mac': '0e4802fff530f84d5b8567127c0e88029d04bd1301483dba6a8ccd7ed9e18b38'}
+2025-03-09 21:40:46,644 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-09 21:40:46,652 - INFO - Generated ticket ID: 25030902483
+2025-03-09 21:40:46,652 - INFO - Generated ticket ID: c54e5203-da5d-42b1-bd85-7ed0c4a66b26 - 25030902483
+2025-03-09 21:40:46,672 - INFO - IDKH: cf993c0f-2220-4835-9d3b-efc5afa62863
+2025-03-09 21:40:46,682 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Tr\u1ea7n Th\u1ebf Anh\", \"email\": \"theanh256@gmail.com\", \"phoneNumber\": \"0977668679\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh-Qu\u1eadn T\u00e...
+2025-03-09 21:40:46,683 - INFO - 127.0.0.1 - - [09/Mar/2025 21:40:46] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 22:14:59,876 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 22:14:59,876 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 22:14:59,877 - INFO - 127.0.0.1 - - [09/Mar/2025 22:14:59] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 22:14:59,882 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Ninh Thị Hà Trang', 'email': 'trangninh242@gmail.com', 'phoneNumber': '0378660179', 'address': 'Tỉnh Ninh Bình-Huyện Yên Khánh-Phòng Giao dịch Yên Khánh', 'company': 'VN0017253', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Tiết kiệm online', 'description': 'Hướng dẫn cách lập tk tiết kiệm online', 'mac': '204544dcd2e27c52cbed7322c2160d2307b9fcdc92f469f866874632e150c540'}
+2025-03-09 22:14:59,892 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-09 22:14:59,900 - INFO - Generated ticket ID: 25030902507
+2025-03-09 22:14:59,900 - INFO - Generated ticket ID: 9fa1c59f-09ee-47eb-9512-a0a3f54655f1 - 25030902507
+2025-03-09 22:14:59,920 - INFO - IDKH: bf2d5551-e0ad-4b4a-80bd-f5f2c8978e4b
+2025-03-09 22:14:59,931 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Ninh Th\u1ecb H\u00e0 Trang\", \"email\": \"trangninh242@gmail.com\", \"phoneNumber\": \"0378660179\", \"address\": \"T\u1ec9nh Ninh B\u00ecnh-Huy\u1ec7n Y\u00ean Kh\u0...
+2025-03-09 22:14:59,931 - INFO - 127.0.0.1 - - [09/Mar/2025 22:14:59] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 22:17:13,643 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 22:17:13,644 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 22:17:13,644 - INFO - 127.0.0.1 - - [09/Mar/2025 22:17:13] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 22:17:13,650 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'lê thị hoàng trang', 'email': 'trangkute19977@gmail.com', 'phoneNumber': '0329260356', 'address': 'Tỉnh Đồng Nai-Thành phố Biên Hòa-Phòng Giao dịch Đồng Khởi', 'company': 'VN0013551', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Dịch vụ Thẻ', 'l3': 'Thẻ tín dụng quốc tế LPBank JCB Standard', 'description': 'mình muốn lam thẻ tin dụng', 'mac': '289ebe46d4ee9da547d86bd12515cfe54da9135f9217aa271f05b37017aaeb76'}
+2025-03-09 22:17:13,659 - INFO - Data matching: Cá nhân,Tư vấn,Dịch vụ Thẻ,,None
+2025-03-09 22:17:13,668 - INFO - Generated ticket ID: 25030902508
+2025-03-09 22:17:13,668 - INFO - Generated ticket ID: 65811224-9c1e-4708-be3f-1d807392d2e0 - 25030902508
+2025-03-09 22:17:13,686 - INFO - IDKH: e08ed9f3-c906-490d-b518-37ec35d174db
+2025-03-09 22:17:13,697 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"l\u00ea th\u1ecb ho\u00e0ng trang\", \"email\": \"trangkute19977@gmail.com\", \"phoneNumber\": \"0329260356\", \"address\": \"T\u1ec9nh \u0110\u1ed3ng Nai-Th\u00e0nh ph...
+2025-03-09 22:17:13,698 - INFO - 127.0.0.1 - - [09/Mar/2025 22:17:13] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 22:35:21,954 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 22:35:21,954 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 22:35:21,955 - INFO - 127.0.0.1 - - [09/Mar/2025 22:35:21] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 22:35:21,960 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Nguyễn mạnh sơn', 'email': 'nguyenmanhson2706@gmail.com', 'phoneNumber': '0398658505', 'address': 'Tỉnh Nghệ An-Huyện Đô Lương-Phòng Giao dịch Đô Lương', 'company': 'VN0012402', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Huy động', 'l3': 'Tính năng Sinh lời Lộc Phát', 'description': 'Hshssjjs', 'mac': '80c0239b46707e8f1533a0a5d9a8422a78c419d9acf4f00bf5f9ab3ec019ff1e'}
+2025-03-09 22:35:21,970 - INFO - Data matching: Cá nhân,Tư vấn,Huy động,,None
+2025-03-09 22:35:21,979 - INFO - Generated ticket ID: 25030902509
+2025-03-09 22:35:21,979 - INFO - Generated ticket ID: afca5327-7277-4f49-a787-23d3781d4089 - 25030902509
+2025-03-09 22:35:22,000 - INFO - IDKH: 6bf2b308-6642-4f64-8a2d-db9f33db0038
+2025-03-09 22:35:22,012 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Nguy\u1ec5n m\u1ea1nh s\u01a1n\", \"email\": \"nguyenmanhson2706@gmail.com\", \"phoneNumber\": \"0398658505\", \"address\": \"T\u1ec9nh Ngh\u1ec7 An-Huy\u1ec7n \u0110\u...
+2025-03-09 22:35:22,013 - INFO - 127.0.0.1 - - [09/Mar/2025 22:35:22] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -
+2025-03-09 23:01:13,689 - INFO - Route: /api/v1/login 
+ Request body: {'password': 'o1cYdGSdQT', 'username': '3CXSYSTEM'}
+2025-03-09 23:01:13,690 - INFO - User 3CXSYSTEM logged in successfully
+2025-03-09 23:01:13,690 - INFO - 127.0.0.1 - - [09/Mar/2025 23:01:13] "POST /api/v1/login HTTP/1.0" 200 -
+2025-03-09 23:01:13,696 - INFO - Route: /api/v1/its/create-ticket-website 
+ Request body: {'name': 'Trịnh Bảo Ngọc', 'email': 'anh047001@gmail.com', 'phoneNumber': '0363437296', 'address': 'Thành phố Hà Nội-Huyện Đông Anh-Chi nhánh Đông Anh', 'company': 'VN0011022', 'group': 'Cá nhân', 'l1': 'Tư vấn', 'l2': 'Tín dụng', 'l3': 'Cho vay sinh viên đóng học phí', 'description': '', 'mac': '677be9df61f539b5eb18592080b96248e92627b53256444995d0d48de094cbc2'}
+2025-03-09 23:01:13,705 - INFO - Data matching: Cá nhân,Tư vấn,Tín dụng,,None
+2025-03-09 23:01:13,716 - INFO - Generated ticket ID: 25030902522
+2025-03-09 23:01:13,716 - INFO - Generated ticket ID: 6d1af6f6-8508-4a95-b7dc-eab72290adef - 25030902522
+2025-03-09 23:01:13,736 - INFO - IDKH: 4acc1f9e-b6c2-41a6-ba5c-51c45d8348eb
+2025-03-09 23:01:13,773 - INFO - Message sent to RabbitMQ: {"Host": "", "Path": "/api/v1/its/create-ticket-website", "RequestBody": "{\"name\": \"Tr\u1ecbnh B\u1ea3o Ng\u1ecdc\", \"email\": \"anh047001@gmail.com\", \"phoneNumber\": \"0363437296\", \"address\": \"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i-Huy\u1ec7n \u0...
+2025-03-09 23:01:13,773 - INFO - 127.0.0.1 - - [09/Mar/2025 23:01:13] "POST /api/v1/its/create-ticket-website HTTP/1.0" 200 -

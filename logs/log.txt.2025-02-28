@@ -1,0 +1,30 @@
+2025-02-28 21:55:57,388 - INFO - Application started
+2025-02-28 21:55:57,388 - INFO - LOG_CURL: True
+2025-02-28 21:55:57,404 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8082
+ * Running on http://10.163.69.49:8082
+2025-02-28 21:55:57,405 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-28 21:56:07,845 - INFO - Application started
+2025-02-28 21:56:07,845 - INFO - LOG_CURL: True
+2025-02-28 21:56:07,868 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8082
+ * Running on http://10.163.69.49:8082
+2025-02-28 21:56:07,868 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-28 21:57:25,664 - INFO - Application started
+2025-02-28 21:57:25,664 - INFO - LOG_CURL: True
+2025-02-28 21:57:25,677 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8082
+ * Running on http://10.163.69.49:8082
+2025-02-28 21:57:25,678 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-28 21:57:25,678 - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2025-02-28 21:59:39,949 - INFO - Application started
+2025-02-28 21:59:39,949 - INFO - LOG_CURL: True
+2025-02-28 21:59:39,963 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8082
+ * Running on http://10.163.69.49:8082
+2025-02-28 21:59:39,963 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-28 21:59:39,970 - INFO -  [*] Waiting for messages. To exit press CTRL+C

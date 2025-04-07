@@ -1,0 +1,1240 @@
+import hashlib
+import hmac
+import os
+import logging
+import uuid
+from datetime import datetime
+import httpx
+import requests
+import time
+import pandas as pd
+from flask import Flask, request, jsonify
+import logging.handlers
+from filelock import FileLock, Timeout
+import importlib.util
+import base64
+
+# Đường dẫn đến py_common.py
+file_path = "/home/Python/py_common.py"
+
+# Tạo spec từ đường dẫn
+spec = importlib.util.spec_from_file_location("py_common", file_path)
+py_common = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(py_common)
+
+# Log file
+base_dir = "/home/Python/OutBoxTrigger/ITS"
+log_dir = os.path.join(base_dir, "Logs")
+
+# Set up logging
+if not os.path.exists(log_dir):
+    os.makedirs(log_dir)
+
+log_filename = os.path.join(log_dir, "log.txt")
+handler = logging.handlers.TimedRotatingFileHandler(
+    log_filename, when="midnight", interval=1
+)
+handler.suffix = "%Y%m%d"
+handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+logging.getLogger().addHandler(handler)
+logging.getLogger().setLevel(logging.INFO)
+
+# info api ITS
+LOCK_FILE = "api-its.lockfile"
+LOCK_TIMEOUT = 600  # Timeout 10 minutes
+SLEEP_INTERVAL = 10  # Sleep interval between each check in seconds
+endpoint = "http://10.36.126.97:8000/gw/internal/its-service/api/v2/request"
+token_endpoint = "http://api-gw-dev.lpbank.com.vn/gw/internal/esb-auth-service"
+token_username = "CRM"
+token_password = "oV6/taBNIwtOPeAbBxZAUQVdmT6AYJyyk2XV9Fe5Dwy92wQnizIPs/nCk8Hfi41y4hrlgdxBLfkVw78SEcneLwyjaBy+u4KOmSNvDeDNAFujNPO6+5PzxAyiPKaCNfn5wmEV23s7Px74h6AzONasHo8PHALOngDCoWsCTF9RPkM="
+AUTH_USERNAME = "3CXSYSTEM"
+AUTH_PASSWORD = "o1cYdGSdQT"
+
+# info api manual
+secret_key = "52TMEesWl5jiot2DWW0V6yY+SR2WFf9KyO1CEBHW8oY="
+source_env = "miniCRM"
+
+proxies = {"http": None, "https": None}
+
+app = Flask(__name__)
+
+
+# get token for ITS
+def get_jwt_token():
+    headers = {
+        "Content-Type": "application/json",
+        "Cookie": "BIGipServerdr_api_gw_dev_8000_pool=1635656714.16415.0000",
+    }
+    response = requests.post(
+        token_endpoint,
+        json={"username": token_username, "password": token_password},
+        headers=headers,
+        proxies=proxies,
+    )
+
+    if response.status_code == 200:
+        return response.json().get("token")
+    else:
+        logging.error(
+            f"Failed to get JWT token: {response.status_code} {response.text}"
+        )
+        return None
+
+
+def fetch_tickets_changes():
+    try:
+        conn = py_common.connect_to_database(read=True)
+        if conn is None:
+            return pd.DataFrame()
+        query = """
+        SELECT idtmp, id, c_TieuDe, c_content, c_Phone, c_loaiDichVu, c_dichVu, c_phanHeChucNang, '1501' as c_t_template
+        FROM outbox_sp_tickets_tmp WHERE (status = 'Inserted' or status = 'Inserted-Done') and c_donViXuLy = 'ITS'
+        """
+        assignments = pd.read_sql(query, conn)
+        # logging.info(f"Columns in DataFrame: {list(assignments.columns)}")
+        conn.close()
+        return assignments
+    except Exception as e:
+        logging.error(f"Error fetching assignments: {e}")
+        return pd.DataFrame()
+
+
+def process_tickets_changes(assignments):
+    try:
+        token = get_jwt_token()
+        if token is None:
+            logging.error("No token available. Exiting process_tickets_changes.")
+            return
+
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {token}",
+        }
+
+        for _, assignment in assignments.iterrows():
+            idtmp = assignment["idtmp"]
+            id = assignment["id"]
+            subject = assignment["c_TieuDe"]
+            description = assignment["c_content"]
+            phone_number = assignment["c_Phone"]
+            cat_id = assignment["c_loaiDichVu"]
+            sub_cat_id = assignment["c_dichVu"]
+            item_id = assignment["c_phanHeChucNang"]
+            template_id = assignment["c_t_template"]
+
+            if not (cat_id and sub_cat_id and item_id and template_id):
+                logging.error(
+                    f"Missing data one of many cat_id, sub_cat_id, item_id, template_id for {idtmp}, skipping..."
+                )
+
+            # Prepare data for API
+            api_data = {
+                "subject": subject,
+                "description": description,
+                "phone_number": phone_number,
+                "cat_id": cat_id,
+                "sub_cat_id": sub_cat_id,
+                "template_id": template_id,
+                "item_id": item_id,
+                "attachments": [],
+                "complain_id": "",
+            }
+
+            # Call API
+            try:
+                response = requests.post(
+                    endpoint, json=api_data, headers=headers, proxies=proxies
+                )
+                response_data = response.json()
+                if (
+                    response.status_code == 200
+                    and response_data.get("res_code", {}).get("error_code") == "00"
+                ):
+                    request_id = response_data["data"]["request"]["id"]
+                    logging.info(
+                        f"API call successful for subject: {subject}, request_id: {request_id}"
+                    )
+
+                    # Update request_id in DB
+                    update_success = update_request_id(id, request_id)
+                    if not update_success:
+                        logging.error(
+                            f"Failed to update request_id for subject: {subject}"
+                        )
+                    else:
+                        update_ticket_status(idtmp)
+                else:
+                    logging.error(
+                        f"API call failed for subject: {subject}, Response: {response_data}"
+                    )
+            except Exception as api_call_error:
+                logging.error(
+                    f"Error calling API for subject: {subject}, Error: {api_call_error}"
+                )
+    except Exception as e:
+        logging.error(f"Error processing assignments: {e}")
+
+
+def update_request_id(ticket_id, request_id):
+    try:
+        conn = py_common.connect_to_database(read=False)
+        if conn is None:
+            logging.error("Error connecting to MySQL")
+            return False
+
+        cursor = conn.cursor()
+        update_query = """
+        UPDATE jwdb.app_fd_sp_tickets_tmp
+        SET c_refNo = %s
+        WHERE id = %s
+        """
+        cursor.execute(update_query, (request_id, ticket_id))
+        conn.commit()
+        cursor.close()
+        conn.close()
+        return True
+    except Exception as e:
+        logging.error(f"Error updating request_id: {e}")
+        return False
+
+
+def update_ticket_status(ticket_id, status="Completed"):
+    try:
+        conn = py_common.connect_to_database(read=False)
+        if conn is None:
+            logging.error("Error connecting to MySQL")
+            return False
+
+        cursor = conn.cursor()
+        update_query = """
+        UPDATE outbox_sp_tickets_tmp
+        SET status = %s
+        WHERE idtmp = %s
+        """
+        cursor.execute(update_query, (status, ticket_id))
+        conn.commit()
+        cursor.close()
+        conn.close()
+        return True
+    except Exception as e:
+        logging.error(f"Error updating status: {e}")
+        return False
+
+
+def handle_update_its(itsId, data):
+    try:
+        conn_select = py_common.connect_to_database(read=True)
+        select_query = (
+            "SELECT COUNT(*) FROM jwdb.app_fd_sp_tickets_tmp WHERE c_refNo = %s limit 1"
+        )
+        cursor_select = conn_select.cursor()
+        cursor_select.execute(select_query, (itsId,))
+        if cursor_select.fetchone()[0] == 0:
+            logging.info(f"No record found with c_refNo = {itsId}. Update aborted.")
+            return False
+
+        conn = py_common.connect_to_database(read=False)
+        if conn is None:
+            logging.error("Error connect Mysql")
+            return False
+
+        update_query = f"""
+        UPDATE jwdb.app_fd_sp_tickets_tmp
+        SET c_content = %s,
+            c_requester = %s,
+            dateModified = %s,
+            c_fileUpload = %s
+        WHERE c_refNo = %s
+        """
+        cursor_update = conn.cursor()
+        cursor_update.execute("SET SQL_SAFE_UPDATES = 0;")
+        cursor_update.execute(
+            update_query,
+            (
+                data.get("itsContent"),
+                data.get("pic"),
+                datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                ",".join(data.get("attachFiles", [])),
+                itsId,
+            ),
+        )
+        cursor_update.execute("SET SQL_SAFE_UPDATES = 1;")
+        conn.commit()
+        conn.close()
+        cursor_update.close()
+        conn_select.close()
+        cursor_select.close()
+        return True
+    except Exception as e:
+        logging.error(f"Error handle_update_its: {e}")
+        return False
+
+
+def check_auth(authorization_header):
+    try:
+        encoded_username_password = authorization_header.split("Basic ")[1].strip()
+        decoded_username_password = base64.b64decode(encoded_username_password).decode(
+            "utf-8"
+        )
+        username, password = decoded_username_password.split(":")
+        if username == AUTH_USERNAME and password == AUTH_PASSWORD:
+            return True
+        else:
+            return False
+    except Exception as e:
+        return False
+
+
+# # Method chuyển string sang base64
+# def string_to_base64(string):
+#     return base64.b64encode(string.encode('utf-8')).decode('utf-8')
+#
+# # Method chuyển base64 sang hmac256
+# def base64_to_hmac256(base64_string, secret_key):
+#     decoded_base64 = base64.b64decode(base64_string)
+#     hmac256 = hmac.new(secret_key.encode('utf-8'), decoded_base64, hashlib.sha256).digest()
+#     return base64.b64encode(hmac256).decode('utf-8')
+
+
+# get token
+async def get_token():
+    url = "https://mkag-uat.lpbank.com.vn/gw/public/1.0/auth/login"
+    headers = {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "X-Reference-Id": "53a1312217191221214444",
+        "X-Source-Env": "LPBSTrade",
+    }
+    data = {
+        "username": "lv24",
+        "password": "3d860e62b871b879f70bd69e6d674966ab82f10808e3b7e32044ed5e6c17c2c9",
+        "customerNo": "1118653084445436356323435",
+        "mac": "6dcbb3792d50606426163527fad0b68a4eb6b6afe909145258e0839fe5ae5b00",
+    }
+
+    async with httpx.AsyncClient() as client:
+        response = await client.post(url, headers=headers, json=data)
+
+        if response.status_code == 200:
+            logging.info(f"Token: {response.json()}")
+            return response.json().get("token")
+        else:
+            logging.error(
+                f"Failed to retrieve token. Status code: {response.status_code}"
+            )
+            return None
+
+
+# Hàm generate MAC sau khi base64 encode chuỗi data
+def generate_mac(secretKey, *args):
+    # Concatenate all the arguments with a "|" separator
+    data = "|".join([str(arg) for arg in args if arg not in [None, ""]])
+
+    # Encode the concatenated string using Base64
+    base64_data = base64.b64encode(data.encode("utf-8")).decode("utf-8")
+
+    # Encode the data and the secret key to bytes
+    byte_key = bytes(secretKey, "utf-8")
+    message = bytes(base64_data, "utf-8")
+
+    # Generate HMACSHA256 hash
+    mac = hmac.new(byte_key, message, hashlib.sha256).hexdigest()
+
+    return mac
+
+
+# Hàm generate UUID4 cho reference_id
+def generate_reference_id():
+    return str(uuid.uuid4())
+
+
+def check_error_code(status_code, response_data):
+    # Mapping status code to the error messages
+    if status_code == "00":
+        return response_data, 200  # Success
+    elif status_code == "13":
+        return {"error": "Token không hợp lệ"}, 401  # Invalid token
+    elif status_code == "21":
+        return {"error": "HMAC không hợp lệ"}, 401  # Invalid HMAC
+    elif status_code == "20":
+        return {"error": "Request sai định dạng"}, 400  # Invalid request format
+    elif status_code == "90":
+        return {"error": "Giao dịch đang xử lý"}, 202  # Transaction in progress
+    elif status_code == "99":
+        return {"error": "Lỗi hệ thống"}, 500  # System error
+    else:
+        return {"error": "Unknown error occurred"}, 500
+
+
+@app.route("/lv24h-callcenter-web/api/its/<int:itsId>", methods=["PUT"])
+def update_its(itsId):
+    authorization_header = request.headers.get("Authorization")
+    if not authorization_header or check_auth(authorization_header) == False:
+        return jsonify({"error": "Unauthorized"}), 401
+    data = request.json
+    if itsId and data:
+        success = handle_update_its(itsId, data)
+        if success:
+            return jsonify({"message": "Success"}), 200
+        else:
+            return jsonify({"error": "Failed to update record"}), 500
+    else:
+        return jsonify({"error": "Invalid itsId or data"}), 400
+
+
+@app.route("/health", methods=["GET"])
+def health_check():
+    return jsonify({"status": "UP"}), 200
+
+
+# Call api get thong tin khach hang theo so dien thoai
+@app.route("/api/v1/customer-info", methods=["POST"])
+async def get_customer_info():
+    data = request.json
+    sdt = data.get("mobileNumber")
+    if sdt:
+        try:
+            # Gọi API bên LPB
+            reference_id = generate_reference_id()
+            token = await get_token()
+            if token is None:
+                logging.error("Token không hợp lệ")
+                return jsonify({"error": "Invalid token"}), 500
+
+            url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-customers-by-mobile-number"
+            headers = {
+                "X-Reference-Id": reference_id,
+                "X-Source-Env": source_env,
+                "Content-Type": "application/json; charset=utf-8",
+                "Authorization": f"Bearer {token}",
+            }
+            data = {
+                "mobileNumber": sdt,
+                "mac": generate_mac(
+                    secret_key,
+                    source_env,  # source_env
+                    reference_id,  # reference_id
+                    sdt,
+                ),
+            }
+
+            # Gọi API bất đồng bộ
+            response = requests.post(url, headers=headers, json=data, proxies=proxies)
+            if response.status_code == 200:
+                response_data = response.json()
+                status_code = response_data.get("statusCode", "")
+                # Gọi hàm kiểm tra mã lỗi
+                result, status = check_error_code(status_code, response_data)
+                if status != 200:
+                    logging.error(
+                        f"Failed to get customer info: {jsonify(result)} - {sdt}"
+                    )
+                return jsonify(result), status
+            else:
+                logging.error(
+                    f"Failed to get customer info: {response.status_code}, Response: {response.text}"
+                )
+                return (
+                    jsonify(
+                        {
+                            "error": "Failed to get customer info",
+                            "message": response.text,
+                        }
+                    ),
+                    500,
+                )
+        except Exception as e:
+            logging.error(f"Exception occurred while fetching customer info: {str(e)}")
+            return (
+                jsonify({"error": "An error occurred while processing your request"}),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid phone number"}), 400
+
+
+# Call api search thong tin khach hang
+@app.route("/api/v1/customer-search", methods=["POST"])
+async def search_customer():
+    data = request.json
+    mobileNumber = data.get("mobileNumber")
+    vnFullName = data.get("vnFullName")
+    cif = data.get("cif")
+    accountId = data.get("accountId")
+    nationalId = data.get("nationalId")
+    email = data.get("email")
+
+    if mobileNumber or cif or vnFullName or accountId or nationalId or email:
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        # call api ben LPB
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-customers"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "mobileNumber": mobileNumber,
+            "vnFullName": vnFullName,
+            "cif": cif,
+            "accountId": accountId,
+            "nationalId": nationalId,
+            "email": email,
+            "mac": generate_mac(
+                secret_key,
+                source_env,  # source_env
+                reference_id,  # reference_id
+                mobileNumber,
+                vnFullName,
+                cif,
+                accountId,
+                nationalId,
+                email,
+            ),
+        }
+
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(
+                    f"Failed to search customer info: {jsonify(result)} - {cif} - {vnFullName} - {accountId} - {nationalId} - {email}"
+                )
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to search customer info: {response.text}")
+            return (
+                jsonify(
+                    {
+                        "error": "Failed to search customer info",
+                        "message": response.text,
+                    }
+                ),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid search criteria"}), 400
+
+
+# Call api hien thi trong tab "Tai khoan thanh toan"
+@app.route("/api/v1/account-info", methods=["POST"])
+async def get_account_info():
+    data = request.json
+    cif = data.get("cif")
+    if cif:
+        # call api ben LPB
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-accounts-by-cif"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "cif": cif,
+            "mac": generate_mac(
+                secret_key, source_env, reference_id, cif  # source_env  # reference_id
+            ),
+        }
+        logging.info(f"Data: {data}")
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(f"Failed to get account info: {jsonify(result)} - {cif}")
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to get account info: {response.text}")
+            return (
+                jsonify(
+                    {"error": "Failed to get account info", "message": response.text}
+                ),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid cif number"}), 400
+
+
+# Call api hien thi trong tab "Tiết kiệm"
+@app.route("/api/v1/saving-info", methods=["POST"])
+async def get_saving_info():
+    data = request.json
+    cif = data.get("cif")
+    if cif:
+        # call api ben LPB
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-savings-accounts-by-cif"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "cif": cif,
+            "mac": generate_mac(
+                secret_key, source_env, reference_id, cif  # source_env  # reference_id
+            ),
+        }
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(f"Failed to get saving info: {jsonify(result)} - {cif}")
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to get saving info: {response.text}")
+            return (
+                jsonify(
+                    {"error": "Failed to get saving info", "message": response.text}
+                ),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid cif number"}), 400
+
+
+# Call api hien thi trong tab "Vay"
+@app.route("/api/v1/loan-info", methods=["POST"])
+async def get_loan_info():
+    data = request.json
+    cif = data.get("cif")
+    if cif:
+        # call api ben LPB
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-loan-info-by-cif"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "cif": cif,
+            "mac": generate_mac(
+                secret_key, source_env, reference_id, cif  # source_env  # reference_id
+            ),
+        }
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(f"Failed to get loan info: {jsonify(result)} - {cif}")
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to get loan info: {response.text}")
+            return (
+                jsonify({"error": "Failed to get loan info", "message": response.text}),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid cif number"}), 400
+
+
+# Call api hien thi trong tab "LPBANK - Thông tin chung"
+@app.route("/api/v1/lpb-info", methods=["POST"])
+async def get_lpb_info():
+    data = request.json
+    cif = data.get("cif")
+    if cif:
+        # call api ben LPB
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-lpbank-app-info-by-cif"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "cif": cif,
+            "mac": generate_mac(
+                secret_key, source_env, reference_id, cif  # source_env  # reference_id
+            ),
+        }
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(f"Failed to get lpb info: {jsonify(result)} - {cif}")
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to get lpb info: {response.text}")
+            return (
+                jsonify({"error": "Failed to get lpb info", "message": response.text}),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid cif number"}), 400
+
+
+# Call api hien thi trong tab "LPBANK - Uỷ thác thanh toán"
+@app.route("/api/v1/lpb-payment-info", methods=["POST"])
+async def get_lpb_payment_info():
+    data = request.json
+    cif = data.get("cif")
+    if cif:
+        # call api ben LPB
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-lpbank-app-entrusted-payment-by-cif"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "cif": cif,
+            "mac": generate_mac(
+                secret_key, source_env, reference_id, cif  # source_env  # reference_id
+            ),
+        }
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(
+                    f"Failed to get lpb payment info: {jsonify(result)} - {cif}"
+                )
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to get lpb payment info: {response.text}")
+            return (
+                jsonify(
+                    {
+                        "error": "Failed to get lpb payment info",
+                        "message": response.text,
+                    }
+                ),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid cif number"}), 400
+
+
+# Call api hien thi trong tab "LPBANK - Lịch sử đăng nhập"
+@app.route("/api/v1/lpb-history-login", methods=["POST"])
+async def get_lpb_history_login():
+    data = request.json
+    cif = data.get("cif")
+    if cif:
+        # call api ben LPB
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-lpbank-app-login-history-by-cif"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "cif": cif,
+            "mac": generate_mac(
+                secret_key, source_env, reference_id, cif  # source_env  # reference_id
+            ),
+        }
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(
+                    f"Failed to get lpb history login info: {jsonify(result)} - {cif}"
+                )
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to get lpb history login info: {response.text}")
+            return (
+                jsonify(
+                    {
+                        "error": "Failed to get lpb history login info",
+                        "message": response.text,
+                    }
+                ),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid cif number"}), 400
+
+
+# Call api hien thi trong tab "LPBANK - Lịch sử tac dong"
+@app.route("/api/v1/lpb-history-impact", methods=["POST"])
+async def get_lpb_history_impact():
+    data = request.json
+    cif = data.get("cif")
+    if cif:
+        # call api ben LPB
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-lpbank-app-action-trace-by-cif"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "cif": cif,
+            "mac": generate_mac(
+                secret_key, source_env, reference_id, cif  # source_env  # reference_id
+            ),
+        }
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(
+                    f"Failed to get lpb history impact info: {jsonify(result)} - {cif}"
+                )
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to get lpb history impact info: {response.text}")
+            return (
+                jsonify(
+                    {
+                        "error": "Failed to get lpb history impact info",
+                        "message": response.text,
+                    }
+                ),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid cif number"}), 400
+
+
+# Call api hien thi trong tab "LPBANK - Lịch sử giao dich"
+@app.route("/api/v1/lpb-history-trans", methods=["POST"])
+async def get_lpb_history_trans():
+    data = request.json
+    cif = data.get("cif")
+    if cif:
+        # call api ben LPB
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-lpbank-app-trans-hist-by-cif"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "cif": cif,
+            "mac": generate_mac(
+                secret_key, source_env, reference_id, cif  # source_env  # reference_id
+            ),
+        }
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(
+                    f"Failed to get lpb history trans info: {jsonify(result)} - {cif}"
+                )
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to get lpb history trans info: {response.text}")
+            return (
+                jsonify(
+                    {
+                        "error": "Failed to get lpb history trans info",
+                        "message": response.text,
+                    }
+                ),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid cif number"}), 400
+
+
+# Call API hiển thị trong tab "VAY" -> cột "Tính lãi khoản vay"
+@app.route("/api/v1/lpb-get-loan-interest-info", methods=["POST"])
+async def get_lpb_loan_interest():
+    data = request.json
+    cif = data.get("cif")
+    if cif:
+        # call api ben LPB
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-loan-interest-info-by-cif"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "cif": cif,
+            "mac": generate_mac(
+                secret_key, source_env, reference_id, cif  # source_env  # reference_id
+            ),
+        }
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(
+                    f"Failed to get lpb get loan interest info: {jsonify(result)} - {cif}"
+                )
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to get lpb get loan interest info: {response.text}")
+            return (
+                jsonify(
+                    {
+                        "error": "Failed to get lpb get loan interest info",
+                        "message": response.text,
+                    }
+                ),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid cif number"}), 400
+
+
+# Call API hiển thị trong tab "VAY" (vay STK online)
+@app.route("/api/v1/lpb-get-loan-online-info", methods=["POST"])
+async def get_lpb_loan_online():
+    data = request.json
+    cif = data.get("cif")
+    if cif:
+        # call api ben LPB
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-loan-online-info-by-cif"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "cif": cif,
+            "mac": generate_mac(
+                secret_key, source_env, reference_id, cif  # source_env  # reference_id
+            ),
+        }
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(
+                    f"Failed to get lpb get loan online info: {jsonify(result)} - {cif}"
+                )
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to get lpb get loan online info: {response.text}")
+            return (
+                jsonify(
+                    {
+                        "error": "Failed to get lpb get loan online info",
+                        "message": response.text,
+                    }
+                ),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid cif number"}), 400
+
+
+# Call api hien thi trong tab "LPBANK - EKYC"
+@app.route("/api/v1/lpb-ekyc-info", methods=["POST"])
+async def get_lpb_ekyc_info():
+    data = request.json
+    cif = data.get("cif")
+    if cif:
+        # call api ben LPB
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-lpbank-app-ekyc-by-cif"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "cif": cif,
+            "mac": generate_mac(
+                secret_key, source_env, reference_id, cif  # source_env  # reference_id
+            ),
+        }
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(f"Failed to get lpb ekyc info: {jsonify(result)} - {cif}")
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to get lpb ekyc info: {response.text}")
+            return (
+                jsonify(
+                    {"error": "Failed to get lpb ekyc info", "message": response.text}
+                ),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid cif number"}), 400
+
+
+# Call api hien thi trong tab "VAY" -> cột "Quá hạn"
+@app.route("/api/v1/lpb-payment-due-info", methods=["POST"])
+async def get_lpb_payment_due_info():
+    data = request.json
+    cif = data.get("cif")
+    if cif:
+        # call api ben LPB
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-payment-due-info-by-cif"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "cif": cif,
+            "mac": generate_mac(
+                secret_key, source_env, reference_id, cif  # source_env  # reference_id
+            ),
+        }
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(
+                    f"Failed to get lpb payment due info: {jsonify(result)} - {cif}"
+                )
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to get lpb payment due info: {response.text}")
+            return (
+                jsonify(
+                    {
+                        "error": "Failed to get lpb payment due info",
+                        "message": response.text,
+                    }
+                ),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid cif number"}), 400
+
+
+# Call api hien thi trong tab "VAY" -> cột "Lịch trả nợ"
+@app.route("/api/v1/lpb-schedule-define-info", methods=["POST"])
+async def get_lpb_schedule_define_info():
+    data = request.json
+    cif = data.get("cif")
+    if cif:
+        # call api ben LPB
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-schedule-define-info-by-cif"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "cif": cif,
+            "mac": generate_mac(
+                secret_key, source_env, reference_id, cif  # source_env  # reference_id
+            ),
+        }
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(
+                    f"Failed to get lpb schedule define info: {jsonify(result)} - {cif}"
+                )
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to get lpb schedule define info: {response.text}")
+            return (
+                jsonify(
+                    {
+                        "error": "Failed to get lpb schedule define info",
+                        "message": response.text,
+                    }
+                ),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid cif number"}), 400
+
+
+# Call api hien thi trong tab "Tiết kiệm" -> cột "Thông tin tất toán"
+@app.route("/api/v1/lpb-final-settlement-info", methods=["POST"])
+async def get_lpb_final_settlement_info():
+    data = request.json
+    cif = data.get("cif")
+    if cif:
+        # call api ben LPB
+        reference_id = generate_reference_id()
+        token = await get_token()
+        if token is None:
+            logging.error("Token không hợp lệ")
+
+        url = "http://api-gw-uat.lpbank.com.vn/gw/internal/1.0/mini-crm/api/v1/get-final-settlement-info-by-cif"
+        headers = {
+            "X-Reference-Id": reference_id,
+            "X-Source-Env": source_env,
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {token}",
+        }
+        data = {
+            "cif": cif,
+            "mac": generate_mac(
+                secret_key, source_env, reference_id, cif  # source_env  # reference_id
+            ),
+        }
+        response = requests.post(url, json=data, headers=headers, proxies=proxies)
+        if response.status_code == 200:
+            response_data = response.json()
+            status_code = response_data.get("statusCode", "")
+            # Call the error checking function
+            result, status = check_error_code(status_code, response_data)
+            if status != 200:
+                logging.error(
+                    f"Failed to get lpb final settlement info: {jsonify(result)} - {cif}"
+                )
+            return jsonify(result), status
+        else:
+            logging.error(f"Failed to get lpb final settlement info: {response.text}")
+            return (
+                jsonify(
+                    {
+                        "error": "Failed to get lpb final settlement info",
+                        "message": response.text,
+                    }
+                ),
+                500,
+            )
+    else:
+        return jsonify({"error": "Invalid cif number"}), 400
+
+
+def main():
+    while True:
+        # current_time = time.time()
+        try:
+            with FileLock(LOCK_FILE, timeout=LOCK_TIMEOUT):
+                # logging.info("Start Ticket Api ITS...")
+
+                try:
+                    assignments = fetch_tickets_changes()
+                    if not assignments.empty:
+                        process_tickets_changes(assignments)
+                    else:
+                        logging.info("No assignments to process.")
+                    time.sleep(SLEEP_INTERVAL)
+                except Exception as e:
+                    logging.error(f"Error processing assignments: {e}")
+
+        except Timeout:
+            logging.error("Lock already acquired by another process. Exiting.")
+        except Exception as e:
+            logging.error(f"Error: {e}")
+
+
+if __name__ == "__main__":
+    from threading import Thread
+
+    Thread(target=main).start()
+    app.run(host="0.0.0.0", port=8082)

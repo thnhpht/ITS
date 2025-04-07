@@ -1,0 +1,11 @@
+curl --location --request POST 'https://mkag-uat.lpbank.com.vn/gw/public/1.0/auth/login' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--header 'X-Reference-Id: 53a1312217191221214444' \
+--header 'X-Source-Env: LPBSTrade' \
+--data-raw '{
+    "username": "lv24",
+    "password": "3d860e62b871b879f70bd69e6d674966ab82f10808e3b7e32044ed5e6c17c2c9",
+    "customerNo": "1118653084445436356323435",
+    "mac": "6dcbb3792d50606426163527fad0b68a4eb6b6afe909145258e0839fe5ae5b00"
+}'

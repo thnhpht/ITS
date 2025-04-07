@@ -1,0 +1,1165 @@
+2025-03-05 00:15:03,269 - ERROR - Unexpected connection close detected: ConnectionClosedByBroker: (320) "CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'"
+2025-03-05 00:15:03,276 - ERROR - Connection failed (attempt 1/5): (320, "CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'")
+2025-03-05 00:15:08,296 - ERROR - Socket failed to connect: <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.163.69.49', 40402)>; error=111 (Connection refused)
+2025-03-05 00:15:08,296 - ERROR - TCP Connection attempt failed: ConnectionRefusedError(111, 'Connection refused'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.163.69.49', 5672))
+2025-03-05 00:15:08,296 - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused')
+2025-03-05 00:15:08,296 - ERROR - AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None.
+2025-03-05 00:15:08,296 - ERROR - AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None
+2025-03-05 00:15:08,296 - ERROR - Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None
+2025-03-05 00:15:08,296 - ERROR - Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2025-03-05 00:15:08,297 - ERROR - Connection failed (attempt 2/5): 
+2025-03-05 00:15:13,304 - ERROR - Socket failed to connect: <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.163.69.49', 40598)>; error=111 (Connection refused)
+2025-03-05 00:15:13,304 - ERROR - TCP Connection attempt failed: ConnectionRefusedError(111, 'Connection refused'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.163.69.49', 5672))
+2025-03-05 00:15:13,304 - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused')
+2025-03-05 00:15:13,304 - ERROR - AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None.
+2025-03-05 00:15:13,304 - ERROR - AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None
+2025-03-05 00:15:13,304 - ERROR - Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None
+2025-03-05 00:15:13,304 - ERROR - Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2025-03-05 00:15:13,304 - ERROR - Connection failed (attempt 3/5): 
+2025-03-05 00:15:18,310 - ERROR - Socket failed to connect: <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.163.69.49', 49576)>; error=111 (Connection refused)
+2025-03-05 00:15:18,311 - ERROR - TCP Connection attempt failed: ConnectionRefusedError(111, 'Connection refused'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.163.69.49', 5672))
+2025-03-05 00:15:18,311 - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused')
+2025-03-05 00:15:18,311 - ERROR - AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None.
+2025-03-05 00:15:18,311 - ERROR - AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None
+2025-03-05 00:15:18,311 - ERROR - Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None
+2025-03-05 00:15:18,311 - ERROR - Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2025-03-05 00:15:18,311 - ERROR - Connection failed (attempt 4/5): 
+2025-03-05 00:15:23,315 - ERROR - Socket failed to connect: <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.163.69.49', 49852)>; error=111 (Connection refused)
+2025-03-05 00:15:23,316 - ERROR - TCP Connection attempt failed: ConnectionRefusedError(111, 'Connection refused'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.163.69.49', 5672))
+2025-03-05 00:15:23,316 - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused')
+2025-03-05 00:15:23,316 - ERROR - AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None.
+2025-03-05 00:15:23,316 - ERROR - AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None
+2025-03-05 00:15:23,316 - ERROR - Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None
+2025-03-05 00:15:23,316 - ERROR - Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2025-03-05 00:15:23,316 - ERROR - Connection failed (attempt 5/5): 
+2025-03-05 00:15:28,321 - CRITICAL - Max retries reached. Exiting consumer.
+2025-03-05 08:06:01,572 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 08:06:01,573 - INFO - 127.0.0.1 - - [05/Mar/2025 08:06:01] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 08:06:01,580 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500257'}
+2025-03-05 08:06:01,599 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000580
+2025-03-05 08:06:01,609 - INFO - don_vi_gan: VN0011001
+2025-03-05 08:06:01,609 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 08:06:01,609 - INFO - don_vi_gan CN
+2025-03-05 08:06:01,611 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 08:06:01,611 - INFO - CN VN0011001
+2025-03-05 08:06:01,613 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 08:06:01,613 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 08:06:01,613 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 08:06:01,623 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 08:06:01,623 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 08:06:01,626 - INFO - 127.0.0.1 - - [05/Mar/2025 08:06:01] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 08:06:01,626 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500257'}
+2025-03-05 08:06:01,818 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000580
+2025-03-05 08:06:01,967 - INFO - don_vi_gan: VN0011001
+2025-03-05 08:06:01,967 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 08:06:01,967 - INFO - don_vi_gan CN
+2025-03-05 08:06:01,993 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 08:06:01,993 - INFO - CN VN0011001
+2025-03-05 08:06:02,024 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 08:06:02,024 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 08:06:02,024 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 08:06:02,071 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 08:06:02,071 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 08:06:02,095 - INFO - 127.0.0.1 - - [05/Mar/2025 08:06:02] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 09:20:43,396 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 09:20:43,397 - INFO - 127.0.0.1 - - [05/Mar/2025 09:20:43] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 09:20:43,405 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500257'}
+2025-03-05 09:20:43,424 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000580
+2025-03-05 09:20:43,433 - INFO - don_vi_gan: VN0011001
+2025-03-05 09:20:43,433 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 09:20:43,433 - INFO - don_vi_gan CN
+2025-03-05 09:20:43,435 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 09:20:43,435 - INFO - CN VN0011001
+2025-03-05 09:20:43,437 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 09:20:43,437 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 09:20:43,437 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 09:20:43,439 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500257'}
+2025-03-05 09:20:43,447 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 09:20:43,447 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 09:20:43,450 - INFO - 127.0.0.1 - - [05/Mar/2025 09:20:43] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 09:20:43,458 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000580
+2025-03-05 09:20:43,468 - INFO - don_vi_gan: VN0011001
+2025-03-05 09:20:43,468 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 09:20:43,468 - INFO - don_vi_gan CN
+2025-03-05 09:20:43,471 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 09:20:43,471 - INFO - CN VN0011001
+2025-03-05 09:20:43,473 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 09:20:43,473 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 09:20:43,473 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 09:20:43,494 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 09:20:43,494 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 09:20:43,498 - INFO - 127.0.0.1 - - [05/Mar/2025 09:20:43] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 16:35:02,618 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 16:35:02,630 - INFO - 127.0.0.1 - - [05/Mar/2025 16:35:02] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 16:35:02,641 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500359'}
+2025-03-05 16:35:02,668 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000585
+2025-03-05 16:35:02,684 - INFO - don_vi_gan: VN0017460
+2025-03-05 16:35:02,684 - INFO - l3 KHCN
+2025-03-05 16:35:02,684 - INFO - don_vi_gan PGD
+2025-03-05 16:35:02,688 - INFO - jobcode: CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 16:35:02,688 - INFO - PGD VN0017460
+2025-03-05 16:35:02,694 - INFO - jobcode:  CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 16:35:02,694 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 16:35:02,694 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 16:35:02,705 - INFO - result ('kieultt@lpbank.com.vn',)
+2025-03-05 16:35:02,705 - INFO - start
+2025-03-05 16:35:02,705 - INFO - VN0017460
+2025-03-05 16:35:02,708 - INFO - donvigan_cha VN0012800
+2025-03-05 16:35:02,711 - INFO - jobcode:  CN0001,CN0002
+2025-03-05 16:35:02,711 - INFO - placeholders %s,%s
+2025-03-05 16:35:02,711 - INFO - placeholders %s,%s
+2025-03-05 16:35:02,722 - INFO - result ('khanhnd@lpbank.com.vn',)
+2025-03-05 16:35:02,722 - INFO - ['kieultt@lpbank.com.vn', 'khanhnd@lpbank.com.vn']
+2025-03-05 16:35:02,727 - INFO - 127.0.0.1 - - [05/Mar/2025 16:35:02] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 16:35:02,796 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500359'}
+2025-03-05 16:35:02,815 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000585
+2025-03-05 16:35:02,824 - INFO - don_vi_gan: VN0017460
+2025-03-05 16:35:02,824 - INFO - l3 KHCN
+2025-03-05 16:35:02,824 - INFO - don_vi_gan PGD
+2025-03-05 16:35:02,830 - INFO - jobcode: CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 16:35:02,830 - INFO - PGD VN0017460
+2025-03-05 16:35:02,832 - INFO - jobcode:  CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 16:35:02,832 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 16:35:02,832 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 16:35:02,842 - INFO - result ('kieultt@lpbank.com.vn',)
+2025-03-05 16:35:02,842 - INFO - start
+2025-03-05 16:35:02,842 - INFO - VN0017460
+2025-03-05 16:35:02,844 - INFO - donvigan_cha VN0012800
+2025-03-05 16:35:02,846 - INFO - jobcode:  CN0001,CN0002
+2025-03-05 16:35:02,846 - INFO - placeholders %s,%s
+2025-03-05 16:35:02,846 - INFO - placeholders %s,%s
+2025-03-05 16:35:02,856 - INFO - result ('khanhnd@lpbank.com.vn',)
+2025-03-05 16:35:02,856 - INFO - ['kieultt@lpbank.com.vn', 'khanhnd@lpbank.com.vn']
+2025-03-05 16:35:02,858 - INFO - 127.0.0.1 - - [05/Mar/2025 16:35:02] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 16:38:52,250 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 16:38:52,251 - INFO - 127.0.0.1 - - [05/Mar/2025 16:38:52] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 16:38:52,262 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 16:38:52,263 - INFO - 127.0.0.1 - - [05/Mar/2025 16:38:52] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 16:38:52,266 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500359'}
+2025-03-05 16:38:52,278 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500359'}
+2025-03-05 16:38:52,303 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000585
+2025-03-05 16:38:52,349 - INFO - don_vi_gan: VN0017460
+2025-03-05 16:38:52,349 - INFO - l3 KHCN
+2025-03-05 16:38:52,349 - INFO - don_vi_gan PGD
+2025-03-05 16:38:52,351 - INFO - jobcode: CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 16:38:52,351 - INFO - PGD VN0017460
+2025-03-05 16:38:52,353 - INFO - jobcode:  CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 16:38:52,353 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 16:38:52,353 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 16:38:52,363 - INFO - result ('kieultt@lpbank.com.vn',)
+2025-03-05 16:38:52,363 - INFO - start
+2025-03-05 16:38:52,363 - INFO - VN0017460
+2025-03-05 16:38:52,365 - INFO - donvigan_cha VN0012800
+2025-03-05 16:38:52,367 - INFO - jobcode:  CN0001,CN0002
+2025-03-05 16:38:52,367 - INFO - placeholders %s,%s
+2025-03-05 16:38:52,367 - INFO - placeholders %s,%s
+2025-03-05 16:38:52,370 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000585
+2025-03-05 16:38:52,381 - INFO - result ('khanhnd@lpbank.com.vn',)
+2025-03-05 16:38:52,382 - INFO - ['kieultt@lpbank.com.vn', 'khanhnd@lpbank.com.vn']
+2025-03-05 16:38:52,385 - INFO - 127.0.0.1 - - [05/Mar/2025 16:38:52] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 16:38:52,417 - INFO - don_vi_gan: VN0017460
+2025-03-05 16:38:52,417 - INFO - l3 KHCN
+2025-03-05 16:38:52,417 - INFO - don_vi_gan PGD
+2025-03-05 16:38:52,426 - INFO - jobcode: CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 16:38:52,426 - INFO - PGD VN0017460
+2025-03-05 16:38:52,436 - INFO - jobcode:  CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 16:38:52,436 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 16:38:52,436 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 16:38:52,451 - INFO - result ('kieultt@lpbank.com.vn',)
+2025-03-05 16:38:52,452 - INFO - start
+2025-03-05 16:38:52,452 - INFO - VN0017460
+2025-03-05 16:38:52,464 - INFO - donvigan_cha VN0012800
+2025-03-05 16:38:52,472 - INFO - jobcode:  CN0001,CN0002
+2025-03-05 16:38:52,473 - INFO - placeholders %s,%s
+2025-03-05 16:38:52,473 - INFO - placeholders %s,%s
+2025-03-05 16:38:52,490 - INFO - result ('khanhnd@lpbank.com.vn',)
+2025-03-05 16:38:52,490 - INFO - ['kieultt@lpbank.com.vn', 'khanhnd@lpbank.com.vn']
+2025-03-05 16:38:52,498 - INFO - 127.0.0.1 - - [05/Mar/2025 16:38:52] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 16:50:13,298 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 16:50:13,299 - INFO - 127.0.0.1 - - [05/Mar/2025 16:50:13] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 16:50:13,311 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 16:50:13,311 - INFO - 127.0.0.1 - - [05/Mar/2025 16:50:13] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 16:50:13,317 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500360'}
+2025-03-05 16:50:13,320 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500360'}
+2025-03-05 16:50:13,340 - INFO - data: Log-Lv1-000371 Log-Lv2-0003745 Log-Lv3-000611
+2025-03-05 16:50:13,345 - INFO - data: Log-Lv1-000371 Log-Lv2-0003745 Log-Lv3-000611
+2025-03-05 16:50:13,350 - INFO - don_vi_gan: VN0011001
+2025-03-05 16:50:13,350 - INFO - l3 KHCN
+2025-03-05 16:50:13,350 - INFO - don_vi_gan CN
+2025-03-05 16:50:13,353 - INFO - jobcode: CN0001,CN0002,CN0245,CN0239,CN0240,CN0259,CN0182,CN0183,CN0257,CN0185,CN0188
+2025-03-05 16:50:13,353 - INFO - CN VN0011001
+2025-03-05 16:50:13,355 - INFO - don_vi_gan: VN0011001
+2025-03-05 16:50:13,355 - INFO - l3 KHCN
+2025-03-05 16:50:13,355 - INFO - don_vi_gan CN
+2025-03-05 16:50:13,356 - INFO - jobcode:  CN0001,CN0002,CN0245,CN0239,CN0240,CN0259,CN0182,CN0183,CN0257,CN0185,CN0188
+2025-03-05 16:50:13,356 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 16:50:13,356 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 16:50:13,356 - INFO - jobcode: CN0001,CN0002,CN0245,CN0239,CN0240,CN0259,CN0182,CN0183,CN0257,CN0185,CN0188
+2025-03-05 16:50:13,356 - INFO - CN VN0011001
+2025-03-05 16:50:13,358 - INFO - jobcode:  CN0001,CN0002,CN0245,CN0239,CN0240,CN0259,CN0182,CN0183,CN0257,CN0185,CN0188
+2025-03-05 16:50:13,358 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 16:50:13,358 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 16:50:13,367 - INFO - result ('hungnm1@lpbank.com.vn;sonhn1@lpbank.com.vn;tranglth4@lpbank.com.vn',)
+2025-03-05 16:50:13,367 - INFO - ['hungnm1@lpbank.com.vn', 'tranglth4@lpbank.com.vn', 'sonhn1@lpbank.com.vn']
+2025-03-05 16:50:13,369 - INFO - result ('hungnm1@lpbank.com.vn;sonhn1@lpbank.com.vn;tranglth4@lpbank.com.vn',)
+2025-03-05 16:50:13,370 - INFO - ['hungnm1@lpbank.com.vn', 'tranglth4@lpbank.com.vn', 'sonhn1@lpbank.com.vn']
+2025-03-05 16:50:13,370 - INFO - 127.0.0.1 - - [05/Mar/2025 16:50:13] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 16:50:13,373 - INFO - 127.0.0.1 - - [05/Mar/2025 16:50:13] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:03:26,411 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:03:26,419 - INFO - 127.0.0.1 - - [05/Mar/2025 17:03:26] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:03:26,423 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:03:26,424 - INFO - 127.0.0.1 - - [05/Mar/2025 17:03:26] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:03:26,434 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:03:26,444 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:03:26,455 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:03:26,466 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:03:26,469 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:03:26,469 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:03:26,469 - INFO - don_vi_gan CN
+2025-03-05 17:03:26,471 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:03:26,471 - INFO - CN VN0011001
+2025-03-05 17:03:26,473 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:03:26,473 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:03:26,473 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:03:26,475 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:03:26,475 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:03:26,475 - INFO - don_vi_gan CN
+2025-03-05 17:03:26,477 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:03:26,477 - INFO - CN VN0011001
+2025-03-05 17:03:26,478 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:03:26,479 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:03:26,479 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:03:26,488 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:03:26,488 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:03:26,491 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:03:26,491 - INFO - 127.0.0.1 - - [05/Mar/2025 17:03:26] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:03:26,491 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:03:26,494 - INFO - 127.0.0.1 - - [05/Mar/2025 17:03:26] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:08:29,883 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:08:29,883 - INFO - 127.0.0.1 - - [05/Mar/2025 17:08:29] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:08:29,886 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:08:29,886 - INFO - 127.0.0.1 - - [05/Mar/2025 17:08:29] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:08:29,890 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:08:29,893 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:08:29,909 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:08:29,913 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:08:29,920 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:08:29,920 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:08:29,920 - INFO - don_vi_gan CN
+2025-03-05 17:08:29,922 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:08:29,922 - INFO - CN VN0011001
+2025-03-05 17:08:29,923 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:08:29,923 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:08:29,923 - INFO - don_vi_gan CN
+2025-03-05 17:08:29,924 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:08:29,924 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:08:29,924 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:08:29,925 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:08:29,925 - INFO - CN VN0011001
+2025-03-05 17:08:29,927 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:08:29,927 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:08:29,927 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:08:29,935 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:08:29,935 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:08:29,937 - INFO - 127.0.0.1 - - [05/Mar/2025 17:08:29] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:08:29,938 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:08:29,938 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:08:29,940 - INFO - 127.0.0.1 - - [05/Mar/2025 17:08:29] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:08:59,403 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:08:59,403 - INFO - 127.0.0.1 - - [05/Mar/2025 17:08:59] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:08:59,404 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:08:59,406 - INFO - 127.0.0.1 - - [05/Mar/2025 17:08:59] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:08:59,413 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:08:59,419 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:08:59,433 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:08:59,436 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:08:59,443 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:08:59,443 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:08:59,443 - INFO - don_vi_gan CN
+2025-03-05 17:08:59,445 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:08:59,445 - INFO - CN VN0011001
+2025-03-05 17:08:59,446 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:08:59,446 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:08:59,446 - INFO - don_vi_gan CN
+2025-03-05 17:08:59,447 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:08:59,447 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:08:59,447 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:08:59,448 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:08:59,448 - INFO - CN VN0011001
+2025-03-05 17:08:59,450 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:08:59,450 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:08:59,450 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:08:59,457 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:08:59,457 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:08:59,459 - INFO - 127.0.0.1 - - [05/Mar/2025 17:08:59] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:08:59,460 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:08:59,460 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:08:59,463 - INFO - 127.0.0.1 - - [05/Mar/2025 17:08:59] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:21:06,801 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:21:06,802 - INFO - 127.0.0.1 - - [05/Mar/2025 17:21:06] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:21:06,808 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:21:06,808 - INFO - 127.0.0.1 - - [05/Mar/2025 17:21:06] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:21:06,809 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500368'}
+2025-03-05 17:21:06,818 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500368'}
+2025-03-05 17:21:06,831 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000580
+2025-03-05 17:21:06,845 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:21:06,845 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:21:06,845 - INFO - don_vi_gan CN
+2025-03-05 17:21:06,846 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000580
+2025-03-05 17:21:06,847 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:21:06,847 - INFO - CN VN0011001
+2025-03-05 17:21:06,849 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:21:06,849 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:21:06,849 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:21:06,861 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:21:06,861 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:21:06,861 - INFO - don_vi_gan CN
+2025-03-05 17:21:06,863 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:21:06,863 - INFO - CN VN0011001
+2025-03-05 17:21:06,865 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:21:06,865 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:21:06,865 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:21:06,866 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:21:06,866 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:21:06,869 - INFO - 127.0.0.1 - - [05/Mar/2025 17:21:06] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:21:06,875 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:21:06,875 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:21:06,878 - INFO - 127.0.0.1 - - [05/Mar/2025 17:21:06] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:21:22,538 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:21:22,539 - INFO - 127.0.0.1 - - [05/Mar/2025 17:21:22] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:21:22,543 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:21:22,543 - INFO - 127.0.0.1 - - [05/Mar/2025 17:21:22] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:21:22,555 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500368'}
+2025-03-05 17:21:22,564 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500368'}
+2025-03-05 17:21:22,579 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000580
+2025-03-05 17:21:22,582 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000580
+2025-03-05 17:21:22,591 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:21:22,591 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:21:22,591 - INFO - don_vi_gan CN
+2025-03-05 17:21:22,592 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:21:22,592 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:21:22,592 - INFO - don_vi_gan CN
+2025-03-05 17:21:22,603 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:21:22,603 - INFO - CN VN0011001
+2025-03-05 17:21:22,604 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:21:22,604 - INFO - CN VN0011001
+2025-03-05 17:21:22,606 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:21:22,606 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:21:22,606 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:21:22,607 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:21:22,607 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:21:22,607 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:21:22,616 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:21:22,616 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:21:22,618 - INFO - 127.0.0.1 - - [05/Mar/2025 17:21:22] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:21:22,618 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:21:22,619 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:21:22,621 - INFO - 127.0.0.1 - - [05/Mar/2025 17:21:22] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:24:53,264 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:24:53,261 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:24:53,301 - INFO - 127.0.0.1 - - [05/Mar/2025 17:24:53] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:24:53,308 - INFO - 127.0.0.1 - - [05/Mar/2025 17:24:53] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:24:53,317 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:24:53,345 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:24:53,398 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:24:53,398 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:24:53,421 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:24:53,421 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:24:53,422 - INFO - don_vi_gan CN
+2025-03-05 17:24:53,422 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:24:53,422 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:24:53,422 - INFO - don_vi_gan CN
+2025-03-05 17:24:53,423 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:24:53,424 - INFO - CN VN0011001
+2025-03-05 17:24:53,425 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:24:53,425 - INFO - CN VN0011001
+2025-03-05 17:24:53,426 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:24:53,433 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:24:53,433 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:24:53,433 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:24:53,434 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:24:53,434 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:24:53,445 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:24:53,446 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:24:53,449 - INFO - 127.0.0.1 - - [05/Mar/2025 17:24:53] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:24:53,450 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:24:53,450 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:24:53,453 - INFO - 127.0.0.1 - - [05/Mar/2025 17:24:53] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:25:09,511 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:25:09,512 - INFO - 127.0.0.1 - - [05/Mar/2025 17:25:09] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:25:09,518 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:25:09,518 - INFO - 127.0.0.1 - - [05/Mar/2025 17:25:09] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:25:09,527 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:25:09,530 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:25:09,547 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:25:09,550 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:25:09,556 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:25:09,556 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:25:09,556 - INFO - don_vi_gan CN
+2025-03-05 17:25:09,559 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:25:09,559 - INFO - CN VN0011001
+2025-03-05 17:25:09,560 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:25:09,560 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:25:09,560 - INFO - don_vi_gan CN
+2025-03-05 17:25:09,562 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:25:09,562 - INFO - CN VN0011001
+2025-03-05 17:25:09,562 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:25:09,562 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:25:09,562 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:25:09,564 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:25:09,564 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:25:09,565 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:25:09,573 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:25:09,573 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:25:09,592 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:25:09,592 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:25:09,594 - INFO - 127.0.0.1 - - [05/Mar/2025 17:25:09] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:25:09,595 - INFO - 127.0.0.1 - - [05/Mar/2025 17:25:09] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:28:29,384 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:28:29,385 - INFO - 127.0.0.1 - - [05/Mar/2025 17:28:29] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:28:29,389 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:28:29,389 - INFO - 127.0.0.1 - - [05/Mar/2025 17:28:29] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:28:29,398 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:28:29,405 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:28:29,426 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:28:29,430 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:28:29,434 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:28:29,434 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:28:29,434 - INFO - don_vi_gan CN
+2025-03-05 17:28:29,436 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:28:29,436 - INFO - CN VN0011001
+2025-03-05 17:28:29,438 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:28:29,438 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:28:29,438 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:28:29,442 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:28:29,442 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:28:29,442 - INFO - don_vi_gan CN
+2025-03-05 17:28:29,444 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:28:29,444 - INFO - CN VN0011001
+2025-03-05 17:28:29,448 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:28:29,448 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:28:29,451 - INFO - 127.0.0.1 - - [05/Mar/2025 17:28:29] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:28:29,454 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:28:29,455 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:28:29,455 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:28:29,469 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:28:29,469 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:28:29,474 - INFO - 127.0.0.1 - - [05/Mar/2025 17:28:29] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:28:48,972 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:28:48,974 - INFO - 127.0.0.1 - - [05/Mar/2025 17:28:48] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:28:48,976 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:28:48,976 - INFO - 127.0.0.1 - - [05/Mar/2025 17:28:48] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:28:48,987 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500368'}
+2025-03-05 17:28:48,989 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500368'}
+2025-03-05 17:28:49,055 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000580
+2025-03-05 17:28:49,058 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000580
+2025-03-05 17:28:49,064 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:28:49,064 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:28:49,064 - INFO - don_vi_gan CN
+2025-03-05 17:28:49,068 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:28:49,068 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:28:49,068 - INFO - don_vi_gan CN
+2025-03-05 17:28:49,073 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:28:49,073 - INFO - CN VN0011001
+2025-03-05 17:28:49,075 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:28:49,075 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:28:49,075 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:28:49,077 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:28:49,077 - INFO - CN VN0011001
+2025-03-05 17:28:49,079 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:28:49,079 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:28:49,079 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:28:49,088 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:28:49,088 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:28:49,096 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:28:49,096 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:28:49,099 - INFO - 127.0.0.1 - - [05/Mar/2025 17:28:49] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:28:49,099 - INFO - 127.0.0.1 - - [05/Mar/2025 17:28:49] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:31:47,944 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:31:47,945 - INFO - 127.0.0.1 - - [05/Mar/2025 17:31:47] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:31:47,947 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:31:47,948 - INFO - 127.0.0.1 - - [05/Mar/2025 17:31:47] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:31:47,966 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:31:47,982 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:31:47,995 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:31:47,999 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:31:48,005 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:31:48,005 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:31:48,005 - INFO - don_vi_gan CN
+2025-03-05 17:31:48,007 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:31:48,007 - INFO - CN VN0011001
+2025-03-05 17:31:48,008 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:31:48,008 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:31:48,008 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:31:48,020 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:31:48,020 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:31:48,032 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:31:48,032 - INFO - 127.0.0.1 - - [05/Mar/2025 17:31:48] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:31:48,032 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:31:48,033 - INFO - don_vi_gan CN
+2025-03-05 17:31:48,035 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:31:48,035 - INFO - CN VN0011001
+2025-03-05 17:31:48,039 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:31:48,039 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:31:48,039 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:31:48,049 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:31:48,049 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:31:48,053 - INFO - 127.0.0.1 - - [05/Mar/2025 17:31:48] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:32:10,647 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:32:10,647 - INFO - 127.0.0.1 - - [05/Mar/2025 17:32:10] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:32:10,657 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:32:10,665 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:32:10,676 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:32:10,687 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:32:10,688 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:32:10,688 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:32:10,689 - INFO - don_vi_gan CN
+2025-03-05 17:32:10,690 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:32:10,690 - INFO - CN VN0011001
+2025-03-05 17:32:10,692 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:32:10,692 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:32:10,692 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:32:10,695 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:32:10,695 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:32:10,695 - INFO - don_vi_gan CN
+2025-03-05 17:32:10,697 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:32:10,697 - INFO - CN VN0011001
+2025-03-05 17:32:10,700 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:32:10,700 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:32:10,700 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:32:10,703 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:32:10,703 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:32:10,705 - INFO - 127.0.0.1 - - [05/Mar/2025 17:32:10] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:32:10,710 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:32:10,710 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:32:10,713 - INFO - 127.0.0.1 - - [05/Mar/2025 17:32:10] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:34:24,652 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:34:24,652 - INFO - 127.0.0.1 - - [05/Mar/2025 17:34:24] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:34:24,653 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:34:24,654 - INFO - 127.0.0.1 - - [05/Mar/2025 17:34:24] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:34:24,662 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:34:24,664 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:34:24,684 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:34:24,687 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:34:24,695 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:34:24,696 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:34:24,696 - INFO - don_vi_gan CN
+2025-03-05 17:34:24,696 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:34:24,696 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:34:24,696 - INFO - don_vi_gan CN
+2025-03-05 17:34:24,697 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:34:24,697 - INFO - CN VN0011001
+2025-03-05 17:34:24,698 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:34:24,698 - INFO - CN VN0011001
+2025-03-05 17:34:24,699 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:34:24,699 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:34:24,699 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:34:24,700 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:34:24,700 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:34:24,700 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:34:24,712 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:34:24,713 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:34:24,713 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:34:24,713 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:34:24,718 - INFO - 127.0.0.1 - - [05/Mar/2025 17:34:24] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:34:24,718 - INFO - 127.0.0.1 - - [05/Mar/2025 17:34:24] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:35:15,222 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:35:15,223 - INFO - 127.0.0.1 - - [05/Mar/2025 17:35:15] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:35:15,226 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:35:15,226 - INFO - 127.0.0.1 - - [05/Mar/2025 17:35:15] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:35:15,229 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500371'}
+2025-03-05 17:35:15,233 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500371'}
+2025-03-05 17:35:15,250 - INFO - data: Log-Lv1-000524 Log-Lv2-000570 Log-Lv3-000589
+2025-03-05 17:35:15,252 - INFO - data: Log-Lv1-000524 Log-Lv2-000570 Log-Lv3-000589
+2025-03-05 17:35:15,258 - INFO - don_vi_gan: VN0011006
+2025-03-05 17:35:15,259 - INFO - l3 KHCN
+2025-03-05 17:35:15,259 - INFO - don_vi_gan PGD
+2025-03-05 17:35:15,260 - INFO - don_vi_gan: VN0011006
+2025-03-05 17:35:15,260 - INFO - l3 KHCN
+2025-03-05 17:35:15,260 - INFO - don_vi_gan PGD
+2025-03-05 17:35:15,261 - INFO - jobcode: CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:35:15,261 - INFO - PGD VN0011006
+2025-03-05 17:35:15,262 - INFO - jobcode: CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:35:15,262 - INFO - PGD VN0011006
+2025-03-05 17:35:15,262 - INFO - jobcode:  CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:35:15,263 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:35:15,263 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:35:15,264 - INFO - jobcode:  CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:35:15,264 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:35:15,264 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:35:15,273 - INFO - result ('nghiahn@lpbank.com.vn;quanta@lpbank.com.vn',)
+2025-03-05 17:35:15,273 - INFO - start
+2025-03-05 17:35:15,273 - INFO - VN0011006
+2025-03-05 17:35:15,275 - INFO - donvigan_cha VN0011003
+2025-03-05 17:35:15,277 - INFO - jobcode:  CN0001,CN0002
+2025-03-05 17:35:15,277 - INFO - placeholders %s,%s
+2025-03-05 17:35:15,277 - INFO - placeholders %s,%s
+2025-03-05 17:35:15,278 - INFO - result ('nghiahn@lpbank.com.vn;quanta@lpbank.com.vn',)
+2025-03-05 17:35:15,278 - INFO - start
+2025-03-05 17:35:15,278 - INFO - VN0011006
+2025-03-05 17:35:15,280 - INFO - donvigan_cha VN0011003
+2025-03-05 17:35:15,282 - INFO - jobcode:  CN0001,CN0002
+2025-03-05 17:35:15,282 - INFO - placeholders %s,%s
+2025-03-05 17:35:15,282 - INFO - placeholders %s,%s
+2025-03-05 17:35:15,287 - INFO - result ('ducca@lpbank.com.vn',)
+2025-03-05 17:35:15,287 - INFO - ['ducca@lpbank.com.vn', 'nghiahn@lpbank.com.vn', 'quanta@lpbank.com.vn']
+2025-03-05 17:35:15,290 - INFO - 127.0.0.1 - - [05/Mar/2025 17:35:15] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:35:15,292 - INFO - result ('ducca@lpbank.com.vn',)
+2025-03-05 17:35:15,292 - INFO - ['ducca@lpbank.com.vn', 'nghiahn@lpbank.com.vn', 'quanta@lpbank.com.vn']
+2025-03-05 17:35:15,295 - INFO - 127.0.0.1 - - [05/Mar/2025 17:35:15] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:36:17,571 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:36:17,572 - INFO - 127.0.0.1 - - [05/Mar/2025 17:36:17] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:36:17,582 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500371'}
+2025-03-05 17:36:17,590 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500371'}
+2025-03-05 17:36:17,639 - INFO - data: Log-Lv1-000524 Log-Lv2-000570 Log-Lv3-000589
+2025-03-05 17:36:17,643 - INFO - data: Log-Lv1-000524 Log-Lv2-000570 Log-Lv3-000589
+2025-03-05 17:36:17,652 - INFO - don_vi_gan: VN0011006
+2025-03-05 17:36:17,652 - INFO - l3 KHCN
+2025-03-05 17:36:17,652 - INFO - don_vi_gan PGD
+2025-03-05 17:36:17,653 - INFO - don_vi_gan: VN0011006
+2025-03-05 17:36:17,653 - INFO - l3 KHCN
+2025-03-05 17:36:17,653 - INFO - don_vi_gan PGD
+2025-03-05 17:36:17,654 - INFO - jobcode: CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:36:17,654 - INFO - PGD VN0011006
+2025-03-05 17:36:17,655 - INFO - jobcode: CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:36:17,655 - INFO - PGD VN0011006
+2025-03-05 17:36:17,658 - INFO - jobcode:  CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:36:17,659 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:36:17,659 - INFO - jobcode:  CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:36:17,659 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:36:17,659 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:36:17,659 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:36:17,673 - INFO - result ('nghiahn@lpbank.com.vn;quanta@lpbank.com.vn',)
+2025-03-05 17:36:17,673 - INFO - start
+2025-03-05 17:36:17,673 - INFO - VN0011006
+2025-03-05 17:36:17,675 - INFO - donvigan_cha VN0011003
+2025-03-05 17:36:17,677 - INFO - jobcode:  CN0001,CN0002
+2025-03-05 17:36:17,677 - INFO - placeholders %s,%s
+2025-03-05 17:36:17,677 - INFO - placeholders %s,%s
+2025-03-05 17:36:17,678 - INFO - result ('nghiahn@lpbank.com.vn;quanta@lpbank.com.vn',)
+2025-03-05 17:36:17,678 - INFO - start
+2025-03-05 17:36:17,679 - INFO - VN0011006
+2025-03-05 17:36:17,680 - INFO - donvigan_cha VN0011003
+2025-03-05 17:36:17,682 - INFO - jobcode:  CN0001,CN0002
+2025-03-05 17:36:17,682 - INFO - placeholders %s,%s
+2025-03-05 17:36:17,682 - INFO - placeholders %s,%s
+2025-03-05 17:36:17,687 - INFO - result ('ducca@lpbank.com.vn',)
+2025-03-05 17:36:17,687 - INFO - ['ducca@lpbank.com.vn', 'nghiahn@lpbank.com.vn', 'quanta@lpbank.com.vn']
+2025-03-05 17:36:17,690 - INFO - 127.0.0.1 - - [05/Mar/2025 17:36:17] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:36:17,692 - INFO - result ('ducca@lpbank.com.vn',)
+2025-03-05 17:36:17,692 - INFO - ['ducca@lpbank.com.vn', 'nghiahn@lpbank.com.vn', 'quanta@lpbank.com.vn']
+2025-03-05 17:36:17,695 - INFO - 127.0.0.1 - - [05/Mar/2025 17:36:17] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:36:34,371 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:36:34,372 - INFO - 127.0.0.1 - - [05/Mar/2025 17:36:34] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:36:34,377 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:36:34,377 - INFO - 127.0.0.1 - - [05/Mar/2025 17:36:34] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:36:34,378 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500371'}
+2025-03-05 17:36:34,386 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500371'}
+2025-03-05 17:36:34,397 - INFO - data: Log-Lv1-000524 Log-Lv2-000570 Log-Lv3-000589
+2025-03-05 17:36:34,404 - INFO - data: Log-Lv1-000524 Log-Lv2-000570 Log-Lv3-000589
+2025-03-05 17:36:34,411 - INFO - don_vi_gan: VN0011006
+2025-03-05 17:36:34,411 - INFO - l3 KHCN
+2025-03-05 17:36:34,411 - INFO - don_vi_gan PGD
+2025-03-05 17:36:34,412 - INFO - don_vi_gan: VN0011006
+2025-03-05 17:36:34,412 - INFO - l3 KHCN
+2025-03-05 17:36:34,412 - INFO - don_vi_gan PGD
+2025-03-05 17:36:34,413 - INFO - jobcode: CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:36:34,413 - INFO - PGD VN0011006
+2025-03-05 17:36:34,414 - INFO - jobcode: CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:36:34,414 - INFO - PGD VN0011006
+2025-03-05 17:36:34,415 - INFO - jobcode:  CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:36:34,415 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:36:34,415 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:36:34,416 - INFO - jobcode:  CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:36:34,416 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:36:34,416 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:36:34,425 - INFO - result ('nghiahn@lpbank.com.vn;quanta@lpbank.com.vn',)
+2025-03-05 17:36:34,425 - INFO - start
+2025-03-05 17:36:34,425 - INFO - VN0011006
+2025-03-05 17:36:34,427 - INFO - donvigan_cha VN0011003
+2025-03-05 17:36:34,428 - INFO - result ('nghiahn@lpbank.com.vn;quanta@lpbank.com.vn',)
+2025-03-05 17:36:34,428 - INFO - start
+2025-03-05 17:36:34,428 - INFO - VN0011006
+2025-03-05 17:36:34,429 - INFO - jobcode:  CN0001,CN0002
+2025-03-05 17:36:34,429 - INFO - placeholders %s,%s
+2025-03-05 17:36:34,429 - INFO - placeholders %s,%s
+2025-03-05 17:36:34,430 - INFO - donvigan_cha VN0011003
+2025-03-05 17:36:34,432 - INFO - jobcode:  CN0001,CN0002
+2025-03-05 17:36:34,432 - INFO - placeholders %s,%s
+2025-03-05 17:36:34,432 - INFO - placeholders %s,%s
+2025-03-05 17:36:34,439 - INFO - result ('ducca@lpbank.com.vn',)
+2025-03-05 17:36:34,439 - INFO - ['ducca@lpbank.com.vn', 'nghiahn@lpbank.com.vn', 'quanta@lpbank.com.vn']
+2025-03-05 17:36:34,442 - INFO - 127.0.0.1 - - [05/Mar/2025 17:36:34] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:36:34,443 - INFO - result ('ducca@lpbank.com.vn',)
+2025-03-05 17:36:34,443 - INFO - ['ducca@lpbank.com.vn', 'nghiahn@lpbank.com.vn', 'quanta@lpbank.com.vn']
+2025-03-05 17:36:34,446 - INFO - 127.0.0.1 - - [05/Mar/2025 17:36:34] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:36:38,855 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500371'}
+2025-03-05 17:36:38,863 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500371'}
+2025-03-05 17:36:38,872 - INFO - data: Log-Lv1-000524 Log-Lv2-000570 Log-Lv3-000589
+2025-03-05 17:36:38,879 - INFO - data: Log-Lv1-000524 Log-Lv2-000570 Log-Lv3-000589
+2025-03-05 17:36:38,884 - INFO - don_vi_gan: VN0011006
+2025-03-05 17:36:38,884 - INFO - l3 KHCN
+2025-03-05 17:36:38,884 - INFO - don_vi_gan PGD
+2025-03-05 17:36:38,886 - INFO - jobcode: CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:36:38,886 - INFO - PGD VN0011006
+2025-03-05 17:36:38,888 - INFO - jobcode:  CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:36:38,888 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:36:38,888 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:36:38,888 - INFO - don_vi_gan: VN0011006
+2025-03-05 17:36:38,888 - INFO - l3 KHCN
+2025-03-05 17:36:38,888 - INFO - don_vi_gan PGD
+2025-03-05 17:36:38,890 - INFO - jobcode: CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:36:38,890 - INFO - PGD VN0011006
+2025-03-05 17:36:38,892 - INFO - jobcode:  CN0001,CN0002,CN0240,CN0047,CN0048,CN0258,CN0228,CN0263
+2025-03-05 17:36:38,892 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:36:38,892 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:36:38,898 - INFO - result ('nghiahn@lpbank.com.vn;quanta@lpbank.com.vn',)
+2025-03-05 17:36:38,898 - INFO - start
+2025-03-05 17:36:38,898 - INFO - VN0011006
+2025-03-05 17:36:38,900 - INFO - donvigan_cha VN0011003
+2025-03-05 17:36:38,902 - INFO - jobcode:  CN0001,CN0002
+2025-03-05 17:36:38,902 - INFO - placeholders %s,%s
+2025-03-05 17:36:38,902 - INFO - placeholders %s,%s
+2025-03-05 17:36:38,904 - INFO - result ('nghiahn@lpbank.com.vn;quanta@lpbank.com.vn',)
+2025-03-05 17:36:38,904 - INFO - start
+2025-03-05 17:36:38,904 - INFO - VN0011006
+2025-03-05 17:36:38,906 - INFO - donvigan_cha VN0011003
+2025-03-05 17:36:38,908 - INFO - jobcode:  CN0001,CN0002
+2025-03-05 17:36:38,908 - INFO - placeholders %s,%s
+2025-03-05 17:36:38,908 - INFO - placeholders %s,%s
+2025-03-05 17:36:38,912 - INFO - result ('ducca@lpbank.com.vn',)
+2025-03-05 17:36:38,912 - INFO - ['ducca@lpbank.com.vn', 'nghiahn@lpbank.com.vn', 'quanta@lpbank.com.vn']
+2025-03-05 17:36:38,915 - INFO - 127.0.0.1 - - [05/Mar/2025 17:36:38] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:36:38,918 - INFO - result ('ducca@lpbank.com.vn',)
+2025-03-05 17:36:38,918 - INFO - ['ducca@lpbank.com.vn', 'nghiahn@lpbank.com.vn', 'quanta@lpbank.com.vn']
+2025-03-05 17:36:38,920 - INFO - 127.0.0.1 - - [05/Mar/2025 17:36:38] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:38:17,905 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:38:17,906 - INFO - 127.0.0.1 - - [05/Mar/2025 17:38:17] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:38:17,913 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:38:17,917 - INFO - 127.0.0.1 - - [05/Mar/2025 17:38:17] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:38:17,923 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:38:17,944 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:38:17,960 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:38:17,973 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:38:17,989 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:38:17,989 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:38:17,989 - INFO - don_vi_gan CN
+2025-03-05 17:38:17,991 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:38:17,991 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:38:17,991 - INFO - don_vi_gan CN
+2025-03-05 17:38:17,992 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:38:17,992 - INFO - CN VN0011001
+2025-03-05 17:38:17,994 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:38:17,995 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:38:17,995 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:38:17,994 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:38:17,996 - INFO - CN VN0011001
+2025-03-05 17:38:18,000 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:38:18,000 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:38:18,000 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:38:18,010 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:38:18,010 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:38:18,012 - INFO - 127.0.0.1 - - [05/Mar/2025 17:38:18] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:38:18,013 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:38:18,013 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:38:18,015 - INFO - 127.0.0.1 - - [05/Mar/2025 17:38:18] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:39:21,274 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:39:21,274 - INFO - 127.0.0.1 - - [05/Mar/2025 17:39:21] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:39:21,284 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500374'}
+2025-03-05 17:39:21,289 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:39:21,290 - INFO - 127.0.0.1 - - [05/Mar/2025 17:39:21] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:39:21,306 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500374'}
+2025-03-05 17:39:21,307 - INFO - data: Log-Lv1-000524 Log-Lv2-000572 Log-Lv3-000591
+2025-03-05 17:39:21,321 - INFO - don_vi_gan: VN0011005
+2025-03-05 17:39:21,321 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:39:21,321 - INFO - don_vi_gan PGDL
+2025-03-05 17:39:21,323 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:39:21,323 - INFO - PGDL VN0011005
+2025-03-05 17:39:21,324 - INFO - data: Log-Lv1-000524 Log-Lv2-000572 Log-Lv3-000591
+2025-03-05 17:39:21,325 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:39:21,325 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:39:21,325 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:39:21,333 - INFO - don_vi_gan: VN0011005
+2025-03-05 17:39:21,333 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:39:21,333 - INFO - don_vi_gan PGDL
+2025-03-05 17:39:21,335 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:39:21,335 - INFO - result ('dattq3@lpbank.com.vn;hoaidtt@lpbank.com.vn;huongnt51@lpbank.com.vn;linhnt38@lpbank.com.vn;nguyettta@lpbank.com.vn;nhamvtm@lpbank.com.vn;nhunglt6@lpbank.com.vn;suvth@lpbank.com.vn',)
+2025-03-05 17:39:21,336 - INFO - PGDL VN0011005
+2025-03-05 17:39:21,336 - INFO - ['linhnt38@lpbank.com.vn', 'nhunglt6@lpbank.com.vn', 'hoaidtt@lpbank.com.vn', 'nguyettta@lpbank.com.vn', 'huongnt51@lpbank.com.vn', 'nhamvtm@lpbank.com.vn', 'dattq3@lpbank.com.vn', 'suvth@lpbank.com.vn']
+2025-03-05 17:39:21,342 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:39:21,342 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:39:21,342 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:39:21,342 - INFO - 127.0.0.1 - - [05/Mar/2025 17:39:21] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:39:21,352 - INFO - result ('dattq3@lpbank.com.vn;hoaidtt@lpbank.com.vn;huongnt51@lpbank.com.vn;linhnt38@lpbank.com.vn;nguyettta@lpbank.com.vn;nhamvtm@lpbank.com.vn;nhunglt6@lpbank.com.vn;suvth@lpbank.com.vn',)
+2025-03-05 17:39:21,352 - INFO - ['linhnt38@lpbank.com.vn', 'nhunglt6@lpbank.com.vn', 'hoaidtt@lpbank.com.vn', 'nguyettta@lpbank.com.vn', 'huongnt51@lpbank.com.vn', 'nhamvtm@lpbank.com.vn', 'dattq3@lpbank.com.vn', 'suvth@lpbank.com.vn']
+2025-03-05 17:39:21,355 - INFO - 127.0.0.1 - - [05/Mar/2025 17:39:21] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:39:38,530 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:39:38,530 - INFO - 127.0.0.1 - - [05/Mar/2025 17:39:38] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:39:38,537 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500374'}
+2025-03-05 17:39:38,541 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500374'}
+2025-03-05 17:39:38,561 - INFO - data: Log-Lv1-000524 Log-Lv2-000572 Log-Lv3-000591
+2025-03-05 17:39:38,563 - INFO - data: Log-Lv1-000524 Log-Lv2-000572 Log-Lv3-000591
+2025-03-05 17:39:38,569 - INFO - don_vi_gan: VN0011005
+2025-03-05 17:39:38,569 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:39:38,570 - INFO - don_vi_gan PGDL
+2025-03-05 17:39:38,571 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:39:38,571 - INFO - PGDL VN0011005
+2025-03-05 17:39:38,571 - INFO - don_vi_gan: VN0011005
+2025-03-05 17:39:38,572 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:39:38,572 - INFO - don_vi_gan PGDL
+2025-03-05 17:39:38,573 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:39:38,573 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:39:38,573 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:39:38,573 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:39:38,574 - INFO - PGDL VN0011005
+2025-03-05 17:39:38,575 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:39:38,575 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:39:38,575 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:39:38,584 - INFO - result ('dattq3@lpbank.com.vn;hoaidtt@lpbank.com.vn;huongnt51@lpbank.com.vn;linhnt38@lpbank.com.vn;nguyettta@lpbank.com.vn;nhamvtm@lpbank.com.vn;nhunglt6@lpbank.com.vn;suvth@lpbank.com.vn',)
+2025-03-05 17:39:38,584 - INFO - ['linhnt38@lpbank.com.vn', 'nhunglt6@lpbank.com.vn', 'hoaidtt@lpbank.com.vn', 'nguyettta@lpbank.com.vn', 'huongnt51@lpbank.com.vn', 'nhamvtm@lpbank.com.vn', 'dattq3@lpbank.com.vn', 'suvth@lpbank.com.vn']
+2025-03-05 17:39:38,586 - INFO - result ('dattq3@lpbank.com.vn;hoaidtt@lpbank.com.vn;huongnt51@lpbank.com.vn;linhnt38@lpbank.com.vn;nguyettta@lpbank.com.vn;nhamvtm@lpbank.com.vn;nhunglt6@lpbank.com.vn;suvth@lpbank.com.vn',)
+2025-03-05 17:39:38,587 - INFO - 127.0.0.1 - - [05/Mar/2025 17:39:38] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:39:38,587 - INFO - ['linhnt38@lpbank.com.vn', 'nhunglt6@lpbank.com.vn', 'hoaidtt@lpbank.com.vn', 'nguyettta@lpbank.com.vn', 'huongnt51@lpbank.com.vn', 'nhamvtm@lpbank.com.vn', 'dattq3@lpbank.com.vn', 'suvth@lpbank.com.vn']
+2025-03-05 17:39:38,590 - INFO - 127.0.0.1 - - [05/Mar/2025 17:39:38] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:40:51,858 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:40:51,859 - INFO - 127.0.0.1 - - [05/Mar/2025 17:40:51] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:40:51,866 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:40:51,866 - INFO - 127.0.0.1 - - [05/Mar/2025 17:40:51] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:40:51,868 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:40:51,883 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:40:51,886 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:40:51,898 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:40:51,898 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:40:51,898 - INFO - don_vi_gan CN
+2025-03-05 17:40:51,902 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:40:51,905 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:40:51,905 - INFO - CN VN0011001
+2025-03-05 17:40:51,907 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:40:51,907 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:40:51,907 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:40:51,912 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:40:51,912 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:40:51,912 - INFO - don_vi_gan CN
+2025-03-05 17:40:51,914 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:40:51,914 - INFO - CN VN0011001
+2025-03-05 17:40:51,916 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:40:51,916 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:40:51,916 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:40:51,923 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:40:51,923 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:40:51,925 - INFO - 127.0.0.1 - - [05/Mar/2025 17:40:51] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:40:51,926 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:40:51,926 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:40:51,928 - INFO - 127.0.0.1 - - [05/Mar/2025 17:40:51] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:41:50,061 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:41:50,062 - INFO - 127.0.0.1 - - [05/Mar/2025 17:41:50] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:41:50,070 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:41:50,071 - INFO - 127.0.0.1 - - [05/Mar/2025 17:41:50] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:41:50,076 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:41:50,085 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:41:50,095 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:41:50,101 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:41:50,109 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:41:50,110 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:41:50,110 - INFO - don_vi_gan CN
+2025-03-05 17:41:50,111 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:41:50,111 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:41:50,111 - INFO - don_vi_gan CN
+2025-03-05 17:41:50,111 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:41:50,111 - INFO - CN VN0011001
+2025-03-05 17:41:50,113 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:41:50,113 - INFO - CN VN0011001
+2025-03-05 17:41:50,114 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:41:50,114 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:41:50,114 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:41:50,115 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:41:50,116 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:41:50,116 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:41:50,124 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:41:50,125 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:41:50,127 - INFO - 127.0.0.1 - - [05/Mar/2025 17:41:50] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:41:50,129 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:41:50,129 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:41:50,132 - INFO - 127.0.0.1 - - [05/Mar/2025 17:41:50] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:42:01,779 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:42:01,779 - INFO - 127.0.0.1 - - [05/Mar/2025 17:42:01] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:42:01,791 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:42:01,795 - INFO - 127.0.0.1 - - [05/Mar/2025 17:42:01] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:42:01,803 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:42:01,822 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:42:01,826 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500367'}
+2025-03-05 17:42:01,831 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:42:01,831 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:42:01,831 - INFO - don_vi_gan CN
+2025-03-05 17:42:01,833 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:42:01,833 - INFO - CN VN0011001
+2025-03-05 17:42:01,835 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:42:01,835 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:42:01,835 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:42:01,845 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:42:01,845 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:42:01,848 - INFO - 127.0.0.1 - - [05/Mar/2025 17:42:01] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:42:01,861 - INFO - data: Log-Lv1-000524 Log-Lv2-000568 Log-Lv3-000606
+2025-03-05 17:42:01,873 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:42:01,873 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:42:01,873 - INFO - don_vi_gan CN
+2025-03-05 17:42:01,878 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:42:01,878 - INFO - CN VN0011001
+2025-03-05 17:42:01,882 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:42:01,882 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:42:01,882 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:42:01,901 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:42:01,901 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:42:01,914 - INFO - 127.0.0.1 - - [05/Mar/2025 17:42:01] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:42:06,662 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:42:06,662 - INFO - 127.0.0.1 - - [05/Mar/2025 17:42:06] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:42:06,695 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:42:06,695 - INFO - 127.0.0.1 - - [05/Mar/2025 17:42:06] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:42:06,705 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500374'}
+2025-03-05 17:42:06,733 - INFO - data: Log-Lv1-000524 Log-Lv2-000572 Log-Lv3-000591
+2025-03-05 17:42:06,736 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500374'}
+2025-03-05 17:42:06,743 - INFO - don_vi_gan: VN0011005
+2025-03-05 17:42:06,743 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:42:06,743 - INFO - don_vi_gan PGDL
+2025-03-05 17:42:06,747 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:42:06,747 - INFO - PGDL VN0011005
+2025-03-05 17:42:06,751 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:42:06,751 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:42:06,751 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:42:06,765 - INFO - result ('dattq3@lpbank.com.vn;hoaidtt@lpbank.com.vn;huongnt51@lpbank.com.vn;linhnt38@lpbank.com.vn;nguyettta@lpbank.com.vn;nhamvtm@lpbank.com.vn;nhunglt6@lpbank.com.vn;suvth@lpbank.com.vn',)
+2025-03-05 17:42:06,765 - INFO - ['linhnt38@lpbank.com.vn', 'nhunglt6@lpbank.com.vn', 'hoaidtt@lpbank.com.vn', 'nguyettta@lpbank.com.vn', 'huongnt51@lpbank.com.vn', 'nhamvtm@lpbank.com.vn', 'dattq3@lpbank.com.vn', 'suvth@lpbank.com.vn']
+2025-03-05 17:42:06,774 - INFO - 127.0.0.1 - - [05/Mar/2025 17:42:06] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:42:06,774 - INFO - data: Log-Lv1-000524 Log-Lv2-000572 Log-Lv3-000591
+2025-03-05 17:42:06,785 - INFO - don_vi_gan: VN0011005
+2025-03-05 17:42:06,785 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:42:06,785 - INFO - don_vi_gan PGDL
+2025-03-05 17:42:06,787 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:42:06,787 - INFO - PGDL VN0011005
+2025-03-05 17:42:06,790 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:42:06,790 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:42:06,790 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:42:06,804 - INFO - result ('dattq3@lpbank.com.vn;hoaidtt@lpbank.com.vn;huongnt51@lpbank.com.vn;linhnt38@lpbank.com.vn;nguyettta@lpbank.com.vn;nhamvtm@lpbank.com.vn;nhunglt6@lpbank.com.vn;suvth@lpbank.com.vn',)
+2025-03-05 17:42:06,804 - INFO - ['linhnt38@lpbank.com.vn', 'nhunglt6@lpbank.com.vn', 'hoaidtt@lpbank.com.vn', 'nguyettta@lpbank.com.vn', 'huongnt51@lpbank.com.vn', 'nhamvtm@lpbank.com.vn', 'dattq3@lpbank.com.vn', 'suvth@lpbank.com.vn']
+2025-03-05 17:42:06,806 - INFO - 127.0.0.1 - - [05/Mar/2025 17:42:06] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:52:09,277 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:52:09,279 - INFO - 127.0.0.1 - - [05/Mar/2025 17:52:09] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:52:09,282 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:52:09,283 - INFO - 127.0.0.1 - - [05/Mar/2025 17:52:09] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:52:09,286 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500381'}
+2025-03-05 17:52:09,292 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500381'}
+2025-03-05 17:52:09,309 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000580
+2025-03-05 17:52:09,312 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000580
+2025-03-05 17:52:09,318 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:52:09,318 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:52:09,318 - INFO - don_vi_gan CN
+2025-03-05 17:52:09,320 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:52:09,320 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:52:09,321 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:52:09,321 - INFO - CN VN0011001
+2025-03-05 17:52:09,321 - INFO - don_vi_gan CN
+2025-03-05 17:52:09,323 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:52:09,323 - INFO - CN VN0011001
+2025-03-05 17:52:09,323 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:52:09,323 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:52:09,324 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:52:09,325 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:52:09,325 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:52:09,325 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:52:09,337 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:52:09,337 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:52:09,340 - INFO - 127.0.0.1 - - [05/Mar/2025 17:52:09] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:52:09,342 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:52:09,342 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:52:09,345 - INFO - 127.0.0.1 - - [05/Mar/2025 17:52:09] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:52:16,662 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:52:16,662 - INFO - 127.0.0.1 - - [05/Mar/2025 17:52:16] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:52:16,672 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 17:52:16,678 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500381'}
+2025-03-05 17:52:16,681 - INFO - 127.0.0.1 - - [05/Mar/2025 17:52:16] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:52:16,709 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000580
+2025-03-05 17:52:16,717 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500381'}
+2025-03-05 17:52:16,723 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:52:16,723 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:52:16,723 - INFO - don_vi_gan CN
+2025-03-05 17:52:16,729 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:52:16,729 - INFO - CN VN0011001
+2025-03-05 17:52:16,731 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:52:16,731 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:52:16,731 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:52:16,746 - INFO - data: Log-Lv1-000524 Log-Lv2-000561 Log-Lv3-000580
+2025-03-05 17:52:16,752 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:52:16,752 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:52:16,758 - INFO - 127.0.0.1 - - [05/Mar/2025 17:52:16] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 17:52:16,761 - INFO - don_vi_gan: VN0011001
+2025-03-05 17:52:16,761 - INFO - l3 Dịch vụ khách hàng
+2025-03-05 17:52:16,761 - INFO - don_vi_gan CN
+2025-03-05 17:52:16,763 - INFO - jobcode: CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:52:16,763 - INFO - CN VN0011001
+2025-03-05 17:52:16,765 - INFO - jobcode:  CN0001,CN0002,CN0249,CN0209,CN0210,CN0215,CN0211
+2025-03-05 17:52:16,765 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:52:16,765 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s
+2025-03-05 17:52:16,777 - INFO - result ('anhntn37@lpbank.com.vn;hungnm1@lpbank.com.vn;lanhbtt@lpbank.com.vn;leltm1@lpbank.com.vn;quynhptt@lpbank.com.vn;thuyhla@lpbank.com.vn',)
+2025-03-05 17:52:16,777 - INFO - ['anhntn37@lpbank.com.vn', 'lanhbtt@lpbank.com.vn', 'quynhptt@lpbank.com.vn', 'leltm1@lpbank.com.vn', 'hungnm1@lpbank.com.vn', 'thuyhla@lpbank.com.vn']
+2025-03-05 17:52:16,780 - INFO - 127.0.0.1 - - [05/Mar/2025 17:52:16] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 18:03:58,106 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 18:03:58,106 - INFO - 127.0.0.1 - - [05/Mar/2025 18:03:58] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 18:03:58,108 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: None
+2025-03-05 18:03:58,109 - INFO - 127.0.0.1 - - [05/Mar/2025 18:03:58] "OPTIONS /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 18:03:58,113 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500383'}
+2025-03-05 18:03:58,116 - INFO - Route: /api/v1/ho/get-mail-by-jodcode 
+ Request body: {'maticket': '25030500383'}
+2025-03-05 18:03:58,133 - INFO - data: Log-Lv1-000524 Log-Lv2-000570 Log-Lv3-000589
+2025-03-05 18:03:58,136 - INFO - data: Log-Lv1-000524 Log-Lv2-000570 Log-Lv3-000589
+2025-03-05 18:03:58,145 - INFO - don_vi_gan: VN0011001
+2025-03-05 18:03:58,145 - INFO - l3 KHCN
+2025-03-05 18:03:58,145 - INFO - don_vi_gan CN
+2025-03-05 18:03:58,145 - INFO - don_vi_gan: VN0011001
+2025-03-05 18:03:58,145 - INFO - l3 KHCN
+2025-03-05 18:03:58,145 - INFO - don_vi_gan CN
+2025-03-05 18:03:58,146 - INFO - jobcode: CN0001,CN0002,CN0245,CN0239,CN0240,CN0259,CN0182,CN0183,CN0257,CN0185,CN0188
+2025-03-05 18:03:58,147 - INFO - CN VN0011001
+2025-03-05 18:03:58,148 - INFO - jobcode: CN0001,CN0002,CN0245,CN0239,CN0240,CN0259,CN0182,CN0183,CN0257,CN0185,CN0188
+2025-03-05 18:03:58,148 - INFO - CN VN0011001
+2025-03-05 18:03:58,149 - INFO - jobcode:  CN0001,CN0002,CN0245,CN0239,CN0240,CN0259,CN0182,CN0183,CN0257,CN0185,CN0188
+2025-03-05 18:03:58,149 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 18:03:58,149 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 18:03:58,150 - INFO - jobcode:  CN0001,CN0002,CN0245,CN0239,CN0240,CN0259,CN0182,CN0183,CN0257,CN0185,CN0188
+2025-03-05 18:03:58,150 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 18:03:58,150 - INFO - placeholders %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s
+2025-03-05 18:03:58,160 - INFO - result ('hungnm1@lpbank.com.vn;sonhn1@lpbank.com.vn;tranglth4@lpbank.com.vn',)
+2025-03-05 18:03:58,160 - INFO - ['hungnm1@lpbank.com.vn', 'tranglth4@lpbank.com.vn', 'sonhn1@lpbank.com.vn']
+2025-03-05 18:03:58,161 - INFO - result ('hungnm1@lpbank.com.vn;sonhn1@lpbank.com.vn;tranglth4@lpbank.com.vn',)
+2025-03-05 18:03:58,162 - INFO - 127.0.0.1 - - [05/Mar/2025 18:03:58] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
+2025-03-05 18:03:58,162 - INFO - ['hungnm1@lpbank.com.vn', 'tranglth4@lpbank.com.vn', 'sonhn1@lpbank.com.vn']
+2025-03-05 18:03:58,165 - INFO - 127.0.0.1 - - [05/Mar/2025 18:03:58] "POST /api/v1/ho/get-mail-by-jodcode HTTP/1.0" 200 -
